@@ -22,7 +22,7 @@ The research program is `PIVOT` to the owner's distinct direction-setting object
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | Decision integration and independent review |
+| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4) open; independent review `MERGE_READY` |
 
 ## Capability audit
 
@@ -43,11 +43,11 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 | Functional role | Assignment | Status | Handoff target |
 |---|---|---|---|
 | Sol-PI | M1 integration and gate ownership | Active | Issue #3 and M1 decision PR |
-| Terra-Evidence | Reproducible narrowed search and snowball closeout | Complete: `STOP` | `handoffs/2026-07-14-m1-terra-systematic-search.md` |
+| Terra-Evidence | Bounded positive-collision search trace and targeted snowball closeout | Complete: `STOP` | `handoffs/2026-07-14-m1-terra-systematic-search.md` |
 | Sol-Theory | CMDP/router reducibility and non-factorization audit | Complete: `STOP` | `handoffs/2026-07-14-m1-sol-reducibility.md` |
 | Terra-Engineering / Luna-RedTeam | Component-agnostic benchmark and outcome-changing accounting audit | Complete: `STOP` | `handoffs/2026-07-14-m1-terra-empirical-route.md` |
 | Luna-Librarian | Independent M1 metadata version and locator verification | Complete with explicit quarantines | `handoffs/2026-07-14-m1-luna-librarian.md` |
-| Luna-QA / Luna-RedTeam | Integrated contradictory review | Pending after consolidation | `handoffs/2026-07-14-m1-luna-cross-review.md` |
+| Luna-QA / Luna-RedTeam | Integrated contradictory review | Complete: `MERGE_READY`, zero open blockers | `handoffs/2026-07-14-m1-luna-cross-review.md` |
 
 ## Input inventory
 
@@ -102,6 +102,7 @@ This machine is sufficient for governance and small deterministic harness work a
 13. Return `STOP` for the empirical fallback because existing dynamic-memory benchmarks cover the proposed operations, JMM is component-encoded, and recent multi-system work covers lifecycle accounting and ranking trade-offs.
 14. Return `PIVOT` for the program after the owner clarified the direction-setting objective. Treat that objective as a new candidate contribution, not as permission to repackage the stopped architecture.
 15. Require the directional article to define an implementation-neutral technical contract and falsifiable regime predictions; a survey, taxonomy, manifesto, maturity model, or migration diagram returns `STOP`.
+16. Do not claim that M1 completed an exhaustive systematic search: several per-query totals, screening counts, exclusions, and interrupted-pass query strings are unavailable. The present `STOP` rests on direct positive anticipations and exact control reduction, not on an absence-of-prior-art inference.
 
 ## Blockers
 
@@ -132,9 +133,9 @@ Complete issue #3 through independent contradictory review, required CI, and mer
 - [x] Independent empirical fallback audited for novelty, circularity, and feasibility.
 - [x] Current architecture and empirical routes given explicit `STOP` decisions.
 - [x] Owner's direction-setting objective separated from the stopped contribution.
-- [x] Reproducible search closeout and version chains integrated.
+- [x] Retained search trace, unavailable fields, version chains, and the positive-collision basis integrated without an exhaustive-absence claim.
 - [x] Independent bibliographic audit integrated.
-- [ ] Independent contradictory review reports no blocking findings.
+- [x] Independent contradictory review reports no blocking findings.
 - [ ] Required `validate` check passes on the M1 decision PR.
 - [ ] M1 decision PR merges and issue #3 closes.
 

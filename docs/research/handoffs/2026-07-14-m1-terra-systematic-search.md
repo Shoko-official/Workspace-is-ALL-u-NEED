@@ -157,7 +157,7 @@ Stopping here is evidence saturation under a positive-collision rule. The gate d
 | [GRU-Mem, arXiv:2602.10560v1](https://arxiv.org/abs/2602.10560v1) | Recurrent memory with learned update and exit gates and dedicated update/exit rewards | §§3.1-3.2.1, PDF pp. 4-6; experiments |
 | [AgeMem, arXiv:2601.01885v2](https://arxiv.org/abs/2601.01885v2) | One policy selects `ADD`, `UPDATE`, `DELETE`, `RETRIEVE`, `SUMMARY`, and `FILTER` operations with task and cost signals | §3.1 and Table 1, PDF pp. 4-5 |
 | [Memory-R1, arXiv:2508.19828v5](https://arxiv.org/abs/2508.19828v5) | Learned `ADD`, `UPDATE`, `DELETE`, `NOOP` manager plus an answer agent | §§3.1-3.3; Tables 2-4; Appendices B and D |
-| [Cost-Sensitive Store Routing, arXiv:2603.15658v1](https://arxiv.org/abs/2603.15658v1) | Store-subset routing with accuracy-minus-access-cost objective | §§3.1-3.4, PDF pp. 2-3 |
+| [Cost-Sensitive Store Routing, arXiv:2603.15658v1](https://arxiv.org/abs/2603.15658v1) | Formalizes store-subset selection with an accuracy-minus-access-cost objective; evaluates oracle, heuristic, and fixed policies, not learned routing | §§3.1-3.4, PDF pp. 2-3 |
 | [MemoPilot, arXiv:2606.08656v1](https://arxiv.org/abs/2606.08656v1) | Memory updates formulated as a trainable sequential decision problem | §3.1, PDF p. 3 |
 | [Constrained Policy Optimization](https://proceedings.mlr.press/v70/achiam17a.html) | Neural policies under auxiliary cost constraints | §4, PDF p. 2; method sections |
 | [Budgeted Reinforcement Learning in Continuous State Space](https://proceedings.neurips.cc/paper/2019/hash/4fe5149039b52765bde64beb9f674940-Abstract.html) | Budget as policy input and part of the dynamics | §1, PDF p. 2; Definition 1 and Theorem 1, §2, pp. 2-3 |
