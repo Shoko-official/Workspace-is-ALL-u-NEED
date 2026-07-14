@@ -6,13 +6,13 @@ Operational status: `STOPPED`
 
 ## Current milestone
 
-`M1c - Distinct technical object discovery`, tracked by [issue #9](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/9). The scientific decision is `STOP` and the independent scientific, bibliographic, and governance reviews report no blocker. Required CI, protected merge, and milestone closure remain before administrative closeout.
+None. M0, M1, M1b, and M1c are closed.
 
-M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), and M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6). Issues #1, #3, and #5 and milestones M0, M1, and M1b are closed. Issue #7 and milestone #4 tracked only the post-merge M1b reconciliation and are closed without reopening scientific work.
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), and M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10). Issues #1, #3, #5, and #9 and their scientific milestones are closed. Issues #7 and #11 and milestones #4 and #6 tracked only post-merge reconciliation and are closed without reopening scientific work.
 
 ## Current gate
 
-`M1C_STOP_PENDING_CI_AND_MERGE`
+`TERMINAL_STOP`
 
 The broad and narrowed architecture claims are `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes are also `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -20,11 +20,11 @@ The owner's distinct direction-setting objective has now returned `STOP`. State-
 
 M1c independently generated sixteen revision, concurrency, migration, causal, procedural, longitudinal, and evaluation objects. Zero survive. Direct or strongest-composite anticipations include Cordon, CoAgent, Causal Agent Replay, CausalFlow, Rosetta Memory, AFTER, SkillGuard, A-MemGuard, Longitudinal Safety, the rate-distortion compaction analysis, Artifact Ecology, ShiftBench, MemDelta, adaptive-agent hysteresis, Hyperproperties, and time-series causal estimands. The remaining formulations reduce explicitly to dynamic dependence graphs, I-confluence, provenance, causal intervention, rejection, branching, stability, two-trace non-interference, path effects, or carryover, or fail to specify a distinct estimator, mechanism, invariant, bound, or theorem.
 
-The direction-setting article remains `NOT_ELIGIBLE`. Decision 0005 records the M1c `STOP`; no model, benchmark, training, experiment, or manuscript is authorized. Only decision integration and closeout are active.
+The direction-setting article remains `NOT_ELIGIBLE`. Decision 0005 and its independent cross-review are merged. The protected `validate` check passed, PR #10 merged with linear history, issue #9 closed, and milestone M1c closed. No model, benchmark, training, experiment, or manuscript is authorized.
 
 ## Active issues
 
-[Issue #9](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/9) tracks M1c decision integration under milestone `M1c - Distinct technical object discovery`.
+None. Issue #11 and milestone #6 tracked only this post-merge reconciliation and closed without changing scientific claims or authorizing work.
 
 ## Capability audit
 
@@ -117,6 +117,8 @@ This machine is sufficient for governance and small deterministic harness work a
 33. Reject the final reset-to-stream ranking-reversal residual as `ANTICIPATED_BY_COMPOSITE`, not `ANTICIPATED_DIRECTLY`: no examined record reports the exact inversion, but Artifact Ecology supplies the inheritance protocol, ShiftBench supplies longitudinal selection inversions, MemDelta supplies controlled conclusion reversals and rank-stability guidance, and time-series causal estimands supply the path contrast.
 34. Return global `STOP` for M1c with zero `DISTINCT_CANDIDATE` objects. Do not authorize implementation or experiment to repair a failed originality gate.
 35. Accept the corrected independent final reviews: scientific distinctness, source metadata, CSV reciprocity, governance validation, tests, and Git scope report no remaining blocker before CI and protected merge.
+36. Close M1c after the protected `validate` check passed on PR #10, PR #10 merged with linear history, issue #9 closed, and milestone #5 closed.
+37. Reconcile the post-merge operational snapshot under issue #11 without changing scientific claims, evidence, candidate dispositions, experiments, or Decision 0005. Retain `TERMINAL_STOP`.
 
 ## Blockers
 
@@ -138,7 +140,7 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Integrate Decision 0005 through issue-linked commits, a protected pull request, the required `validate` check, merge, and issue and milestone closure. No scientific experiment or implementation is authorized. Any later reopening must introduce a new object outside the stopped M1c set and satisfy Decisions 0004 and 0005.
+None. The program remains at `TERMINAL_STOP`. A later M1d cycle may open only through a new issue and milestone for an independently motivated object outside M1C-C01 through M1C-C16 that satisfies Decisions 0004 and 0005 before implementation.
 
 ## M1c exit checklist
 
@@ -150,8 +152,8 @@ Integrate Decision 0005 through issue-linked commits, a protected pull request, 
 - [x] Final carryover residual tested against Artifact Ecology, ShiftBench, MemDelta, and path-indexed causal estimands.
 - [x] Explicit `STOP` decision recorded with zero `DISTINCT_CANDIDATE` objects.
 - [x] Independent final scientific, bibliographic, and governance reviews report no blocking finding.
-- [ ] Required CI passes on the latest M1c decision head.
-- [ ] Protected decision PR merges and issue #9 and milestone M1c close.
+- [x] Required CI passes on the latest M1c decision head.
+- [x] Protected decision PR merges and issue #9 and milestone M1c close.
 
 ## M1b exit checklist
 
