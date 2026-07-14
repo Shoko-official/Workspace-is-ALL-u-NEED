@@ -18,6 +18,8 @@ The minimum model state is `M_t = (W_t, E_t, S_t, B_t)`:
 
 The controller `pi_phi` may select `PROMOTE`, `RETRIEVE`, `APPEND`, `SUPERSEDE`, `REVOKE`, `CONSOLIDATE`, `PONDER`, `VERIFY`, or `HALT`. Every action must have a typed schema, bounded cardinality, explicit failure behavior, and trace record.
 
+Expiration is a deterministic store transition triggered by a declared time. Rollback of a committed mutation is a privileged append-only environment/store event. Neither is a learned controller action in the candidate mechanism. Temporal benchmarks test whether the model respects their effects; they do not silently expand the controller action set.
+
 ## Staged program
 
 1. **M1, novelty:** execute the registered search and issue a contradictory novelty opinion.
@@ -29,6 +31,8 @@ The controller `pi_phi` may select `PROMOTE`, `RETRIEVE`, `APPEND`, `SUPERSEDE`,
 7. **M7, transfer:** evaluate at least two natural-task families without test tuning; scale to 1B-3B only after prior gates pass.
 8. **M8, replication:** rebuild at least one main table, one main figure, one ablation, and one hardware profile from a clean installation and raw traces.
 9. **M9, manuscript:** generate LaTeX, verified BibTeX, tables, figures, limitations, negative results, and artifact documentation without submitting or releasing automatically.
+
+The initial M0 screen returned `PIVOT`. M1 must therefore close the systematic search and verify the narrowed constrained-policy delta before M2 may begin. No architecture work is authorized merely to instantiate a combination of known modules.
 
 ## WAIN-Core task families
 
@@ -47,6 +51,8 @@ Pointer chasing, stack execution, graph traversal, function composition, additio
 ### Joint Memory Machine
 
 Every accepted instance must require episodic retrieval, compressed-state use, recurrent computation, and provenance output. Counterfactual checks must establish that removing any required information changes the oracle target.
+
+This family is a diagnostic stress test, not primary evidence of architectural necessity or novelty, because its construction encodes the proposed component roles. The primary anti-assembly result must also survive hidden component-agnostic task families whose targets and difficulty annotations do not expose the action ontology, plus the frozen natural-transfer requirement. A benchmark contribution must remain useful across architecture families and if the candidate model loses.
 
 ## Independent variables
 
@@ -73,6 +79,10 @@ Candidate external families are Zoology/MQAR, RULER, BABILong, NoLiMa, a natural
 
 A baseline may be marked infeasible only with a recorded compatibility, license, or resource analysis and an approved replacement. Published trends must be reproduced within a preregistered tolerance before comparative claims are allowed.
 
+The closest-threat set is mandatory even when a representative replaces a broader family: HOLA or Sparse Delta Memory for exact/explicit memory plus recurrent state; Adaptive Loops and Memory or Universal Transformers Need Memory for memory-depth allocation; Mixture-of-Recursions for coupled recursion and cache traffic; and a MemOS-style versioned transactional store. The minimum composite combines equivalent disclosed mechanisms with fixed routing and adaptive stopping. A separately trained per-resource-controller composite must use the same components and matched total controller capacity.
+
+M2 must cost this matrix before approving it. If all required controls cannot be run fairly, the claim must narrow to the comparison that remains identifiable; weak-baseline substitution is not allowed.
+
 ## Controller sequence
 
 Evaluate in this order:
@@ -86,6 +96,17 @@ Evaluate in this order:
 7. joint controller.
 
 The M4 gate is evaluated before optimizing a complex learned router.
+
+## Coordination identifiability
+
+“Joint” and “separated” must be defined through observation interfaces, gradient paths, parameter counts, arbiter logic, and resource-price inputs, not through component names. The minimum causal coordination study is a matched 2x2 factorial:
+
+1. local-only versus cross-resource observations and remaining budgets;
+2. resource-local versus jointly coupled gradients and objectives.
+
+The preregistered interaction contrast is evaluated on the same instances and resource-price interventions. The candidate mechanism survives only if the joint condition improves a frozen Pareto statistic beyond component main effects and lower-order interactions, with a practically meaningful threshold and replication at two sizes. Aggregate improvement against weak baselines, a nonzero router entropy, or a new architecture diagram is insufficient.
+
+If the interaction is absent, M4 returns `STOP` for the architecture paper. A benchmark or accounting paper may continue only if its contribution is independently new and useful without a favorable model result.
 
 ## Primary endpoints
 
@@ -111,6 +132,8 @@ Publish three separate comparisons:
 3. inference-budget-matched.
 
 Inference accounting includes model execution, index construction and maintenance, episodic writes, retrieval, CPU-GPU transfer, persistent storage I/O, compilation, warm-up, verification, and failed or retried actions. No report may state that parameters, FLOPs, memory, latency, and energy are all equal unless each equality is separately demonstrated.
+
+Each budget axis must be classified before execution as `HARD_ENFORCED`, `WATCHDOG_CAPPED`, or `MEASURED_ONLY`. Action counts, recurrent steps, reads, writes, returned records, payload bytes, and bounded kernel FLOPs may be hard-enforced. Wall-clock latency and energy are normally watchdog-capped or measured because irregular operations can overshoot. Failed attempts consume actual resources and never receive a budget refund.
 
 ## Seeds, pilot, and confirmatory runs
 

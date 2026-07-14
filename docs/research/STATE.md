@@ -10,15 +10,15 @@ Operational status: `IN_PROGRESS`
 
 ## Current gate
 
-`M0-GOVERNANCE-BOOTSTRAP`
+`M0-PIVOT-AND-PR-REVIEW`
 
-The repository may conduct governance, source verification, novelty review, formal analysis, and protocol design. Training, benchmark implementation, and substantive model implementation are not authorized.
+The broad architecture novelty claim is `STOP`. The research program is `PIVOT` to a bounded M1 systematic review of one narrow coordination hypothesis or an independent empirical route. The current architecture paper is `NOT_ELIGIBLE`; eligibility of a future narrowed paper is `NOT_ESTABLISHED`. Training, benchmark implementation, M2 formalization, and substantive model implementation are not authorized.
 
 ## Active issues
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#1 M0: bootstrap research governance](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1) | M0 | `agent/1-bootstrap-research-governance` | Active |
+| [#1 M0: bootstrap research governance](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1) | M0 | `agent/1-bootstrap-research-governance` | Integration and PR review |
 
 ## Capability audit
 
@@ -39,9 +39,11 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 | Functional role | Assignment | Status | Handoff target |
 |---|---|---|---|
 | Sol-PI | Repository audit and M0 integration | Active | Issue #1 and bootstrap PR |
-| Terra-Evidence | Bounded primary-source novelty audit | Active | `handoffs/2026-07-14-terra-evidence.md` |
-| Sol-Theory | Contradictory formalization and identifiability audit | Active | `handoffs/2026-07-14-sol-theory.md` |
-| Terra-Engineering | Protocol, resource, and reproducibility feasibility audit | Active | `handoffs/2026-07-14-terra-engineering.md` |
+| Terra-Evidence | Bounded primary-source novelty audit | Complete | `handoffs/2026-07-14-terra-evidence.md` |
+| Sol-Theory | Contradictory formalization and identifiability audit | Complete | `handoffs/2026-07-14-sol-theory.md` |
+| Terra-Engineering | Protocol, resource, and reproducibility feasibility audit | Complete | `handoffs/2026-07-14-terra-engineering.md` |
+| Luna-Librarian | Source metadata, version, licence, and locator verification | Complete | `handoffs/2026-07-14-luna-librarian.md` |
+| Luna-QA / Luna-RedTeam | Independent anti-assembly cross-review | Complete | `handoffs/2026-07-14-luna-cross-review.md` |
 
 ## Input inventory
 
@@ -86,6 +88,11 @@ This machine is sufficient for governance and small deterministic harness work a
 3. Keep advanced security and advanced causal modeling outside the core-paper scope.
 4. Use the empty-repository exception only for the minimal root commit. All substantive changes use issue #1 and a PR.
 5. Do not authorize model or benchmark implementation during M0.
+6. Return `STOP` for the broad architecture novelty claim after a 27-source primary-record screen.
+7. Return `PIVOT` for the research program, limited to a full M1 review of a non-factorizing constrained-policy hypothesis or an independently useful empirical route.
+8. Keep the current architecture paper `NOT_ELIGIBLE` and future narrowed-paper eligibility `NOT_ESTABLISHED`; a new combination, title, diagram, or aggregate gain against weak baselines cannot establish eligibility.
+9. Require a same-component fixed composite, matched separated controllers, randomized resource-price interventions, and a preregistered coordination factorial before any architecture claim.
+10. Treat expiration as a deterministic store transition and committed rollback as a privileged append-only environment/store event, not learned controller actions.
 
 ## Blockers
 
@@ -97,6 +104,8 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-004 | Docker daemon is stopped | OCI reproducibility checks cannot run | Daemon available and clean-image build verified |
 | B-005 | Project and dataset licenses are undecided | Redistribution and some benchmark use are blocked | License decision and dataset license ledger approved |
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
+| B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
+| B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
 
 ## Last valid experiment
 
@@ -104,7 +113,7 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Complete the minimal governance artifacts, obtain bounded novelty/theory/protocol/bibliography handoffs, cross-review them, and decide whether M0 can advance to a dedicated M1 systematic-review issue. The current issue may not start model implementation.
+Finish issue #1 through its PR, independent functional review, and CI. If merged, close M0 and open a dedicated M1 issue to execute the registered systematic search, close one snowball cycle, formalize the exact computational delta, and cost the minimum discriminating design. The M1 issue may not start model or benchmark implementation.
 
 ## M0 exit checklist
 
@@ -113,7 +122,8 @@ Complete the minimal governance artifacts, obtain bounded novelty/theory/protoco
 - [x] Initial branch protection applied.
 - [x] Runtime capability selection recorded honestly.
 - [x] Local resource constraints measured.
-- [ ] Governance validator and CI pass.
-- [ ] Novelty, theory, protocol, and bibliography handoffs completed.
-- [ ] Cross-review completed.
-- [ ] Explicit `GO`, `PIVOT`, or `STOP` decision recorded.
+- [x] Governance validator and unit tests pass locally.
+- [ ] Pull-request CI passes.
+- [x] Novelty, theory, protocol, engineering, and bibliography handoffs completed.
+- [x] Independent anti-assembly cross-review completed.
+- [x] Explicit `PIVOT` decision recorded, with `STOP` for the broad claim, current paper `NOT_ELIGIBLE`, and future eligibility not established.

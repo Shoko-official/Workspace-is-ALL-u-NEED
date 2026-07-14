@@ -1,9 +1,9 @@
 # Novelty Review
 
-Status: `SEARCH_NOT_EXECUTED`
+Status: `INITIAL_SCREEN_COMPLETE_M1_REVIEW_REQUIRED`
 Protocol version: `0.1.0`
 Protocol recorded: `2026-07-14`
-Candidate gate: `M1`
+Candidate gate: `PIVOT`
 
 ## Review question
 
@@ -19,6 +19,24 @@ An absence of an identical title or diagram is not evidence of novelty. A compon
 | P-002 | Episodic mutations are versioned and transactional, with provenance bound immutably to retained content | Show a technical distinction from recurrent memory, kNN memory, neural long-term memory, and agent memory/versioning systems | Insert/supersede/revoke/expire/rollback tasks plus provenance-only interventions |
 | P-003 | The controller is evaluated as a constrained resource allocator rather than only as a quality router | Show complete accounting beyond theoretical FLOPs or parameter count | Pareto fronts including indexing, transfers, writes, storage, compilation, warm-up, latency, HBM, and energy |
 | P-004 | The full system creates an interaction unavailable from any component alone | Reject additive assembly as the explanation | Full factorial ablations and fixed composite baseline, with preregistered interaction analysis |
+
+## Initial screen results
+
+The M0 screen opened and read 27 primary records across workspace, recurrent-memory, explicit-memory, state-space, adaptive-compute, agent-memory, transactional-memory, and resource-routing families. It is not the completed M1 systematic review: database result counts, deduplication, patent searching, and a closed forward/backward snowball iteration remain outstanding.
+
+The screen rejects the broad architecture-novelty claim:
+
+- HOLA already combines a fixed recurrent state with a bounded exact KV memory and a write-retention rule.
+- Adaptive Loops and Memory in Transformers combines learned halting with gated local/global memory, while Universal Transformers Need Memory directly studies substitution between state capacity and ponder depth.
+- Sparse Delta Memory learns sparse reads and writes to a large explicit state under iso-parameter and iso-FLOP comparisons.
+- MemOS covers memory scheduling, provenance, versioning, lifecycle operations, transactional pipelines, and rollback at the systems layer.
+- Mixture-of-Recursions couples learned recursive depth to selective cache traffic; CAT and Engram already study controllable or optimized memory-compute operating points.
+
+Together with the older shared-workspace, external-memory, recurrent-memory, SSM, and adaptive-computation lines, these records make a near-complete composite constructible from disclosed mechanisms. Constructing that composite is not a contribution.
+
+The only surviving research question is narrower: under matched controller capacity and complete physical accounting, can one non-factorizing per-instance policy coordinate mutable versioned episodic I/O, fixed compressed state, recurrent compute, verification, and halting better than the same components with fixed routing and independently trained resource controllers?
+
+This is an unsupported hypothesis, not a positive novelty finding. It remains eligible only if a preregistered causal coordination interaction or an independently useful new benchmark/resource-accounting result survives the strongest composite.
 
 ## Preregistered search plan
 
@@ -86,7 +104,19 @@ For each included work record architecture, state variables, persistence semanti
 ## Decision rule
 
 - `GO`: at least one candidate property remains technically distinct and has a feasible experiment that can distinguish it from the strongest known composite.
-- `PIVOT`: the broad architecture is known, but a narrower property or evaluation contribution remains testable.
-- `STOP`: no technically meaningful distinction survives, or no feasible experiment can identify it.
+- `PIVOT`: the broad architecture is known, but a narrower causal interaction or genuinely new empirical phenomenon, benchmark, or physical-resource result remains testable against the strongest fixed and separately controlled composites.
+- `STOP`: no technically meaningful distinction survives, no feasible experiment can identify it, or the prospective paper would amount only to assembling, renaming, or narratively reframing prior work.
 
-No novelty decision has been made in this document.
+An architecture diagram, shared vocabulary, or new combination of known modules cannot satisfy this gate. Before any paper claim is authorized, the project must preregister the expected observation that existing components and their strongest composite cannot already explain.
+
+## Initial gate decision
+
+Decision: `PIVOT`.
+
+1. Stop the current broad architecture-novelty claim.
+2. Carry only the narrow constrained-policy question into a full M1 review.
+3. Require a HOLA + Mixture-of-Recursions + MemOS + adaptive-stop composite, plus fixed and separately trained controller baselines.
+4. Preregister randomized resource-price interventions and a matched 2x2 coordination study before implementation.
+5. Convert the decision to `STOP` if no practically meaningful interaction or independently useful empirical contribution remains.
+
+The detailed evidence and locators are recorded in the Terra-Evidence and Sol-Theory handoffs. This initial decision authorizes a dedicated M1 systematic-review issue only; it does not authorize M2 formalization, benchmark implementation, model implementation, or training.

@@ -11,9 +11,11 @@ Under separately matched parameter, training-compute, and inference-resource reg
 
 The working title is **Budgeted Workspace Models: Joint Allocation of Attention, Persistent Memory, and Recurrent Compute**.
 
-## Candidate contribution
+## Candidate contribution hypothesis
 
-The candidate contribution is the joint budget-allocation mechanism and its falsifiable evaluation. The project does not claim that attention, external memory, state-space recurrence, adaptive computation, provenance, or shared workspaces are individually novel.
+The candidate contribution hypothesis is a non-factorizing joint budget-allocation policy and its falsifiable evaluation. It is not yet a technically established mechanism or a positive novelty finding. The project does not claim that attention, external memory, state-space recurrence, adaptive computation, provenance, or shared workspaces are individually novel.
+
+The paper is not eligible to proceed as an architecture contribution merely because it combines those mechanisms or renames their roles. At least one preregistered result must distinguish the proposal from the strongest fixed composite and separately controlled composite. The acceptable result must be either a causal interaction attributable to joint allocation or a genuinely new empirical phenomenon, benchmark, or resource-accounting result that changes what can be concluded about the memory-compute trade-off. If neither survives, the project stops instead of rewriting prior work.
 
 The permitted provisional formulation is:
 
@@ -78,7 +80,7 @@ Advanced security mechanisms such as ACL systems, capability models, taint track
 
 ### M1 novelty gate
 
-Return `PIVOT` or `STOP` if the defensible difference is only an untested assembly of known components. A `GO` permits formalization, not model implementation.
+Return `PIVOT` or `STOP` if the defensible difference is only an untested assembly, renaming, or narrative synthesis of known components. `PIVOT` requires a precise new empirical question and a discriminating experiment against the strongest composite. Return `STOP` if no causal interaction or genuinely new empirical phenomenon remains identifiable. A `GO` permits formalization, not model implementation.
 
 ### M4 oracle gate
 
@@ -86,10 +88,12 @@ Return `PIVOT` or `STOP` if an oracle router fails to produce a practically rele
 
 ### Confirmatory success threshold
 
-A substantive result requires at least one of the following, plus replication at two model sizes, survival against the composite baseline, and no relative degradation greater than 1% on the primary natural-task metric:
+A quality or cost result requires at least one of the following, plus replication at two model sizes, survival against the composite baseline, and no relative degradation greater than 1% on the primary natural-task metric:
 
 - at least 5 percentage points in length-generalization AUC with the lower 95% confidence bound above 3 points; or
 - at least 20% reduction in a preregistered physical cost at non-inferior quality.
+
+These thresholds are necessary but insufficient for article eligibility. The architecture route also requires a preregistered practically meaningful coordination-interaction threshold whose 95% confidence interval clears that threshold, superiority to the same-component fixed and separated policies, non-degenerate response to resource-price interventions, and transfer beyond component-encoded synthetic tasks. Failure closes the architecture route. The empirical route instead requires a component-agnostic benchmark or accounting result that changes a comparative conclusion across strong architecture families and remains useful when the candidate model loses.
 
 ### Refutation or claim-reduction triggers
 
