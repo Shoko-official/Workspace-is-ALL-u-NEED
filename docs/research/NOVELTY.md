@@ -1,8 +1,8 @@
 # Novelty Review
 
-Status: `M1B_ALL_ARTICLE_ROUTES_STOPPED_TERMINAL`
-Protocol version: `0.3.0`
-Protocol recorded: `2026-07-14`
+Status: `M1C_DISTINCT_OBJECT_SET_STOPPED`
+Protocol version: `0.4.0`
+Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
 ## Review question
@@ -202,3 +202,15 @@ The search record contains twelve preregistered query families, four narrow stat
 The direction may be useful engineering guidance, but usefulness is not the project's publication criterion. Under the owner's anti-rewrite requirement, a managed-state manifesto, transition roadmap, maturity model, survey, or unified notation article would be a narrative synthesis of the cited systems. The direction-setting article is therefore `NOT_ELIGIBLE`. No manuscript, framework implementation, benchmark run, model training, or paid compute is authorized from issue #5.
 
 The research program has no surviving article route. Reopening requires a new, independently motivated technical question that identifies a `DISTINCT_CANDIDATE` before implementation and survives label substitution, strongest-composite reduction, generic-theory reduction, at least one decisive falsifier, and an affordable discriminating design.
+
+## M1c final gate decision
+
+Decision: `STOP`.
+
+M1c generated sixteen independently motivated technical objects instead of narrowing or renaming the M1b transition shell. Three review lanes covered revision and replay formalization, shared-state systems, and longitudinal memory dynamics. Every object was given a decisive falsifier, a negative regime, a strongest composite, a generic reduction, and a minimum discrimination burden.
+
+The formal candidates reduce to dynamic dependence graphs and change propagation, causal intervention, provenance, approximate trace equivalence, lossy coding, and reject decisions. The systems candidates collide with Cordon semantic transactions, CoAgent serializable repair, verified anomaly hierarchies, Rosetta Memory cross-LLM adaptation, AFTER procedural transfer, and SkillGuard executable drift contracts; decision confluence is exactly I-confluence under an application invariant. CausalFlow supplies localized counterfactual repair, not a proof of the proposed global minimum-repair objective. The dynamics records observe self-reinforcing errors, longitudinal exposure effects, order sensitivity, and repeated-compaction amplification; the proposed reproduction and divergence quantities remain generic branching and stability summaries rather than directly reported objects. Ziegler additionally supplies adaptive-agent hysteresis under target reversal without reset, while Hyperproperties supplies the two-trace probabilistic non-interference form. The exact LLM `A -> B -> A` cell is unreported but `ANTICIPATED_BY_COMPOSITE`, not a new phenomenon class.
+
+The final reset-versus-persistent ranking residual also fails. No examined record reports the exact reset-per-episode versus persistent-stream ranking inversion. Artifact Ecology anticipates the inheritance protocol, ShiftBench already reports longitudinal memory-policy selection inversions, MemDelta reports controlled comparison reversals and recommends rank-order stability checks, and time-series potential outcomes supply the path contrast. The residual is therefore `ANTICIPATED_BY_COMPOSITE`, not `ANTICIPATED_DIRECTLY`: observing the exact cell would extend an anticipated phenomenon without adding a mechanism, estimator, invariant, or general law.
+
+The M1c search is targeted and non-exhaustive. `STOP` rests on positive primary-record collisions, explicit strongest-composite anticipations, generic reductions, and the absence of a specified distinct technical object within the candidates, not on search silence. Zero candidates are `DISTINCT_CANDIDATE`; no experiment or article is authorized. The full record is in `M1C_CANDIDATE_REGISTER.md`, `M1C_SCOPING_LOG.md`, and Decision 0005.

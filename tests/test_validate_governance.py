@@ -8,6 +8,8 @@ from pathlib import Path
 from scripts.validate_governance import (
     CLAIM_CLASSIFICATIONS,
     CLAIM_HEADER,
+    REQUIRED_HEADINGS,
+    REQUIRED_PATHS,
     validate,
     validate_csv,
 )
@@ -19,6 +21,16 @@ ROOT = Path(__file__).resolve().parents[1]
 class GovernanceValidationTests(unittest.TestCase):
     def test_repository_snapshot_passes(self) -> None:
         self.assertEqual(validate(ROOT), [])
+
+    def test_m1c_decision_artifacts_are_governed(self) -> None:
+        expected = {
+            "docs/research/M1C_CANDIDATE_REGISTER.md",
+            "docs/research/M1C_SCOPING_LOG.md",
+            "docs/research/decisions/0005-stop-distinct-object-discovery.md",
+        }
+
+        self.assertTrue(expected.issubset(REQUIRED_PATHS))
+        self.assertTrue(expected.issubset(REQUIRED_HEADINGS))
 
     def test_duplicate_identifier_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

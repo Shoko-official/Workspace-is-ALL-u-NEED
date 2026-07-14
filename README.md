@@ -2,4 +2,4 @@
 
 Research repository for falsifiable originality gates on stateful LLM directions.
 
-The budgeted-workspace architecture and benchmark routes failed the M1 originality gate. The separately audited direction-setting thesis for managed state, persistent memory, and adaptive computation also failed M1b: its direction is directly anticipated and its formal shell reduces to known systems and decision-theory objects. No article, implementation, benchmark, training, or experiment is authorized. See [decision 0004](docs/research/decisions/0004-stop-directional-transition-thesis.md).
+The budgeted-workspace architecture and benchmark routes failed M1. The managed-state direction-setting thesis failed M1b. M1c then tested sixteen independently motivated formal, systems, and longitudinal objects; all were directly or compositely anticipated, reducible to known generic theory, or unsupported without distinct technical content. No article, implementation, benchmark, training, or experiment is authorized. See [decision 0005](docs/research/decisions/0005-stop-distinct-object-discovery.md) and the [M1c candidate register](docs/research/M1C_CANDIDATE_REGISTER.md).

@@ -1,28 +1,30 @@
 # Research State
 
-Snapshot: `2026-07-14`
+Snapshot: `2026-07-15`
 State schema: `1`
 Operational status: `STOPPED`
 
 ## Current milestone
 
-None. M0, M1, and M1b are closed.
+`M1c - Distinct technical object discovery`, tracked by [issue #9](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/9). The scientific decision is `STOP` and the independent scientific, bibliographic, and governance reviews report no blocker. Required CI, protected merge, and milestone closure remain before administrative closeout.
 
-M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), and M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6). Issues #1, #3, and #5 and milestones M0, M1, and M1b are closed. Issue #7 and milestone #4 tracked only the post-merge status reconciliation and are closed without reopening scientific work.
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), and M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6). Issues #1, #3, and #5 and milestones M0, M1, and M1b are closed. Issue #7 and milestone #4 tracked only the post-merge M1b reconciliation and are closed without reopening scientific work.
 
 ## Current gate
 
-`TERMINAL_STOP`
+`M1C_STOP_PENDING_CI_AND_MERGE`
 
 The broad and narrowed architecture claims are `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes are also `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
 The owner's distinct direction-setting objective has now returned `STOP`. State-Aware Runtime and PLACEMEM directly anticipate the broad shift from prompt accumulation toward managed state and compute-aware memory. The implementation-neutral `Omega/G/B/Adeq/Cert/Cmp/T*/T_hat` shell reduces to known contracts, resource allocation, temporal data, provenance, evidence certification, metareasoning, Pareto comparison, and reject decisions. Four registered predictions are `ANTICIPATED`; the validity-before-compute prediction is `UNSUPPORTED` and `UNSUPPORTED_NOT_DISTINCT` as a novelty disposition.
 
-The direction-setting article is `NOT_ELIGIBLE`. The decision is recorded, the independent bibliographic and anti-rewrite reviews are complete with no blocking finding, the required `validate` check passed, PR #6 merged with linear history, and issue #5 and milestone M1b are closed. No model, benchmark, training, experiment, or manuscript is authorized.
+M1c independently generated sixteen revision, concurrency, migration, causal, procedural, longitudinal, and evaluation objects. Zero survive. Direct or strongest-composite anticipations include Cordon, CoAgent, Causal Agent Replay, CausalFlow, Rosetta Memory, AFTER, SkillGuard, A-MemGuard, Longitudinal Safety, the rate-distortion compaction analysis, Artifact Ecology, ShiftBench, MemDelta, adaptive-agent hysteresis, Hyperproperties, and time-series causal estimands. The remaining formulations reduce explicitly to dynamic dependence graphs, I-confluence, provenance, causal intervention, rejection, branching, stability, two-trace non-interference, path effects, or carryover, or fail to specify a distinct estimator, mechanism, invariant, bound, or theorem.
+
+The direction-setting article remains `NOT_ELIGIBLE`. Decision 0005 records the M1c `STOP`; no model, benchmark, training, experiment, or manuscript is authorized. Only decision integration and closeout are active.
 
 ## Active issues
 
-None. Issue #7 tracked the administrative reconciliation of this terminal snapshot and did not reopen scientific work.
+[Issue #9](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/9) tracks M1c decision integration under milestone `M1c - Distinct technical object discovery`.
 
 ## Capability audit
 
@@ -40,7 +42,7 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 ## Active agents
 
-None. All M1b functional roles completed their assignments and handoffs before PR #6 merged.
+None. The three M1c discovery lanes and the independent final scientific, bibliographic, and governance reviews completed. No blocking finding remains.
 
 ## Input inventory
 
@@ -107,6 +109,14 @@ This machine is sufficient for governance and small deterministic harness work a
 25. Accept the final independent RedTeam result on scientific commit `32adacc`: all pre-integration blockers are corrected, no blocking finding remains, and merge is recommended after required CI.
 26. Close M1b after the protected `validate` check passed on the latest PR #6 head, PR #6 merged with linear history, issue #5 closed, and milestone M1b closed.
 27. Reconcile the post-merge operational snapshot under issue #7 without changing scientific claims, evidence, predictions, or decisions. Retain `TERMINAL_STOP`.
+28. Open issue #9 and milestone M1c only for independently motivated technical-object discovery; do not inherit novelty from the stopped M1b vocabulary.
+29. Evaluate sixteen objects across formal revision repair, shared-state systems, and longitudinal memory dynamics with decisive falsifiers, negative regimes, strongest composites, generic reductions, and minimum designs.
+30. Reject revision replay and dependency-closure objects after exact reduction to dynamic dependence graphs and change propagation. Causal Agent Replay and CausalFlow supply the intervention and localized-repair ingredients for minimum repair and read-set closure, but do not solve the proposed global objectives; those residuals are generic extensions without a distinct estimator or theorem and are `UNSUPPORTED_NOT_DISTINCT`.
+31. Reject semantic transaction, serializability, confluence, replay closure, migration, and procedural-contract objects after Cordon, CoAgent, the verified anomaly hierarchy, I-confluence, Rosetta Memory, AFTER, and SkillGuard collisions or reductions.
+32. Reject contamination reproduction, divergence exponent, and scaling-law objects because the cited records establish the underlying longitudinal and feedback phenomena while the candidate quantities add only generic branching or stability summaries and no distinct estimator or theorem. Reject revision hysteresis as `ANTICIPATED_BY_COMPOSITE`: no examined record reports the exact LLM `A -> B -> A` protocol, but Ziegler supplies adaptive-agent hysteresis, Hyperproperties supplies the two-trace condition, and LLM state-validity work supplies the application ingredients.
+33. Reject the final reset-to-stream ranking-reversal residual as `ANTICIPATED_BY_COMPOSITE`, not `ANTICIPATED_DIRECTLY`: no examined record reports the exact inversion, but Artifact Ecology supplies the inheritance protocol, ShiftBench supplies longitudinal selection inversions, MemDelta supplies controlled conclusion reversals and rank-stability guidance, and time-series causal estimands supply the path contrast.
+34. Return global `STOP` for M1c with zero `DISTINCT_CANDIDATE` objects. Do not authorize implementation or experiment to repair a failed originality gate.
+35. Accept the corrected independent final reviews: scientific distinctness, source metadata, CSV reciprocity, governance validation, tests, and Git scope report no remaining blocker before CI and protected merge.
 
 ## Blockers
 
@@ -120,7 +130,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
-| B-010 | No original article route survives the M0, M1, and M1b gates | No manuscript, implementation, benchmark, training, or experiment is authorized | Owner supplies a new independently motivated question with a distinct technical object that survives prior-art and generic-theory reduction |
+| B-010 | No original article route survives the M0, M1, M1b, and M1c gates | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object survives positive prior-art comparison, strongest-composite and generic-theory reduction, falsifiability, and minimum-design review |
 
 ## Last valid experiment
 
@@ -128,7 +138,20 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-None. The program remains at `TERMINAL_STOP`. No scientific or implementation action is authorized unless the owner supplies a new independently motivated question with a distinct technical object that satisfies the reopening conditions in Decision 0004.
+Integrate Decision 0005 through issue-linked commits, a protected pull request, the required `validate` check, merge, and issue and milestone closure. No scientific experiment or implementation is authorized. Any later reopening must introduce a new object outside the stopped M1c set and satisfy Decisions 0004 and 0005.
+
+## M1c exit checklist
+
+- [x] Sixteen independently motivated technical objects registered.
+- [x] Each object has a decisive falsifier and negative regime.
+- [x] Strongest prior-art composites and generic reductions recorded.
+- [x] Minimum formal or empirical discrimination burdens recorded before implementation.
+- [x] Targeted discovery queries, exact record resolutions, and non-exhaustive limitation retained.
+- [x] Final carryover residual tested against Artifact Ecology, ShiftBench, MemDelta, and path-indexed causal estimands.
+- [x] Explicit `STOP` decision recorded with zero `DISTINCT_CANDIDATE` objects.
+- [x] Independent final scientific, bibliographic, and governance reviews report no blocking finding.
+- [ ] Required CI passes on the latest M1c decision head.
+- [ ] Protected decision PR merges and issue #9 and milestone M1c close.
 
 ## M1b exit checklist
 
