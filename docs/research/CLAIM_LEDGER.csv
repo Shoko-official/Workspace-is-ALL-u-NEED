@@ -1,0 +1,5 @@
+claim_id,claim_text,classification,evidence_ids,scope,owner,last_reviewed,notes
+CLM-001,"A jointly learned budget controller improves the quality-cost Pareto frontier over the strongest eligible baseline.",UNSUPPORTED,EV-0001,Primary empirical hypothesis,Sol-PI,2026-07-14,Must remain a hypothesis until confirmatory evidence exists
+CLM-002,"The joint allocation across bounded workspace, versioned episodic memory, compressed state, recurrent compute, verification, and halting is technically distinct from prior work.",UNSUPPORTED,EV-0001,Novelty hypothesis,Terra-Evidence,2026-07-14,Requires systematic primary-source review and a discriminating experiment
+CLM-003,"Lossless storage of selected episodic payloads does not imply exact retrieval or bounded infinite storage.",INFERENCE,,Operational definition,Sol-Theory,2026-07-14,Logical scope restriction; not an empirical result
+CLM-004,"Exact Sol, Terra, and Luna model selection is not exposed by the current runtime.",VERIFIED,EV-0002,Capability audit,Sol-PI,2026-07-14,Functional roles are used as fallbacks
