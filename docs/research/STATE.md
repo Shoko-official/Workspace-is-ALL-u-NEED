@@ -10,7 +10,7 @@ Operational status: `IN_PROGRESS`
 
 ## Current gate
 
-`M0-PIVOT-AND-PR-REVIEW`
+`M0-PIVOT-MERGE-READY`
 
 The broad architecture novelty claim is `STOP`. The research program is `PIVOT` to a bounded M1 systematic review of one narrow coordination hypothesis or an independent empirical route. The current architecture paper is `NOT_ELIGIBLE`; eligibility of a future narrowed paper is `NOT_ESTABLISHED`. Training, benchmark implementation, M2 formalization, and substantive model implementation are not authorized.
 
@@ -18,7 +18,7 @@ The broad architecture novelty claim is `STOP`. The research program is `PIVOT` 
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#1 M0: bootstrap research governance](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1) | M0 | `agent/1-bootstrap-research-governance` | Integration and PR review |
+| [#1 M0: bootstrap research governance](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1) | M0 | `agent/1-bootstrap-research-governance` | [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2) merge-ready subject to latest-head CI |
 
 ## Capability audit
 
@@ -61,7 +61,7 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 - GitHub access: administrator permission through authenticated local GitHub CLI.
 - Secret scanning and push protection: enabled by GitHub.
 - Default branch: `main`, created by root commit `6e6d45f`.
-- Initial branch protection: PR required, linear history required, conversations must be resolved, force-push and branch deletion disabled. Required CI contexts remain to be configured after the first workflow reports a stable context.
+- Branch protection: PR required, strict `validate` status check required, linear history required, conversations must be resolved, force-push and branch deletion disabled. The approval count is zero because only one GitHub identity is currently available; independent functional review is recorded in-repository.
 - License: absent and undecided. No third-party code, dataset redistribution, or binary release is authorized until licenses are recorded.
 - CI before issue #1: absent.
 
@@ -113,7 +113,7 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Finish issue #1 through its PR, independent functional review, and CI. If merged, close M0 and open a dedicated M1 issue to execute the registered systematic search, close one snowball cycle, formalize the exact computational delta, and cost the minimum discriminating design. The M1 issue may not start model or benchmark implementation.
+Merge PR #2 only after the required `validate` check passes on its latest head. After merge, close M0 and open a dedicated M1 issue to execute the registered systematic search, close one snowball cycle, formalize the exact computational delta, and cost the minimum discriminating design. The M1 issue may not start model or benchmark implementation.
 
 ## M0 exit checklist
 
@@ -123,7 +123,7 @@ Finish issue #1 through its PR, independent functional review, and CI. If merged
 - [x] Runtime capability selection recorded honestly.
 - [x] Local resource constraints measured.
 - [x] Governance validator and unit tests pass locally.
-- [ ] Pull-request CI passes.
+- [x] Required `validate` check configured on `main`; GitHub blocks merge unless the latest PR head passes.
 - [x] Novelty, theory, protocol, engineering, and bibliography handoffs completed.
 - [x] Independent anti-assembly cross-review completed.
 - [x] Explicit `PIVOT` decision recorded, with `STOP` for the broad claim, current paper `NOT_ELIGIBLE`, and future eligibility not established.
