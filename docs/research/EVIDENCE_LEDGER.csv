@@ -1,0 +1,3 @@
+evidence_id,source_id,title,authors,year,identifier,version,primary_url,accessed_at,supports_claim_ids,locator,verification_status,notes
+EV-0001,SRC-INPUT-001,Research program supplied for Workspace Is All You Need,Repository owner,2026,sha256:F5B682FA743F15D8AEB6B125B1BC2AA0B7E99DF76CE70BFF31ABCE295C5F4714,attachment snapshot,,2026-07-14,CLM-001;CLM-002,"Candidate contribution, architecture, hypotheses, and master prompt",VERIFIED,Input provenance only; not independent scientific evidence
+EV-0002,SRC-AUDIT-001,Local runtime and repository audit,Sol-PI functional role,2026,issue:1,bootstrap branch,https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1,2026-07-14,CLM-004,STATE.md capability and repository audit,VERIFIED,Operational evidence only
