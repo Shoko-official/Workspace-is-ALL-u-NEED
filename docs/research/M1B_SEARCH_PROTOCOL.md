@@ -108,3 +108,11 @@ The route returns `STOP` when the residual is vocabulary, aggregation, advice, a
 ## Deviations
 
 Any unavailable count, blocked database, syntax adaptation, inaccessible record, incomplete screening field, or search interruption must be recorded at occurrence. Missing values are `NON DISPONIBLE`; they are never reconstructed from memory or inferred from a visible result page.
+
+## Final execution disposition
+
+The twelve broad arXiv queries retain live result totals and the five titles screened for each query, but their per-title inclusion and exclusion decisions were not preserved. Those fields are frozen as `NON DISPONIBLE`; broad-family screening and snowball closure are not claimed. Four narrow joint-boundary queries and fifteen direct identifier resolutions provide the decision-critical positive collisions.
+
+This deviation prevents exhaustive-recall and absence-of-prior-art claims. It does not weaken a `STOP` based on direct anticipation or generic reconstruction. The log is a reproducible execution trace with bounded missing screening data, not a completed systematic review.
+
+The preregistered `A` and `T` notation above is preserved as protocol history. The final audit separates ground-truth `Adeq`, evidence `Cert`, pairwise `Cmp`, the ideal selector `T*`, and a possible calibrated estimator `T_hat`; this is a typing correction, not a post hoc novelty claim.

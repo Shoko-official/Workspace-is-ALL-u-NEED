@@ -1,8 +1,8 @@
 # M1b literature-matrix coverage review
 
-Date: `2026-07-14`  
-Base commit: `86cb827b3ad7acfdad43106dce54f95ceaa6529a`  
-Functional role: independent coverage reviewer  
+Date: `2026-07-14`
+Base commit: `86cb827b3ad7acfdad43106dce54f95ceaa6529a`
+Functional role: independent coverage reviewer
 Recommended gate effect: `STOP`, with no `DISTINCT_CANDIDATE`
 
 ## 1. Objective
