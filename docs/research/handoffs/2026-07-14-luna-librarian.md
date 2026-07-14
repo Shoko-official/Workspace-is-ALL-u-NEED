@@ -1,8 +1,11 @@
 # Luna-Librarian Handoff: Decision-Source Verification
 
-Date: `2026-07-14`  
-Role: `Luna-Librarian`  
-Target: `Sol-PI`, milestone `M0`, issue [#1](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1)  
+Date: `2026-07-14`
+
+Role: `Luna-Librarian`
+
+Target: `Sol-PI`, milestone `M0`, issue [#1](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1)
+
 Overall status: `VERIFIED WITH REQUIRED CORRECTIONS`
 
 ## Objective
