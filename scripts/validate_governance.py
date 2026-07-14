@@ -46,6 +46,58 @@ LITERATURE_HEADER = [
     "notes",
 ]
 
+PREDICTION_HEADER = [
+    "prediction_id",
+    "status",
+    "claim",
+    "unit",
+    "target_workload",
+    "pre_outcome_observables",
+    "intervention_or_comparison",
+    "eligible_implementation_classes",
+    "matching_regime",
+    "primary_outcome",
+    "expected_ordering",
+    "falsification_margin",
+    "counterexample",
+    "decisive_falsifier",
+    "minimum_design_id",
+    "closest_prior_art",
+    "novelty_disposition",
+    "registry_role",
+]
+
+COUNTEREXAMPLE_HEADER = [
+    "counterexample_id",
+    "target_kind",
+    "target_prediction_or_thesis",
+    "related_prediction_ids",
+    "support_relation",
+    "pre_outcome_regime",
+    "intervention_or_comparison",
+    "expected_failure_of_shift",
+    "decisive_observation",
+    "evidence_ids",
+    "evidence_locators",
+    "status",
+    "novelty_disposition",
+]
+
+M1B_SEARCH_HEADER = [
+    "search_id",
+    "source",
+    "exact_query",
+    "executed_at",
+    "result_count",
+    "count_scope",
+    "screened",
+    "included",
+    "excluded",
+    "adaptation",
+    "discovery_path",
+    "notes",
+]
+
 REQUIRED_PATHS = [
     "docs/research/CHARTER.md",
     "docs/research/STATE.md",
@@ -55,6 +107,12 @@ REQUIRED_PATHS = [
     "docs/research/EVIDENCE_LEDGER.csv",
     "docs/research/CLAIM_LEDGER.csv",
     "docs/research/LITERATURE_MATRIX.csv",
+    "docs/research/M1B_SEARCH_PROTOCOL.md",
+    "docs/research/M1B_SEARCH_LOG.csv",
+    "docs/research/TRANSITION_CONTRACT.md",
+    "docs/research/PREDICTION_REGISTER.csv",
+    "docs/research/COUNTEREXAMPLE_REGISTER.csv",
+    "docs/research/MINIMUM_DISCRIMINATING_DESIGNS.md",
     "docs/research/decisions/README.md",
     "docs/research/handoffs/README.md",
     "experiments/registry.yaml",
@@ -122,6 +180,25 @@ LITERATURE_STATUSES = {
     "DISPUTED",
 }
 
+M1B_STATUSES = {
+    "ANTICIPATED",
+    "PARTIAL",
+    "DISTINCT_CANDIDATE",
+    "UNSUPPORTED",
+}
+
+COUNTEREXAMPLE_TARGET_KINDS = {
+    "PREDICTION",
+    "THESIS",
+}
+
+COUNTEREXAMPLE_RELATIONS = {
+    "WITHIN_SUPPORT_FALSIFIER",
+    "OUT_OF_SUPPORT_NEGATIVE_REGIME",
+    "ORTHOGONAL_INSTANTIATION",
+    "INDEPENDENT_CONTRACT_FALSIFIER",
+}
+
 
 def validate_csv(
     path: Path,
@@ -139,6 +216,17 @@ def validate_csv(
             ]
         seen: set[str] = set()
         for line_number, row in enumerate(reader, start=2):
+            if None in row:
+                errors.append(
+                    f"{path}:{line_number}: extra columns {row[None]!r}"
+                )
+            missing_columns = [
+                field for field in expected_header if row.get(field) is None
+            ]
+            if missing_columns:
+                errors.append(
+                    f"{path}:{line_number}: missing columns {missing_columns!r}"
+                )
             record_id = (row.get(id_field) or "").strip()
             if not record_id:
                 errors.append(f"{path}:{line_number}: missing {id_field}")
@@ -154,6 +242,135 @@ def validate_csv(
                         f"{path}:{line_number}: invalid {field} {value!r}; "
                         f"expected one of {sorted(allowed)!r}"
                     )
+    return errors
+
+
+def read_csv_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def split_ids(value: str) -> list[str]:
+    return [item.strip() for item in value.split(";") if item.strip()]
+
+
+def validate_m1b_cross_references(root: Path) -> list[str]:
+    errors: list[str] = []
+    prediction_path = root / "docs/research/PREDICTION_REGISTER.csv"
+    counterexample_path = root / "docs/research/COUNTEREXAMPLE_REGISTER.csv"
+    evidence_path = root / "docs/research/EVIDENCE_LEDGER.csv"
+    designs_path = root / "docs/research/MINIMUM_DISCRIMINATING_DESIGNS.md"
+
+    if not all(
+        path.is_file()
+        for path in [
+            prediction_path,
+            counterexample_path,
+            evidence_path,
+            designs_path,
+        ]
+    ):
+        return errors
+
+    predictions = read_csv_rows(prediction_path)
+    counterexamples = read_csv_rows(counterexample_path)
+    evidence_ids = {
+        (row.get("evidence_id") or "").strip()
+        for row in read_csv_rows(evidence_path)
+    }
+    prediction_ids = {
+        (row.get("prediction_id") or "").strip() for row in predictions
+    }
+    design_ids = set(
+        re.findall(
+            r"(?m)^## (M1B-D\d{2}):",
+            designs_path.read_text(encoding="utf-8"),
+        )
+    )
+
+    referenced_design_ids: set[str] = set()
+    for line_number, row in enumerate(predictions, start=2):
+        design_id = (row.get("minimum_design_id") or "").strip()
+        referenced_design_ids.add(design_id)
+        if design_id not in design_ids:
+            errors.append(
+                f"{prediction_path}:{line_number}: unknown minimum_design_id "
+                f"{design_id!r}"
+            )
+        for evidence_id in split_ids(row.get("closest_prior_art") or ""):
+            if evidence_id not in evidence_ids:
+                errors.append(
+                    f"{prediction_path}:{line_number}: unknown evidence id "
+                    f"{evidence_id!r}"
+                )
+
+    for design_id in sorted(design_ids - referenced_design_ids):
+        errors.append(f"{designs_path}: unreferenced design {design_id!r}")
+
+    covered_prediction_ids: set[str] = set()
+    for line_number, row in enumerate(counterexamples, start=2):
+        target_kind = (row.get("target_kind") or "").strip()
+        target = (row.get("target_prediction_or_thesis") or "").strip()
+        if target_kind == "PREDICTION" and target not in prediction_ids:
+            errors.append(
+                f"{counterexample_path}:{line_number}: unknown prediction target "
+                f"{target!r}"
+            )
+        for prediction_id in split_ids(row.get("related_prediction_ids") or ""):
+            covered_prediction_ids.add(prediction_id)
+            if prediction_id not in prediction_ids:
+                errors.append(
+                    f"{counterexample_path}:{line_number}: unknown related "
+                    f"prediction {prediction_id!r}"
+                )
+        for evidence_id in split_ids(row.get("evidence_ids") or ""):
+            if evidence_id not in evidence_ids:
+                errors.append(
+                    f"{counterexample_path}:{line_number}: unknown evidence id "
+                    f"{evidence_id!r}"
+                )
+
+    for prediction_id in sorted(prediction_ids - covered_prediction_ids):
+        errors.append(
+            f"{counterexample_path}: no counterexample covers {prediction_id!r}"
+        )
+
+    return errors
+
+
+def validate_m1b_search_log(path: Path) -> list[str]:
+    errors: list[str] = []
+    if not path.is_file():
+        return errors
+
+    for line_number, row in enumerate(read_csv_rows(path), start=2):
+        included = (row.get("included") or "").strip()
+        excluded = (row.get("excluded") or "").strip()
+        if included == "PENDING" or excluded == "PENDING":
+            errors.append(
+                f"{path}:{line_number}: unresolved inclusion/exclusion status"
+            )
+        if included == "NON DISPONIBLE" or excluded == "NON DISPONIBLE":
+            if included != excluded:
+                errors.append(
+                    f"{path}:{line_number}: inclusion and exclusion must both be "
+                    "NON DISPONIBLE"
+                )
+            continue
+        try:
+            screened = int((row.get("screened") or "").strip())
+            included_count = int(included)
+            excluded_count = int(excluded)
+        except ValueError:
+            errors.append(
+                f"{path}:{line_number}: invalid screening counts"
+            )
+            continue
+        if included_count + excluded_count > screened:
+            errors.append(
+                f"{path}:{line_number}: included plus excluded exceeds screened"
+            )
+
     return errors
 
 
@@ -221,6 +438,45 @@ def validate(root: Path) -> list[str]:
                 {"status": LITERATURE_STATUSES},
             )
         )
+
+    prediction_path = root / "docs/research/PREDICTION_REGISTER.csv"
+    if prediction_path.is_file():
+        errors.extend(
+            validate_csv(
+                prediction_path,
+                PREDICTION_HEADER,
+                "prediction_id",
+                {"status": M1B_STATUSES},
+            )
+        )
+
+    counterexample_path = root / "docs/research/COUNTEREXAMPLE_REGISTER.csv"
+    if counterexample_path.is_file():
+        errors.extend(
+            validate_csv(
+                counterexample_path,
+                COUNTEREXAMPLE_HEADER,
+                "counterexample_id",
+                {
+                    "target_kind": COUNTEREXAMPLE_TARGET_KINDS,
+                    "support_relation": COUNTEREXAMPLE_RELATIONS,
+                    "status": M1B_STATUSES,
+                },
+            )
+        )
+
+    search_log_path = root / "docs/research/M1B_SEARCH_LOG.csv"
+    if search_log_path.is_file():
+        errors.extend(
+            validate_csv(
+                search_log_path,
+                M1B_SEARCH_HEADER,
+                "search_id",
+            )
+        )
+        errors.extend(validate_m1b_search_log(search_log_path))
+
+    errors.extend(validate_m1b_cross_references(root))
 
     registry_path = root / "experiments/registry.yaml"
     if registry_path.is_file():

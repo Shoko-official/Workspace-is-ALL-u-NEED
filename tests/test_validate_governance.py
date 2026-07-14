@@ -71,6 +71,25 @@ class GovernanceValidationTests(unittest.TestCase):
 
         self.assertTrue(any("invalid classification" in error for error in errors))
 
+    def test_missing_csv_column_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "claims.csv"
+            path.write_text(
+                "claim_id,claim_text,classification,evidence_ids,scope,owner,"
+                "last_reviewed,notes\n"
+                "CLM-001,candidate claim,UNSUPPORTED,,,,\n",
+                encoding="utf-8",
+            )
+
+            errors = validate_csv(
+                path,
+                CLAIM_HEADER,
+                "claim_id",
+                {"classification": CLAIM_CLASSIFICATIONS},
+            )
+
+        self.assertTrue(any("missing columns" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

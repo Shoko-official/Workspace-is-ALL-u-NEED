@@ -14,7 +14,7 @@ Handoff target: `Sol-PI`, issue `#5`, milestone `M1b`
 
 ## Decision in one sentence
 
-The proposed map `T(Ω,G,B)`, implementation-neutral adequacy contracts, feasibility and efficiency boundaries, and abstention rule are exactly reconstructible from assume/guarantee contracts plus QoS/SLO predicates, temporal and provenance semantics, vector resource contracts, online caching, metareasoning, robust Pareto selection, and reject-option decision theory; the only possible residual would be a frozen, quantitatively falsifiable, LLM-specific ex-ante boundary law, and no such law or estimator is presently supplied.
+The proposed map `T(Ω,G,B)`, now separated into an ideal selector `T*` and a calibrated estimator `T_hat`, along with implementation-neutral adequacy contracts, feasibility and efficiency boundaries, and abstention, is exactly reconstructible from assume/guarantee contracts plus QoS/SLO predicates, temporal and provenance semantics, vector resource contracts, online caching, metareasoning, robust Pareto selection, and reject-option decision theory; the only possible residual would be a frozen, quantitatively falsifiable, LLM-specific ex-ante boundary law, and no such law or estimator is presently supplied.
 
 ## Scope and burden of proof
 
@@ -90,54 +90,96 @@ These are observational classes. A prompt replay, database lookup, event-log fol
 
 ### 1.6 Adequacy and its evidence status
 
-For a pathwise contract,
+For a pathwise contract, define the true semantic and resource violation sets separately:
 
 \[
-I\models_\Omega(G,B)
-\iff
-\forall e\in\mathcal E_\Omega:\ A(e)\Rightarrow
-\bigwedge_j\Gamma_j(\tau(I,e))
-\land
-\bigwedge_k R_k(\tau(I,e))\le b_k.
+V_G(I)=\{j:\exists e\in\mathcal E_\Omega,
+A(e)\land\neg\Gamma_j(\tau(I,e))\},
 \]
 
-The statistical form replaces the universal predicates by the quantifiers declared in `Q_j` and `S_k`, without converting distinct axes into one number. Finite evidence yields a three-valued certificate
+\[
+V_B(I)=\{k:\exists e\in\mathcal E_\Omega,
+A(e)\land R_k(\tau(I,e))>b_k\},
+\]
+
+with the quantifiers and aggregation semantics declared by `Q_j` and `S_k`. Ground-truth adequacy is the Boolean predicate
 
 \[
-\operatorname{Cert}_D(\Omega,G,B)\in
+\operatorname{Adeq}(I;\Omega,G,B)=1
+\iff V_G(I)=\varnothing\land V_B(I)=\varnothing.
+\]
+
+The two sets may both be non-empty, and their axes are never collapsed. Statistical contracts replace the pathwise existential violations above by the probability, expectation, or quantile conditions declared in the contract.
+
+Finite evaluation evidence `E_eval` yields a different object:
+
+\[
+\operatorname{Cert}(I;\Omega,G,B,E_{\mathrm{eval}})\in
 \{\texttt{PASS},\texttt{FAIL},\texttt{UNRESOLVED}\},
 \]
 
-according to whether simultaneous confidence regions lie entirely inside, entirely outside, or straddle the admissible set. `UNRESOLVED` is not evidence that a class is adequate or inadequate.
+according to whether simultaneous confidence regions lie inside all bounds, establish violation of at least one bound, or leave at least one decisive bound unresolved. `Cert` is evidence about `Adeq`; it does not redefine it. `INCOMPARABLE` is a relation between outcomes, and `ABSTAIN` is a selector status. Neither is a possible value of `Adeq` or `Cert`.
 
-### 1.7 Feasibility, efficiency, and `T`
+### 1.7 Class feasibility and bounded inference
 
 For a behavioral class `D`, define
 
 \[
 F_D(\Omega,G,B)=
-\mathbf 1\{\exists I\in D:I\models_\Omega(G,B)\}.
+\mathbf 1\{\exists I\in D:\operatorname{Adeq}(I;\Omega,G,B)=1\}.
 \]
 
-Persistent cross-instance state is **required** only if `F_{D_0}=0` and `F_{D_p}=1`. The first conjunct needs an impossibility result or lower bound; the second needs a witness. This is a correct definition, not a predictive theory.
+A true adequate witness establishes `F_D=1`. Failure of any finite sample of representatives does not establish `F_D=0`. Class-level infeasibility requires an impossibility theorem, a lower bound, an exhaustive finite characterization, or another argument covering every member of `D`. An empirical design without such coverage supports claims about its tested implementations only.
+
+Persistent cross-instance state is **required** only if `F_{D_0}=0` is established at class level and a class permitting retained cross-instance information has an adequate witness. Bounded adaptive computation is required only under the analogous fixed-class infeasibility and adaptive-class feasibility conditions. A performance difference, even a replicated one, proves neither requirement.
+
+### 1.8 Complete-axis comparison
 
 For adequate implementations only, let
 
 \[
-z(I)=(\ell_q,v_1,\ldots,v_m,c_1,\ldots,c_d),
+z(I)=(\ell_1,\ldots,\ell_p,c_1,\ldots,c_d),
 \]
 
-where `ℓ_q` is quality loss, `v_j` contract violation, and `c_k` resource use. Efficiency is the Pareto partial order on `z`. A **preferred** class requires either robust dominance or a preference functional fixed before results are seen. A claim of rank reversal is otherwise undefined: changing an unreported scalarization can reverse the rank by construction.
-
-The strongest defensible selector is set-valued:
+where every declared quality-loss and resource coordinate is oriented so that lower is better. Define strict Pareto dominance by
 
 \[
-T(\Omega,G,B)=
-\begin{cases}
-\operatorname{Pareto}\{D:F_D=1\}, & \text{if adequacy is resolved};\\
-\texttt{ABSTAIN}, & \text{if confidence sets cross feasibility or ordering boundaries}.
-\end{cases}
+I\prec J
+\iff
+\bigl[\forall l,\ z_l(I)\le z_l(J)\bigr]
+\land
+\bigl[\exists l,\ z_l(I)<z_l(J)\bigr].
 \]
+
+An improvement on one axis with degradation on another is `INCOMPARABLE`, not dominance. Empirical dominance requires simultaneous uncertainty regions that establish no degradation on every axis and strict improvement on at least one. A **preferred** class otherwise requires a scalar or lexicographic preference fixed before results. A rank reversal is undefined if that preference is selected after observing outcomes.
+
+### 1.9 Ideal selector `T*` and calibrated estimator `T_hat`
+
+The ideal selector is set-valued. Define
+
+\[
+\mathcal F^\star=\{D:F_D(\Omega,G,B)=1\},
+\]
+
+and let `P*` be the nondominated set of adequate implementation outcomes paired with their behavioral classes. Then
+
+\[
+T^\star(\Omega,G,B)=(\mathcal F^\star,\mathcal P^\star,
+\mathcal O^\star),
+\]
+
+where `O*` contains only obligations justified by the class-feasibility conditions above. If no class is feasible, `T*` returns `INFEASIBLE`. If several classes are nondominated, it returns the identified set. Identified incomparability is not epistemic abstention, and `T*` never returns a named architecture.
+
+A deployable empirical rule is separate:
+
+\[
+\widehat T(\Omega,G,B;E_{\mathrm{cal}})
+\mapsto
+(\widehat{\mathcal F},\widehat{\mathcal P},
+\widehat{\mathcal O},s),
+\]
+
+where `E_cal` is frozen before target outcomes and `s` is `DECIDED`, `INFEASIBLE`, `INCOMPARABLE`, or `ABSTAIN`. `ABSTAIN` is reserved for out-of-coverage inputs, failed calibration, or uncertainty regions that cross a feasibility or ordering boundary. The target outcomes may evaluate `T_hat`; they may not be inputs to it.
 
 Adaptive computation is selected when its conditional value of computation exceeds its compute and control overhead. This is the metareasoning rule
 
@@ -145,9 +187,9 @@ Adaptive computation is selected when its conditional value of computation excee
 \mathbb E[\Delta U\mid\phi_\Omega]>c_{\mathrm{compute}}+c_{\mathrm{control}}.
 \]
 
-Consequently, `T` is a generic robust constrained-selection rule unless the work supplies a calibrated predictor `\widehat T(φ_Ω,G,B)`, with thresholds and margins frozen before outcomes.
+Consequently, `T*` is a generic feasible-set and Pareto-selection object, while the proposed LLM-specific `T_hat` remains unsupported without frozen features, thresholds, margins, calibration, and transport evidence.
 
-## 2. Exact generic boundary for view-only feasibility
+## 2. Exact generic boundary for local one-step view-only feasibility
 
 Define visible-view equivalence by
 
@@ -155,21 +197,26 @@ Define visible-view equivalence by
 h\sim_Vh'\iff V(h)=V(h'),
 \]
 
-and let `Y_G(h)` be the set of outputs allowed by `G` after history `h`.
+Fix a local contract obligation at one decision point. Its admissibility must depend only on the current output and current per-step measurements; it must not couple later outputs, impose liveness, or contain an unrepresented cumulative resource state. Let `Y_G^{(1)}(h)` be the set of current outputs satisfying that local obligation after history `h`.
 
-**Proposition.** A deterministic view-only implementation satisfying `G` exists if and only if
+**Local proposition.** A deterministic mapping from visible views to current outputs satisfies this one-step obligation for every history if and only if
 
 \[
-\forall C\in H/{\sim_V}:\quad \bigcap_{h\in C}Y_G(h)\ne\varnothing.
+\forall C\in H/{\sim_V}:\quad
+\bigcap_{h\in C}Y_G^{(1)}(h)\ne\varnothing.
 \]
 
 **Necessity.** A view-only implementation must emit the same output for every history in one equivalence class. That output must be acceptable for each member, so it belongs to the intersection.
 
 **Sufficiency.** Choose one member of the non-empty intersection for every equivalence class and emit it for the corresponding visible view.
 
-For stochastic outputs, replace each acceptable-output set by linear constraints on one distribution shared by the equivalence class. Feasibility is then an ordinary linear feasibility problem.
+For stochastic current outputs and linear probability constraints, replace the acceptable-output sets by constraints on one distribution shared by each equivalence class. The local question is then a linear feasibility problem.
 
-This proposition gives the cleanest implementation-neutral account of when a bounded accessible view is insufficient. It is also a generic observational-equivalence and realizability result. It uses no property specific to language models, tokens, autoregression, or natural language. Calling the equivalence classes “contexts” does not create a new boundary theorem.
+For a general trace contract, the correct condition is existence of an observation-based winning strategy in the induced partial-observation contract game, with cumulative resources included in the observable control state when required. The local intersection condition remains a valid obstruction when it is empty, but it is not claimed sufficient for temporally coupled safety, liveness, recovery, or cumulative-budget obligations.
+
+Even in its restricted valid scope, the proposition is a generic observational-equivalence result. It uses no property specific to language models, tokens, autoregression, or natural language. Calling the equivalence classes “contexts” does not create a new boundary theorem.
+
+The `STOP` verdict does not depend on this local proposition. It follows independently from the complete reconstruction of the candidate objects by contract theory, QoS/SLOs, temporal and provenance semantics, vector resource accounting, caching, value of computation, Pareto selection, and reject-option decision theory.
 
 ## 3. Strongest composite reduction
 
@@ -189,7 +236,8 @@ The candidate is reconstructed by the following existing abstractions taken toge
 | Feasibility boundary | Realizability/observational equivalence | Existence of an implementation in a behavioral class; indistinguishable histories yield lower bounds | `ANTICIPATED` |
 | Efficiency boundary | Multiobjective and robust Pareto optimization | Nondominated adequate outcomes under vector costs and uncertainty | `ANTICIPATED` |
 | Abstention | Reject-option decision theory plus partial identification | Reject when loss/uncertainty makes an asserted class unsafe or unidentified | `ANTICIPATED` |
-| Full `T` | Robust set-valued constrained selection | Return feasible nondominated classes or abstain | `ANTICIPATED` |
+| Ideal `T*` | Feasible-set and robust Pareto selection | Return the true feasible and nondominated sets, or true infeasibility | `ANTICIPATED` |
+| Empirical `T_hat` | Calibrated constrained selection with reject option | Estimate the sets from frozen calibration evidence and abstain under coverage or uncertainty failure | Generic shell `ANTICIPATED`; LLM-specific estimator `UNSUPPORTED` |
 
 The composite is:
 
@@ -217,7 +265,7 @@ For adaptive computation with observable instance features `φ`, it is worth inv
 
 where `c` is added compute and `o` is router, calibration, and scheduling overhead. On a homogeneous easy workload with negligible improvement, a fixed schedule wins. This is value of computation.
 
-If uncertainty intervals for either expression cross zero, the identified action is `ABSTAIN`, collect more evidence, or return several nondominated classes. That is standard decision-making under partial identification.
+If uncertainty intervals for either expression cross zero, `T_hat` must `ABSTAIN` or collect more evidence. If the axes are well identified but several alternatives are nondominated under no declared preference, it returns the identified `INCOMPARABLE` set rather than abstaining. Both behaviors are standard decision-making under partial identification and multiobjective order.
 
 ### 4.2 Orthogonal-instantiation countermodel
 
@@ -264,9 +312,10 @@ These regimes satisfy the requested anti-universality discipline, but they are g
 | `G` as an implementation-neutral measurable guarantee set | `ANTICIPATED` | Assume/guarantee contracts and QoS/SLO specifications. |
 | `B` as a vector resource envelope | `ANTICIPATED` | Resource reservations, containers, and multi-resource allocation. |
 | Adequacy as satisfaction under `Ω,G,B` | `ANTICIPATED` | Standard satisfaction/realizability with statistical evidence status. |
-| `T` as a set-valued selector over feasible Pareto classes | `ANTICIPATED` | Robust multiobjective decision with reject option. |
-| `T` as an ex-ante LLM architecture predictor | `UNSUPPORTED` | No frozen predictive rule or validation. |
-| Generic view-only feasibility boundary | `ANTICIPATED` | Observational equivalence and realizability. |
+| `T*` as an ideal set-valued selector over feasible Pareto classes | `ANTICIPATED` | Feasible-set and robust multiobjective selection. |
+| `T_hat` as an ex-ante LLM class predictor | `UNSUPPORTED` | No frozen features, calibrated predictive rule, margin, or transport validation. |
+| Local one-step view-only feasibility boundary | `ANTICIPATED` | Observational equivalence and local constraint feasibility. |
+| General trace-contract feasibility | `ANTICIPATED` | Observation-based strategy realizability; no new winning-strategy theorem is claimed here. |
 | Concrete context-only impossibility law for LLMs | `UNSUPPORTED` | No LLM-specific lower bound or measured threshold. |
 | Generic persistent-state efficiency boundary | `ANTICIPATED` | Reuse/locality/caching and maintenance tradeoffs. |
 | Concrete LLM rank reversal under complete accounting | `UNSUPPORTED` | No threshold, matched vector budget, or replicated result. |
@@ -284,7 +333,7 @@ There is no `DISTINCT_CANDIDATE`. The route therefore receives `STOP`, not `PIVO
 The route can survive only if later work supplies all of the following:
 
 1. At least one pre-outcome, operationally measurable LLM-specific variable or invariant that cannot be reduced to reuse, locality, information sufficiency, generic uncertainty, or value of computation.
-2. A frozen predictor, threshold, and non-zero decision margin for `\widehat T(φ_Ω,G,B)` before evaluating outcomes.
+2. A frozen predictor, threshold, and non-zero decision margin for `\widehat T(Ω,G,B;E_{\mathrm{cal}})` before evaluating target outcomes.
 3. Either a lower bound/impossibility theorem or a replicated quantitative rank reversal under matched vector budgets and complete state-maintenance accounting.
 4. Coverage of at least two non-isomorphic implementation families, so the result is not a component benchmark in contract notation.
 5. A component-neutral admission rule and observable oracle for every guarantee.

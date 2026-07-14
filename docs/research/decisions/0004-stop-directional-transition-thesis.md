@@ -14,11 +14,11 @@ The owner also required that the article not be a rewrite of earlier work. Issue
 
 ## Candidate audited
 
-M1b tested whether pre-outcome workload descriptors `Omega`, guarantee contracts `G`, and a vector resource envelope `B` could support an implementation-neutral rule
+M1b tested whether pre-outcome workload descriptors `Omega`, guarantee contracts `G`, and a vector resource envelope `B` could support an ideal implementation-neutral selector
 
-`T(Omega,G,B,E) -> (state_obligation, compute_obligation, decision_status)`
+`T*(Omega,G,B) -> (feasible_classes, nondominated_classes, obligations)`
 
-with an adequacy relation `A` that distinguishes semantic violation, resource violation, incomparability, and abstention. The intended output was a predictive transition framework, not an architecture label.
+and a calibrated empirical estimator `T_hat(Omega,G,B;E_cal)`. The corrected formalization separates ground-truth adequacy `Adeq`, evidence certification `Cert`, pairwise comparison `Cmp`, and the estimator's possible abstention. The intended output was a predictive transition framework, not an architecture label.
 
 The audit registered five predictions:
 
@@ -32,9 +32,9 @@ The audit registered five predictions:
 
 ### Direct direction collision
 
-[State-Aware Runtime](https://doi.org/10.33774/coe-2026-vt9t2-v2) is a direct framework-and-research-agenda collision. It separates generation from canonical state and places validation, commit, rollback, recovery, permissions, and audit in an explicit runtime-governance layer. Its stated direction is that long-horizon reliability should depend less on prompt accumulation and more on managed state.
+[State-Aware Runtime](https://doi.org/10.33774/coe-2026-vt9t2-v2), a non-peer-reviewed working paper at the search cutoff, is a direct framework-and-research-agenda collision. It separates generation from canonical state and places validation, commit, rollback, recovery, permissions, and audit in an explicit runtime-governance layer. Its stated direction is that long-horizon reliability should depend less on prompt accumulation and more on managed state.
 
-[PLACEMEM](https://arxiv.org/abs/2607.04089v1) independently proposes a compute-aware and correction-aware memory plane with versioned validity, provenance, invalidation, reusable runtime state, KV-aware routing, and a roadmap. Together these records anticipate the broad transition direction and its strongest state-plus-compute composite.
+[PLACEMEM](https://arxiv.org/abs/2607.04089v1), an arXiv systems position and prototype at the cutoff, independently proposes a compute-aware and correction-aware memory plane with versioned validity, provenance, invalidation, reusable runtime state, KV-aware routing, and a roadmap. Together these public records anticipate the broad transition direction and its strongest state-plus-compute composite without being treated as universal empirical laws.
 
 The intended article could restate these systems under a unified vocabulary, but it would not produce a new observable decision, contract predicate, or falsifier.
 
@@ -48,7 +48,7 @@ The candidate objects are reconstructible without LLM-specific theory:
 - temporal database theory and W3C PROV supply validity, generation, use, invalidation, and ordering constraints; and
 - reject-option theory supplies explicit abstention under uncertainty.
 
-Writing these objects as `Omega`, `G`, `B`, `A`, and `T` introduces notation but no new invariant, lower bound, guarantee, or LLM-specific separation.
+Writing these objects as `Omega`, `G`, `B`, `Adeq`, `Cert`, `Cmp`, `T*`, and `T_hat` corrects their typing but introduces no new invariant, lower bound, guarantee, calibrated estimator, or LLM-specific separation.
 
 ### State and compute boundaries
 
@@ -66,23 +66,23 @@ No exact calibrated cross-family coefficient was identified in the read source s
 
 ### Falsifiability and feasibility
 
-The five candidate predictions are falsifiable. Eight counterexample regimes and five non-circular minimum designs were recorded. Their combined lower bound is 131,200 query or policy executions before tuning, broader replication, lifecycle transactions, or independent reproduction. Model, API, energy, GPU-time, and storage costs remain `NON DISPONIBLE` because eligible model families and deployment modes were never frozen.
+The five candidate predictions are falsifiable. Nine counterexample regimes and five non-circular minimum designs were recorded. Their arithmetic floor is 134,400 answer or policy-query executions plus 10,000 transition decisions, or 144,400 execution-or-decision units, before power-driven increases, tuning, broader replication, lifecycle transactions, or independent reproduction. Model, API, energy, GPU-time, and storage costs remain `NON DISPONIBLE` because eligible model families and deployment modes were never frozen.
 
-Falsifiability does not establish originality. No experiment is authorized because every prediction is anticipated, tautological under its assumptions, generic, or unspecified rather than distinct.
+Falsifiability does not establish originality. No experiment is authorized because four predictions are anticipated by direct or generic prior art, while the remaining prediction is unsupported without a distinct object.
 
 ### Search sufficiency and limitation
 
 The retained search log contains twelve registered broad query families, four narrow state-validity-by-compute queries, and fifteen exact identifier or canonical-record resolutions. Three independent audits recorded direct stateful-system collisions, generic contract reduction, and regime-boundary reduction.
 
-The search is targeted and family-saturated, not exhaustive. It does not justify an absence-of-prior-art statement. This `STOP` instead rests on positive anticipation and exact reconstruction. Search silence around the precise M1B-D04 factorial is not used as novelty evidence.
+The search is targeted and only partially screened, not exhaustive. The broad-query inclusion and exclusion counts are `NON DISPONIBLE`, while direct identifier resolutions retain the decision-critical positive collisions. The search does not justify an absence-of-prior-art statement. This `STOP` instead rests on positive anticipation and exact reconstruction. Search silence around the precise M1B-D04 factorial is not used as novelty evidence.
 
 ## Decision
 
 Return global `STOP` for the M1b direction-setting route.
 
 - The broad future-facing direction is directly anticipated by State-Aware Runtime and PLACEMEM.
-- `Omega`, `G`, `B`, `A`, and the qualitative `T` shell reduce to known stateful systems, contracts, resource allocation, temporal data, provenance, metareasoning, and reject decisions.
-- Every registered prediction is anticipated, generic, tautological under declared information constraints, or unsupported without a distinct object.
+- `Omega`, `G`, `B`, `Adeq`, `Cert`, `Cmp`, and the ideal `T*` shell reduce to known stateful systems, contracts, resource allocation, temporal data, provenance, evidence certification, metareasoning, Pareto comparison, and reject decisions; no calibrated LLM-specific `T_hat` is supplied.
+- Four registered predictions are `ANTICIPATED`; M1B-P04 is `UNSUPPORTED` and `UNSUPPORTED_NOT_DISTINCT` as a novelty disposition.
 - The validity-before-compute residual remains testable but is `UNSUPPORTED_NOT_DISTINCT`.
 - Zero `DISTINCT_CANDIDATE` objects survive.
 - The direction-setting article is `NOT_ELIGIBLE`.
@@ -114,13 +114,15 @@ The managed-state direction may be useful engineering advice. The gate rejects i
 
 - `docs/research/TRANSITION_CONTRACT.md`: operational objects, reductions, and residual test.
 - `docs/research/PREDICTION_REGISTER.csv`: five prediction dispositions and decisive falsifiers.
-- `docs/research/COUNTEREXAMPLE_REGISTER.csv`: eight negative regimes and orthogonal countermodels.
+- `docs/research/COUNTEREXAMPLE_REGISTER.csv`: nine negative regimes, direct falsifiers, and orthogonal countermodels.
 - `docs/research/MINIMUM_DISCRIMINATING_DESIGNS.md`: five non-circular designs and lower-bound resource counts.
 - `docs/research/M1B_SEARCH_PROTOCOL.md` and `docs/research/M1B_SEARCH_LOG.csv`: preregistered search and retained execution trace.
 - `docs/research/handoffs/2026-07-14-m1b-terra-stateful-systems.md`: direct stateful-system prior-art audit.
 - `docs/research/handoffs/2026-07-14-m1b-sol-contract-reduction.md`: generic contract and systems reduction.
 - `docs/research/handoffs/2026-07-14-m1b-terra-regime-boundaries.md`: state, compute, and joint-boundary audit.
 - `docs/research/handoffs/2026-07-14-m1b-orbit-matrix-review.md`: independent collision-matrix coverage review.
+- `docs/research/handoffs/2026-07-14-m1b-sol-preintegration-review.md`: independent scientific consistency review and correction checklist.
+- `docs/research/handoffs/2026-07-14-m1b-luna-librarian.md`: independent metadata, version, venue, and locator audit.
 - `docs/research/CLAIM_LEDGER.csv`, `docs/research/EVIDENCE_LEDGER.csv`, `docs/research/LITERATURE_MATRIX.csv`, and `docs/research/NOVELTY.md`: consolidated originality record.
 - `paper/references.bib`: version-pinned decision bibliography, not a manuscript.
 
