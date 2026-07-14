@@ -22,7 +22,7 @@ The research program is `PIVOT` to the owner's distinct direction-setting object
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4) open; independent review `MERGE_READY` |
+| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4) open; review `MERGE_READY`; required CI passed |
 
 ## Capability audit
 
@@ -136,7 +136,7 @@ Complete issue #3 through independent contradictory review, required CI, and mer
 - [x] Retained search trace, unavailable fields, version chains, and the positive-collision basis integrated without an exhaustive-absence claim.
 - [x] Independent bibliographic audit integrated.
 - [x] Independent contradictory review reports no blocking findings.
-- [ ] Required `validate` check passes on the M1 decision PR.
+- [x] Required `validate` check passes on the M1 decision PR.
 - [ ] M1 decision PR merges and issue #3 closes.
 
 ## M0 exit checklist
