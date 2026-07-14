@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `ALL_ARTICLE_ROUTES_STOPPED_TERMINAL`
-Version: `0.3.0`
-Milestone: `M1b - Managed-state transition thesis novelty gate`
-Tracking issue: [#5](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/5)
+Status: `ALL_ARTICLE_ROUTES_STOPPED_M1C`
+Version: `0.4.0`
+Milestone: `M1c - Distinct technical object discovery`
+Tracking issue: [#9](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/9)
 
 ## Scientific question
 
@@ -11,7 +11,9 @@ Under separately matched parameter, training-compute, and inference-resource reg
 
 The working title is **Budgeted Workspace Models: Joint Allocation of Attention, Persistent Memory, and Recurrent Compute**.
 
-M1 rejected this question as an original architecture contribution and retired the working title. M1b separately audited the owner's objective of giving future LLM development a technically actionable direction toward managed state, persistent memory, and adaptive computation. That route also returned `STOP`: the broad direction is directly anticipated, the implementation-neutral transition shell reduces to known systems and decision-theory objects, and no distinct prediction survives. The program now has no article-eligible route.
+M1 rejected this question as an original architecture contribution and retired the working title. M1b separately audited the owner's objective of giving future LLM development a technically actionable direction toward managed state, persistent memory, and adaptive computation. That route also returned `STOP`: the broad direction is directly anticipated, the implementation-neutral transition shell reduces to known systems and decision-theory objects, and no distinct prediction survives.
+
+M1c then generated sixteen independently motivated objects covering revision repair, dependency closure, compaction certificates, concurrency, replay, migration, causal read sets, procedural drift, longitudinal feedback, revision hysteresis, evaluation carryover, and stability scaling. All sixteen failed direct anticipation, strongest-composite anticipation, generic reduction, or the requirement to specify distinct technical content. The program still has no article-eligible route.
 
 ## Candidate contribution hypothesis
 
@@ -87,6 +89,10 @@ Return `PIVOT` or `STOP` if the defensible difference is only an untested assemb
 ### Directional-thesis gate
 
 The direction-setting pivot could proceed to article design only if it defined an implementation-neutral technical contract and at least one falsifiable regime prediction not already supplied by memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, or systems-roadmap work. M1b applied this rule and returned `STOP`. The contract shell and every proposed regime prediction were anticipated, generic, tautological under their assumptions, or unsupported without a distinct technical object.
+
+### Distinct-object reopening gate
+
+M1c required every independently motivated object to state a new observable, mechanism, estimator, invariant, bound, or theorem; a decisive falsifier; a negative regime; the strongest prior-art composite; a generic-theory reduction; and a minimum discrimination burden. A testable LLM-specific relabeling of dynamic computation, semantic transactions, I-confluence, provenance, causal intervention, rejection, branching, stability, hysteresis, path effects, or carryover does not pass. An exact application axis being unreported also does not pass when a positive composite already supplies its protocol ingredients, phenomenon class, and ordinary estimator. M1c applied this rule and returned `STOP` for all sixteen candidates.
 
 ### M4 oracle gate
 
