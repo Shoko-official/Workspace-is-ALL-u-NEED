@@ -123,6 +123,7 @@ The managed-state direction may be useful engineering advice. The gate rejects i
 - `docs/research/handoffs/2026-07-14-m1b-orbit-matrix-review.md`: independent collision-matrix coverage review.
 - `docs/research/handoffs/2026-07-14-m1b-sol-preintegration-review.md`: independent scientific consistency review and correction checklist.
 - `docs/research/handoffs/2026-07-14-m1b-luna-librarian.md`: independent metadata, version, venue, and locator audit.
+- `docs/research/handoffs/2026-07-14-m1b-luna-cross-review.md`: final independent anti-rewrite review with no blocking finding.
 - `docs/research/CLAIM_LEDGER.csv`, `docs/research/EVIDENCE_LEDGER.csv`, `docs/research/LITERATURE_MATRIX.csv`, and `docs/research/NOVELTY.md`: consolidated originality record.
 - `paper/references.bib`: version-pinned decision bibliography, not a manuscript.
 

@@ -12,13 +12,13 @@ M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-i
 
 ## Current gate
 
-`M1B-STOP-PENDING-FINAL-REVIEW-AND-PR`
+`M1B-STOP-PENDING-PR-CI-AND-MERGE`
 
 The broad and narrowed architecture claims are `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes are also `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
 The owner's distinct direction-setting objective has now returned `STOP`. State-Aware Runtime and PLACEMEM directly anticipate the broad shift from prompt accumulation toward managed state and compute-aware memory. The implementation-neutral `Omega/G/B/Adeq/Cert/Cmp/T*/T_hat` shell reduces to known contracts, resource allocation, temporal data, provenance, evidence certification, metareasoning, Pareto comparison, and reject decisions. Four registered predictions are `ANTICIPATED`; the validity-before-compute prediction is `UNSUPPORTED` and `UNSUPPORTED_NOT_DISTINCT` as a novelty disposition.
 
-The direction-setting article is `NOT_ELIGIBLE`. The decision is recorded and awaiting independent bibliographic review, anti-rewrite cross-review, required CI, and merge under issue #5. No model, benchmark, training, experiment, or manuscript is authorized.
+The direction-setting article is `NOT_ELIGIBLE`. The decision is recorded, the independent bibliographic and anti-rewrite reviews are complete with no blocking finding, and only PR integration, required CI, and merge remain under issue #5. No model, benchmark, training, experiment, or manuscript is authorized.
 
 ## Active issues
 
@@ -51,7 +51,7 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 | Luna-QA | Literature-matrix collision coverage | Completed with `STOP` | `handoffs/2026-07-14-m1b-orbit-matrix-review.md` |
 | Sol-Theory / Luna-QA | Pre-integration scientific consistency review | Completed with `STOP`; blockers corrected before final review | `handoffs/2026-07-14-m1b-sol-preintegration-review.md` |
 | Luna-Librarian | M1b metadata, locator, version, and venue audit | Completed `PASS WITH CORRECTIONS`; corrections integrated | `handoffs/2026-07-14-m1b-luna-librarian.md` |
-| Luna-QA / Luna-RedTeam | M1b anti-rewrite cross-review | Pending after bibliographic integration | `handoffs/2026-07-14-m1b-luna-cross-review.md` |
+| Luna-QA / Luna-RedTeam | M1b anti-rewrite cross-review | Completed `PASS`; no blocking finding | `handoffs/2026-07-14-m1b-luna-cross-review.md` |
 
 ## Input inventory
 
@@ -115,6 +115,7 @@ This machine is sufficient for governance and small deterministic harness work a
 22. Keep all five M1b prediction candidates for falsifiability trace only. Four are `ANTICIPATED`; M1B-P04 is `UNSUPPORTED` and `UNSUPPORTED_NOT_DISTINCT` as a novelty disposition. None authorizes an article or experiment.
 23. Make no exhaustive-search or absence-of-prior-art claim. The M1b `STOP` rests on direct positive collisions and reductions recorded by three independent audits.
 24. Mark the direction-setting article `NOT_ELIGIBLE` and leave the program with no surviving article route. Reopening requires a new independently motivated `DISTINCT_CANDIDATE` before implementation.
+25. Accept the final independent RedTeam result on scientific commit `32adacc`: all pre-integration blockers are corrected, no blocking finding remains, and merge is recommended after required CI.
 
 ## Blockers
 
@@ -136,7 +137,7 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Complete issue #5 governance: integrate the independent bibliographic audit, obtain an independent anti-rewrite cross-review of the exact decision head, pass required CI, merge the M1b decision PR, close issue #5, and close milestone M1b. After merge, no scientific or implementation action is authorized unless the owner supplies a new independently motivated question that satisfies the reopening conditions in Decision 0004.
+Complete issue #5 governance: open the M1b decision PR, pass required CI on its latest head, merge with linear history, close issue #5, and close milestone M1b. After merge, no scientific or implementation action is authorized unless the owner supplies a new independently motivated question that satisfies the reopening conditions in Decision 0004.
 
 ## M1b exit checklist
 
@@ -146,7 +147,7 @@ Complete issue #5 governance: integrate the independent bibliographic audit, obt
 - [x] Prediction and counterexample registers completed without component-encoded admission rules.
 - [x] Minimum discriminating designs and resource estimates recorded.
 - [x] Independent bibliographic audit integrated.
-- [ ] Independent anti-rewrite review reports no blocking findings.
+- [x] Independent anti-rewrite review reports no blocking findings.
 - [x] Explicit `STOP` decision recorded.
 - [ ] Required CI passes and the M1b decision PR merges.
 
