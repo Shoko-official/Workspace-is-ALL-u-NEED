@@ -4,9 +4,9 @@ Scale: probability and impact are `LOW`, `MEDIUM`, or `HIGH`. Status is `OPEN`, 
 
 | ID | Risk | Probability | Impact | Mitigation | Trigger or evidence | Owner | Status |
 |---|---|---:|---:|---|---|---|---|
-| R-001 | The candidate novelty is only a composition of known components | High | High | Systematic primary-source matrix and adversarial novelty review before implementation | No discriminating property survives the composite baseline | Terra-Evidence / Sol-PI | Open |
+| R-001 | The candidate novelty is only a composition of known components | High | High | Broad claim stopped; M1 may retain only a causal coordination interaction or independently useful empirical route | Initial screen found a near-complete prior-art composite; article remains ineligible | Terra-Evidence / Sol-PI | MITIGATING |
 | R-002 | The referenced underlying report is unavailable | High | Medium | Mark `INPUT_MISSING`; do not attribute claims to unseen material | Attachment inventory contains only the research program | Sol-PI | Open |
-| R-003 | Confirmatory compute exceeds available resources | High | High | Cost models, oracle gate, small pilot, and written budget ceiling before scheduling | No cluster or cloud budget; local GPU has 16 GB VRAM | Terra-Engineering | Open |
+| R-003 | Confirmatory compute exceeds available resources | High | High | Cost the minimum decisive factorial first; freeze baseline tiers, grids, retention, power, and written ceilings | Core draft implies at least 225 run cells and roughly 120-399 optimistic GPU-days at 20 tokens/parameter before tuning | Terra-Engineering | Open |
 | R-004 | Local ML environment cannot use the GPU reproducibly | High | High | Pin a supported Python/CUDA stack and validate in a clean OCI image | Installed PyTorch is CPU-only; Docker daemon stopped | Terra-Engineering | Open |
 | R-005 | Code or dataset licensing prevents publication | Medium | High | License ledger before acquisition; do not redistribute by default | Repository has no license; datasets not reviewed | Luna-Librarian | Open |
 | R-006 | Split leakage or generator-family contamination inflates OOD results | Medium | High | Family-level splits, hidden confirmatory generators, hashes, MinHash, and canaries | Train/test similarity or canary hit | Luna-QA | Open |
