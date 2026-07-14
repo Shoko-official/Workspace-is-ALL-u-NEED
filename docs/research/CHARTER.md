@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `CURRENT_ROUTES_STOPPED_DIRECTIONAL_PIVOT_PENDING_REVIEW`
-Version: `0.2.0`
-Milestone: `M1 - Systematic novelty review`
-Tracking issue: [#3](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3)
+Status: `ALL_ARTICLE_ROUTES_STOPPED_M1B_REVIEW_PENDING_MERGE`
+Version: `0.3.0`
+Milestone: `M1b - Managed-state transition thesis novelty gate`
+Tracking issue: [#5](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/5)
 
 ## Scientific question
 
@@ -11,7 +11,7 @@ Under separately matched parameter, training-compute, and inference-resource reg
 
 The working title is **Budgeted Workspace Models: Joint Allocation of Attention, Persistent Memory, and Recurrent Compute**.
 
-M1 rejected this question as an original architecture contribution and retired the working title. The program owner retains a different objective: give future LLM development a technically actionable direction toward managed state, persistent memory, and adaptive computation. That route is not yet established as novel. Its next gate must test whether an implementation-neutral transition framework, technical contract, regime boundaries, and falsifiable predictions can contribute more than a survey or roadmap assembled from known systems.
+M1 rejected this question as an original architecture contribution and retired the working title. M1b separately audited the owner's objective of giving future LLM development a technically actionable direction toward managed state, persistent memory, and adaptive computation. That route also returned `STOP`: the broad direction is directly anticipated, the implementation-neutral transition shell reduces to known systems and decision-theory objects, and no distinct prediction survives. The program now has no article-eligible route.
 
 ## Candidate contribution hypothesis
 
@@ -67,7 +67,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The core paper may cover bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 and 0004 stop that scope and its direction-setting successor; neither is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
@@ -86,7 +86,7 @@ Return `PIVOT` or `STOP` if the defensible difference is only an untested assemb
 
 ### Directional-thesis gate
 
-The direction-setting pivot may proceed to article design only if it defines an implementation-neutral technical contract and at least one falsifiable regime prediction not already supplied by memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, or systems-roadmap work. A synthesis, taxonomy, manifesto, maturity model, or migration diagram without a distinct prediction returns `STOP`.
+The direction-setting pivot could proceed to article design only if it defined an implementation-neutral technical contract and at least one falsifiable regime prediction not already supplied by memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, or systems-roadmap work. M1b applied this rule and returned `STOP`. The contract shell and every proposed regime prediction were anticipated, generic, tautological under their assumptions, or unsupported without a distinct technical object.
 
 ### M4 oracle gate
 

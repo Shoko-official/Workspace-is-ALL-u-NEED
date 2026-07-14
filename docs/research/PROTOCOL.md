@@ -5,7 +5,7 @@ Version: `0.2.0`
 Recorded: `2026-07-14`
 Implementation authorization: `NONE`
 
-This document preserves the unexecuted architecture protocol. M1 stopped the architecture and empirical contribution routes before formalization or implementation. It does not authorize experiments for the separate direction-setting pivot, which requires its own novelty gate and protocol if it survives.
+This document preserves the unexecuted architecture protocol. M1 stopped the architecture and empirical contribution routes before formalization or implementation. M1b then stopped the separate direction-setting pivot before experiment authorization. This protocol does not authorize any current work.
 
 The M1 literature trace did not retain every preregistered result and screening count. Decision 0003 relies on direct positive anticipations and an exact control reduction, not on exhaustive search or absence evidence. A future novelty-positive route must register and preserve a complete search flow under its own issue.
 
