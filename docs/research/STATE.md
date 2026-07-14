@@ -12,15 +12,17 @@ M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-i
 
 ## Current gate
 
-`M1-NARROW-NOVELTY-REVIEW`
+`M1-STOP-CURRENT-CLAIMS-DIRECTIONAL-PIVOT`
 
-The broad architecture novelty claim is `STOP`. The research program is `PIVOT` to a bounded M1 systematic review of one narrow coordination hypothesis or an independent empirical route. The current architecture paper is `NOT_ELIGIBLE`; eligibility of a future narrowed paper is `NOT_ESTABLISHED`. Training, benchmark implementation, M2 formalization, and substantive model implementation are not authorized.
+The broad and narrowed architecture claims are `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes are also `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
+
+The research program is `PIVOT` to the owner's distinct direction-setting objective: guide future LLM development toward managed state, persistent memory, and adaptive computation. Eligibility of that article is `NOT_ESTABLISHED`. It requires a new issue and an anti-rewrite review of an implementation-neutral transition framework, technical contracts, regime boundaries, and falsifiable predictions.
 
 ## Active issues
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | Active |
+| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | Decision integration and independent review |
 
 ## Capability audit
 
@@ -41,9 +43,11 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 | Functional role | Assignment | Status | Handoff target |
 |---|---|---|---|
 | Sol-PI | M1 integration and gate ownership | Active | Issue #3 and M1 decision PR |
-| Terra-Evidence | Reproducible narrowed systematic search and snowballing | Active | `handoffs/2026-07-14-m1-terra-systematic-search.md` |
-| Sol-Theory | CMDP/router reducibility and non-factorization audit | Active | `handoffs/2026-07-14-m1-sol-reducibility.md` |
-| Terra-Engineering / Luna-RedTeam | Component-agnostic benchmark and outcome-changing accounting audit | Active | `handoffs/2026-07-14-m1-terra-empirical-route.md` |
+| Terra-Evidence | Reproducible narrowed search and snowball closeout | Complete: `STOP` | `handoffs/2026-07-14-m1-terra-systematic-search.md` |
+| Sol-Theory | CMDP/router reducibility and non-factorization audit | Complete: `STOP` | `handoffs/2026-07-14-m1-sol-reducibility.md` |
+| Terra-Engineering / Luna-RedTeam | Component-agnostic benchmark and outcome-changing accounting audit | Complete: `STOP` | `handoffs/2026-07-14-m1-terra-empirical-route.md` |
+| Luna-Librarian | Independent M1 metadata version and locator verification | Complete with explicit quarantines | `handoffs/2026-07-14-m1-luna-librarian.md` |
+| Luna-QA / Luna-RedTeam | Integrated contradictory review | Pending after consolidation | `handoffs/2026-07-14-m1-luna-cross-review.md` |
 
 ## Input inventory
 
@@ -94,6 +98,10 @@ This machine is sufficient for governance and small deterministic harness work a
 9. Require a same-component fixed composite, matched separated controllers, randomized resource-price interventions, and a preregistered coordination factorial before any architecture claim.
 10. Treat expiration as a deterministic store transition and committed rollback as a privileged append-only environment/store event, not learned controller actions.
 11. Close M0 only after PR #2 passed the required `validate` check and merged with linear history; open issue #3 under milestone M1 for the systematic novelty gate.
+12. Return `STOP` for the narrowed mechanism because it reduces to a generic constrained or budgeted control policy and is nearly anticipated by UMA plus GRU-Mem.
+13. Return `STOP` for the empirical fallback because existing dynamic-memory benchmarks cover the proposed operations, JMM is component-encoded, and recent multi-system work covers lifecycle accounting and ranking trade-offs.
+14. Return `PIVOT` for the program after the owner clarified the direction-setting objective. Treat that objective as a new candidate contribution, not as permission to repackage the stopped architecture.
+15. Require the directional article to define an implementation-neutral technical contract and falsifiable regime predictions; a survey, taxonomy, manifesto, maturity model, or migration diagram returns `STOP`.
 
 ## Blockers
 
@@ -107,6 +115,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
+| B-009 | Originality of the direction-setting transition framework has not been audited | The directional article cannot be drafted or declared eligible | Open a dedicated issue and milestone; compare against memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, and systems-roadmap literature |
 
 ## Last valid experiment
 
@@ -114,7 +123,20 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Execute issue #3: close the systematic search and citation snowball cycle, test whether the constrained policy is reducible to known generic control, test whether an independent component-agnostic empirical route survives, cost the minimum discriminating design, and obtain a new contradictory gate review. The issue may not start model or benchmark implementation.
+Complete issue #3 through independent contradictory review, required CI, and merge. If the M1 pivot survives review, open a new issue and milestone for the directional-thesis novelty audit. Do not draft the article or implement a model or benchmark before that separate gate.
+
+## M1 exit checklist
+
+- [x] Narrow policy reduced to a known control object or shown distinct.
+- [x] Direct learned-policy prior art compared at precise locators.
+- [x] Independent empirical fallback audited for novelty, circularity, and feasibility.
+- [x] Current architecture and empirical routes given explicit `STOP` decisions.
+- [x] Owner's direction-setting objective separated from the stopped contribution.
+- [x] Reproducible search closeout and version chains integrated.
+- [x] Independent bibliographic audit integrated.
+- [ ] Independent contradictory review reports no blocking findings.
+- [ ] Required `validate` check passes on the M1 decision PR.
+- [ ] M1 decision PR merges and issue #3 closes.
 
 ## M0 exit checklist
 

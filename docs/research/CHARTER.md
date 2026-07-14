@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `DRAFT`
-Version: `0.1.0`
-Milestone: `M0 - Audit and charter`
-Tracking issue: [#1](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1)
+Status: `CURRENT_ROUTES_STOPPED_DIRECTIONAL_PIVOT_PENDING_REVIEW`
+Version: `0.2.0`
+Milestone: `M1 - Systematic novelty review`
+Tracking issue: [#3](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3)
 
 ## Scientific question
 
@@ -11,9 +11,11 @@ Under separately matched parameter, training-compute, and inference-resource reg
 
 The working title is **Budgeted Workspace Models: Joint Allocation of Attention, Persistent Memory, and Recurrent Compute**.
 
+M1 rejected this question as an original architecture contribution and retired the working title. The program owner retains a different objective: give future LLM development a technically actionable direction toward managed state, persistent memory, and adaptive computation. That route is not yet established as novel. Its next gate must test whether an implementation-neutral transition framework, technical contract, regime boundaries, and falsifiable predictions can contribute more than a survey or roadmap assembled from known systems.
+
 ## Candidate contribution hypothesis
 
-The candidate contribution hypothesis is a non-factorizing joint budget-allocation policy and its falsifiable evaluation. It is not yet a technically established mechanism or a positive novelty finding. The project does not claim that attention, external memory, state-space recurrence, adaptive computation, provenance, or shared workspaces are individually novel.
+The following hypothesis is retained as the historical M0 candidate and was stopped by M1. It is not an active article claim. The candidate was a non-factorizing joint budget-allocation policy and its falsifiable evaluation. The project does not claim that attention, external memory, state-space recurrence, adaptive computation, provenance, or shared workspaces are individually novel.
 
 The paper is not eligible to proceed as an architecture contribution merely because it combines those mechanisms or renames their roles. At least one preregistered result must distinguish the proposal from the strongest fixed composite and separately controlled composite. The acceptable result must be either a causal interaction attributable to joint allocation or a genuinely new empirical phenomenon, benchmark, or resource-accounting result that changes what can be concluded about the memory-compute trade-off. If neither survives, the project stops instead of rewriting prior work.
 
@@ -81,6 +83,10 @@ Advanced security mechanisms such as ACL systems, capability models, taint track
 ### M1 novelty gate
 
 Return `PIVOT` or `STOP` if the defensible difference is only an untested assembly, renaming, or narrative synthesis of known components. `PIVOT` requires a precise new empirical question and a discriminating experiment against the strongest composite. Return `STOP` if no causal interaction or genuinely new empirical phenomenon remains identifiable. A `GO` permits formalization, not model implementation.
+
+### Directional-thesis gate
+
+The direction-setting pivot may proceed to article design only if it defines an implementation-neutral technical contract and at least one falsifiable regime prediction not already supplied by memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, or systems-roadmap work. A synthesis, taxonomy, manifesto, maturity model, or migration diagram without a distinct prediction returns `STOP`.
 
 ### M4 oracle gate
 

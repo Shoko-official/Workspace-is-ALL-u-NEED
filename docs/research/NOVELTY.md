@@ -1,9 +1,9 @@
 # Novelty Review
 
-Status: `INITIAL_SCREEN_COMPLETE_M1_REVIEW_REQUIRED`
-Protocol version: `0.1.0`
+Status: `M1_CURRENT_ROUTES_STOPPED_DIRECTIONAL_PIVOT_PENDING_REVIEW`
+Protocol version: `0.2.0`
 Protocol recorded: `2026-07-14`
-Candidate gate: `PIVOT`
+Candidate gate: `PIVOT_PROGRAM_STOP_CURRENT_CLAIMS`
 
 ## Review question
 
@@ -37,6 +37,42 @@ Together with the older shared-workspace, external-memory, recurrent-memory, SSM
 The only surviving research question is narrower: under matched controller capacity and complete physical accounting, can one non-factorizing per-instance policy coordinate mutable versioned episodic I/O, fixed compressed state, recurrent compute, verification, and halting better than the same components with fixed routing and independently trained resource controllers?
 
 This is an unsupported hypothesis, not a positive novelty finding. It remains eligible only if a preregistered causal coordination interaction or an independently useful new benchmark/resource-accounting result survives the strongest composite.
+
+## M1 results
+
+M1 closes both contribution routes retained by the initial screen.
+
+### The narrowed mechanism is reducible and directly anticipated
+
+The complete state, typed action union, transition rules, and resource vector form a constrained POMDP, or a CMDP after state or belief augmentation. Adding remaining resource to the state gives a budgeted MDP. For any joint stochastic policy over typed operations, ordinary marginalization and conditioning gives the exact decomposition
+
+\[
+\pi(k,du\mid h)=\rho(k\mid h)q_k(du\mid h).
+\]
+
+An arbiter plus conditional action heads can therefore preserve the same observations, action support, feasibility mask, and trajectory distribution. "Non-factorizing" changes when actions are split, merged, or relabeled, so it is not a behavioral invariant. The candidate specifies no new learning algorithm, guarantee, lower bound, or semantic property that escapes this reduction.
+
+The remaining learned topology is nearly explicit in primary work:
+
+- [UMA](https://arxiv.org/abs/2602.18493) uses one end-to-end policy, a compact core summary, a mutable structured memory bank, CRUD-like tools, iterative tool use, and a terminal answer action. It also compares unified and decoupled training.
+- [GRU-Mem](https://arxiv.org/abs/2602.10560) learns recurrent memory-update and exit gates with dedicated reinforcement signals.
+- [AgeMem](https://arxiv.org/abs/2601.01885) integrates long- and short-term memory management into the policy through typed memory tools.
+- [Memory-R1](https://arxiv.org/abs/2508.19828) learns ADD, UPDATE, DELETE, and NOOP memory operations and a separate memory-use policy.
+- [Constrained Policy Optimization](https://proceedings.mlr.press/v70/achiam17a.html) and [Budgeted Reinforcement Learning in Continuous State Space](https://proceedings.neurips.cc/paper/2019/hash/4fe5149039b52765bde64beb9f674940-Abstract.html) establish the generic constrained and runtime-budgeted control objects.
+
+The proposed coordination factorial could measure information access, representation sharing, or credit assignment in a finite implementation. It cannot establish a new policy class, and a positive average delta would not by itself satisfy the anti-assembly gate.
+
+### No independent empirical phenomenon survives
+
+WAIN-Core aggregates temporal operations already isolated by dynamic-memory work. Ledger-QA in UMA, [AMemGym](https://openreview.net/forum?id=sfrVLzsmlf), [Memora](https://arxiv.org/abs/2604.20006), and [Supersede](https://arxiv.org/abs/2606.27472) cover continuous updates, evolving state, obsolete-memory penalties, and supersession. The [bi-temporal Engram](https://arxiv.org/abs/2606.09900) covers append-only episodes, provenance, supersession chains, and point-in-time filtering.
+
+The Joint Memory Machine cannot carry the causal claim because its admission rule encodes the need for the proposed components. Removing that ontology reduces it to component-neutral evolving-state tracking already covered by the closest benchmarks.
+
+Complete resource accounting is mandatory for valid comparisons but is not a new contribution in this formulation. [Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](https://arxiv.org/abs/2606.06448) profiles construction, retrieval, generation, latency, HBM, power, and energy across ten systems. [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) compares twelve systems across storage, extraction, routing, maintenance, update correctness, long-horizon stability, and cost-performance. Adding unmeasured axes without a new intervention or conclusion-changing law would improve rigor, not create a new empirical phenomenon.
+
+### Feasibility reinforces, but does not create, the stop decision
+
+The minimum mechanism study requires matched fixed and separated controllers, equal information access, randomized multi-resource prices, a full observation-by-objective factorial, and replication. The minimum systems study requires reproducible adapters and lifecycle telemetry across approximately ten to twelve heterogeneous memory systems. No written compute, instrumentation, energy, storage, or labor budget supports either design. The gate would still be `STOP` if resources were unlimited because the distinct contribution is absent.
 
 ## Preregistered search plan
 
@@ -120,3 +156,17 @@ Decision: `PIVOT`.
 5. Convert the decision to `STOP` if no practically meaningful interaction or independently useful empirical contribution remains.
 
 The detailed evidence and locators are recorded in the Terra-Evidence and Sol-Theory handoffs. This initial decision authorizes a dedicated M1 systematic-review issue only; it does not authorize M2 formalization, benchmark implementation, model implementation, or training.
+
+## M1 final gate decision
+
+Decision on current contribution routes: `STOP`.
+
+1. Stop the non-factorizing constrained-policy mechanism claim.
+2. Stop WAIN-Core and Joint Memory Machine as proposed original benchmark claims.
+3. Stop complete accounting or ranking reversal as a standalone contribution without a new causal intervention, predictive law, or conclusion-changing result.
+4. Keep the original architecture article and working title `NOT_ELIGIBLE`.
+5. Do not implement, train, or draft a manuscript from these stopped routes.
+
+Program decision: `PIVOT` to a separately audited direction-setting technical thesis requested by the repository owner.
+
+That pivot must contribute an implementation-neutral transition framework for future LLM systems, technical contracts, measurable regime boundaries, and falsifiable predictions. It is not currently established as novel. It returns `STOP` if it reduces to a survey, taxonomy, manifesto, maturity model, migration diagram, or renamed synthesis of memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, and systems-roadmap literature.

@@ -1,11 +1,11 @@
 # Experimental Protocol
 
-Status: `DRAFT_NOT_FROZEN`
-Version: `0.1.0`
+Status: `CLOSED_UNEXECUTED_BY_M1_STOP`
+Version: `0.2.0`
 Recorded: `2026-07-14`
 Implementation authorization: `NONE`
 
-This document defines the protocol that must be completed and independently reviewed before confirmatory work. Pilot results may refine a later frozen version, but pilot data must never be pooled with confirmatory results.
+This document preserves the unexecuted architecture protocol. M1 stopped the architecture and empirical contribution routes before formalization or implementation. It does not authorize experiments for the separate direction-setting pivot, which requires its own novelty gate and protocol if it survives.
 
 ## State and actions
 
