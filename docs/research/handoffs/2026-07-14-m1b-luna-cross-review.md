@@ -177,3 +177,8 @@ Le commit `32adacc` est scientifiquement prêt à entrer en PR. La fusion est re
 Si l'intégration modifie une conclusion scientifique, une prédiction, un registre, un design, une source ou une formule au-delà de ces mises à jour mécaniques, une nouvelle revue du nouveau SHA exact est nécessaire.
 
 Le merge n'autorise aucun article, manifeste, roadmap, benchmark, entraînement, modèle ou expérience. Il clôt la dernière route d'article actuelle avec `STOP` et `0 DISTINCT_CANDIDATE`.
+
+## 12. Rôles
+
+- Rôle auteur: Luna-RedTeam, relecteur scientifique indépendant de l'assemblage Terra-Evidence, de la réduction Sol-Theory et de l'intégration Sol-PI.
+- Rôle de revue distinct: Sol-PI, propriétaire du gate et intégrateur, limité à la vérification de la traçabilité, du SHA, des corrections mécaniques et des conditions de merge. Ce rôle ne peut pas convertir le verdict indépendant ni le `STOP` en autorisation scientifique.
