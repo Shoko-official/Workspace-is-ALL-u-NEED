@@ -1,6 +1,6 @@
 # Research Charter
 
-Status: `ALL_ARTICLE_ROUTES_STOPPED_M1B_REVIEW_PENDING_MERGE`
+Status: `ALL_ARTICLE_ROUTES_STOPPED_TERMINAL`
 Version: `0.3.0`
 Milestone: `M1b - Managed-state transition thesis novelty gate`
 Tracking issue: [#5](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/5)

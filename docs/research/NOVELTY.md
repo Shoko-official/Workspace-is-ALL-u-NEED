@@ -1,6 +1,6 @@
 # Novelty Review
 
-Status: `M1B_ALL_ARTICLE_ROUTES_STOPPED_REVIEW_PENDING_MERGE`
+Status: `M1B_ALL_ARTICLE_ROUTES_STOPPED_TERMINAL`
 Protocol version: `0.3.0`
 Protocol recorded: `2026-07-14`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
