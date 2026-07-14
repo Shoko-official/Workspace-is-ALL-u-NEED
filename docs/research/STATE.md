@@ -6,11 +6,13 @@ Operational status: `IN_PROGRESS`
 
 ## Current milestone
 
-`M0 - Audit and charter`
+`M1 - Systematic novelty review`
+
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2); issue #1 and milestone M0 are closed.
 
 ## Current gate
 
-`M0-PIVOT-MERGE-READY`
+`M1-NARROW-NOVELTY-REVIEW`
 
 The broad architecture novelty claim is `STOP`. The research program is `PIVOT` to a bounded M1 systematic review of one narrow coordination hypothesis or an independent empirical route. The current architecture paper is `NOT_ELIGIBLE`; eligibility of a future narrowed paper is `NOT_ESTABLISHED`. Training, benchmark implementation, M2 formalization, and substantive model implementation are not authorized.
 
@@ -18,7 +20,7 @@ The broad architecture novelty claim is `STOP`. The research program is `PIVOT` 
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#1 M0: bootstrap research governance](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1) | M0 | `agent/1-bootstrap-research-governance` | [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2) merge-ready subject to latest-head CI |
+| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | Active |
 
 ## Capability audit
 
@@ -38,12 +40,10 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 | Functional role | Assignment | Status | Handoff target |
 |---|---|---|---|
-| Sol-PI | Repository audit and M0 integration | Active | Issue #1 and bootstrap PR |
-| Terra-Evidence | Bounded primary-source novelty audit | Complete | `handoffs/2026-07-14-terra-evidence.md` |
-| Sol-Theory | Contradictory formalization and identifiability audit | Complete | `handoffs/2026-07-14-sol-theory.md` |
-| Terra-Engineering | Protocol, resource, and reproducibility feasibility audit | Complete | `handoffs/2026-07-14-terra-engineering.md` |
-| Luna-Librarian | Source metadata, version, licence, and locator verification | Complete | `handoffs/2026-07-14-luna-librarian.md` |
-| Luna-QA / Luna-RedTeam | Independent anti-assembly cross-review | Complete | `handoffs/2026-07-14-luna-cross-review.md` |
+| Sol-PI | M1 integration and gate ownership | Active | Issue #3 and M1 decision PR |
+| Terra-Evidence | Reproducible narrowed systematic search and snowballing | Active | `handoffs/2026-07-14-m1-terra-systematic-search.md` |
+| Sol-Theory | CMDP/router reducibility and non-factorization audit | Active | `handoffs/2026-07-14-m1-sol-reducibility.md` |
+| Terra-Engineering / Luna-RedTeam | Component-agnostic benchmark and outcome-changing accounting audit | Active | `handoffs/2026-07-14-m1-terra-empirical-route.md` |
 
 ## Input inventory
 
@@ -93,6 +93,7 @@ This machine is sufficient for governance and small deterministic harness work a
 8. Keep the current architecture paper `NOT_ELIGIBLE` and future narrowed-paper eligibility `NOT_ESTABLISHED`; a new combination, title, diagram, or aggregate gain against weak baselines cannot establish eligibility.
 9. Require a same-component fixed composite, matched separated controllers, randomized resource-price interventions, and a preregistered coordination factorial before any architecture claim.
 10. Treat expiration as a deterministic store transition and committed rollback as a privileged append-only environment/store event, not learned controller actions.
+11. Close M0 only after PR #2 passed the required `validate` check and merged with linear history; open issue #3 under milestone M1 for the systematic novelty gate.
 
 ## Blockers
 
@@ -113,7 +114,7 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Merge PR #2 only after the required `validate` check passes on its latest head. After merge, close M0 and open a dedicated M1 issue to execute the registered systematic search, close one snowball cycle, formalize the exact computational delta, and cost the minimum discriminating design. The M1 issue may not start model or benchmark implementation.
+Execute issue #3: close the systematic search and citation snowball cycle, test whether the constrained policy is reducible to known generic control, test whether an independent component-agnostic empirical route survives, cost the minimum discriminating design, and obtain a new contradictory gate review. The issue may not start model or benchmark implementation.
 
 ## M0 exit checklist
 
@@ -127,3 +128,4 @@ Merge PR #2 only after the required `validate` check passes on its latest head. 
 - [x] Novelty, theory, protocol, engineering, and bibliography handoffs completed.
 - [x] Independent anti-assembly cross-review completed.
 - [x] Explicit `PIVOT` decision recorded, with `STOP` for the broad claim, current paper `NOT_ELIGIBLE`, and future eligibility not established.
+- [x] PR #2 passed required CI and merged; issue #1 and milestone M0 closed.
