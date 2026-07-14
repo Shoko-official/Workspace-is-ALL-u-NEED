@@ -1,9 +1,13 @@
 # Terra-Engineering feasibility, fairness, and reproducibility audit
 
-Date: `2026-07-14`  
-Issue: [#1](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1)  
-Milestone: `M0 - Audit and charter`  
-Authoring functional role: `Terra-Engineering`  
+Date: `2026-07-14`
+
+Issue: [#1](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1)
+
+Milestone: `M0 - Audit and charter`
+
+Authoring functional role: `Terra-Engineering`
+
 Required independent reviewing role: `Sol-PI`, then `Luna-QA` before this can support a gate
 
 ## Objective

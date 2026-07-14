@@ -1,8 +1,11 @@
 # Terra-Evidence Handoff: Initial Novelty Audit of the Budgeted Workspace Model
 
-Date: `2026-07-14`  
-Role: `Terra-Evidence`  
-Target: `Sol-PI`, milestone `M0`, issue [#1](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1)  
+Date: `2026-07-14`
+
+Role: `Terra-Evidence`
+
+Target: `Sol-PI`, milestone `M0`, issue [#1](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/1)
+
 Decision status: `PIVOT`, with a default `STOP` for the current broad architecture claim
 
 ## Objective
