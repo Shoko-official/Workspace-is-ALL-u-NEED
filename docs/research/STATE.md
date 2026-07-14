@@ -6,23 +6,23 @@ Operational status: `IN_PROGRESS`
 
 ## Current milestone
 
-`M1 - Systematic novelty review`
+`M1b - Managed-state transition thesis novelty gate`
 
-M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2); issue #1 and milestone M0 are closed.
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2). M1 was completed by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4). Issues #1 and #3 and milestones M0 and M1 are closed.
 
 ## Current gate
 
-`M1-STOP-CURRENT-CLAIMS-DIRECTIONAL-PIVOT`
+`M1B-DIRECTIONAL-THESIS-NOVELTY-AUDIT`
 
 The broad and narrowed architecture claims are `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes are also `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
-The research program is `PIVOT` to the owner's distinct direction-setting objective: guide future LLM development toward managed state, persistent memory, and adaptive computation. Eligibility of that article is `NOT_ESTABLISHED`. It requires a new issue and an anti-rewrite review of an implementation-neutral transition framework, technical contracts, regime boundaries, and falsifiable predictions.
+The research program is auditing the owner's distinct direction-setting objective: guide future LLM development toward managed state, persistent memory, and adaptive computation. Eligibility of that article remains `NOT_ESTABLISHED`. Issue #5 must try to reduce the candidate transition framework to prior work and generic control, caching, OS, and temporal-data abstractions before any article drafting.
 
 ## Active issues
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#3 M1: test the narrowed contribution against prior art](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/3) | M1 | `agent/3-systematic-novelty-review` | [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4) open; review `MERGE_READY`; required CI passed |
+| [#5 M1b: audit a falsifiable transition thesis for managed-state LLMs](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/5) | M1b | `agent/5-directional-thesis-audit` | Search and formal-reduction planning |
 
 ## Capability audit
 
@@ -42,12 +42,12 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 | Functional role | Assignment | Status | Handoff target |
 |---|---|---|---|
-| Sol-PI | M1 integration and gate ownership | Active | Issue #3 and M1 decision PR |
-| Terra-Evidence | Bounded positive-collision search trace and targeted snowball closeout | Complete: `STOP` | `handoffs/2026-07-14-m1-terra-systematic-search.md` |
-| Sol-Theory | CMDP/router reducibility and non-factorization audit | Complete: `STOP` | `handoffs/2026-07-14-m1-sol-reducibility.md` |
-| Terra-Engineering / Luna-RedTeam | Component-agnostic benchmark and outcome-changing accounting audit | Complete: `STOP` | `handoffs/2026-07-14-m1-terra-empirical-route.md` |
-| Luna-Librarian | Independent M1 metadata version and locator verification | Complete with explicit quarantines | `handoffs/2026-07-14-m1-luna-librarian.md` |
-| Luna-QA / Luna-RedTeam | Integrated contradictory review | Complete: `MERGE_READY`, zero open blockers | `handoffs/2026-07-14-m1-luna-cross-review.md` |
+| Sol-PI | M1b integration and gate ownership | Active | Issue #5 and eventual M1b decision PR |
+| Terra-Evidence | Memory-OS, agent-OS, stateful-agent, and position-framework prior art | Scheduled | `handoffs/2026-07-14-m1b-terra-stateful-systems.md` |
+| Sol-Theory | Generic-theory and implementation-neutral contract reduction | Scheduled | `handoffs/2026-07-14-m1b-sol-contract-reduction.md` |
+| Terra-Evidence / Sol-Theory | Adaptive-compute, metareasoning, caching, and regime-boundary prior art | Scheduled | `handoffs/2026-07-14-m1b-terra-regime-boundaries.md` |
+| Luna-Librarian | M1b metadata, locator, version, and venue audit | Pending after integration | `handoffs/2026-07-14-m1b-luna-librarian.md` |
+| Luna-QA / Luna-RedTeam | M1b anti-rewrite cross-review | Pending after integration | `handoffs/2026-07-14-m1b-luna-cross-review.md` |
 
 ## Input inventory
 
@@ -103,6 +103,8 @@ This machine is sufficient for governance and small deterministic harness work a
 14. Return `PIVOT` for the program after the owner clarified the direction-setting objective. Treat that objective as a new candidate contribution, not as permission to repackage the stopped architecture.
 15. Require the directional article to define an implementation-neutral technical contract and falsifiable regime predictions; a survey, taxonomy, manifesto, maturity model, or migration diagram returns `STOP`.
 16. Do not claim that M1 completed an exhaustive systematic search: several per-query totals, screening counts, exclusions, and interrupted-pass query strings are unavailable. The present `STOP` rests on direct positive anticipations and exact control reduction, not on an absence-of-prior-art inference.
+17. Close M1 only after PR #4 passed independent functional review and required CI, merged with linear history, issue #3 closed, and milestone M1 closed.
+18. Open issue #5 and milestone M1b for the directional thesis. Treat `T(Omega, G, B)` and every proposed regime prediction as unsupported candidates until they survive individual prior art, strongest-composite, and generic-theory reduction.
 
 ## Blockers
 
@@ -124,7 +126,19 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Complete issue #3 through independent contradictory review, required CI, and merge. If the M1 pivot survives review, open a new issue and milestone for the directional-thesis novelty audit. Do not draft the article or implement a model or benchmark before that separate gate.
+Execute issue #5: register and run the primary-source search, define the candidate implementation-neutral contract and predictions, attempt strongest-composite and generic-theory reduction, and return `GO`, `PIVOT`, or `STOP`. Do not draft the article or implement a model or benchmark before this gate.
+
+## M1b exit checklist
+
+- [ ] Reproducible search and snowball log frozen.
+- [ ] Candidate contract, adequacy relation, transition rule, and boundary types operationalized.
+- [ ] Strongest-composite and generic-theory reductions completed.
+- [ ] Prediction and counterexample registers completed without component-encoded admission rules.
+- [ ] Minimum discriminating designs and resource estimates recorded.
+- [ ] Independent bibliographic audit integrated.
+- [ ] Independent anti-rewrite review reports no blocking findings.
+- [ ] Explicit `GO`, `PIVOT`, or `STOP` decision recorded.
+- [ ] Required CI passes and the M1b decision PR merges.
 
 ## M1 exit checklist
 
@@ -137,7 +151,7 @@ Complete issue #3 through independent contradictory review, required CI, and mer
 - [x] Independent bibliographic audit integrated.
 - [x] Independent contradictory review reports no blocking findings.
 - [x] Required `validate` check passes on the M1 decision PR.
-- [ ] M1 decision PR merges and issue #3 closes.
+- [x] M1 decision PR merges and issue #3 closes.
 
 ## M0 exit checklist
 
