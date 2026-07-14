@@ -16,13 +16,15 @@ M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-i
 
 The broad and narrowed architecture claims are `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes are also `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
-The research program is auditing the owner's distinct direction-setting objective: guide future LLM development toward managed state, persistent memory, and adaptive computation. Eligibility of that article remains `NOT_ESTABLISHED`. Issue #5 must try to reduce the candidate transition framework to prior work and generic control, caching, OS, and temporal-data abstractions before any article drafting.
+The owner's distinct direction-setting objective has now returned `STOP`. State-Aware Runtime and PLACEMEM directly anticipate the broad shift from prompt accumulation toward managed state and compute-aware memory. The implementation-neutral `Omega/G/B/A/T` shell reduces to known contracts, resource allocation, temporal data, provenance, metareasoning, and reject decisions. All five registered predictions are anticipated, generic, tautological under their declared information constraints, or `UNSUPPORTED_NOT_DISTINCT`.
+
+The direction-setting article is `NOT_ELIGIBLE`. The decision is recorded and awaiting independent bibliographic review, anti-rewrite cross-review, required CI, and merge under issue #5. No model, benchmark, training, experiment, or manuscript is authorized.
 
 ## Active issues
 
 | Issue | Milestone | Branch | Status |
 |---|---|---|---|
-| [#5 M1b: audit a falsifiable transition thesis for managed-state LLMs](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/5) | M1b | `agent/5-directional-thesis-audit` | Search and formal-reduction planning |
+| [#5 M1b: audit a falsifiable transition thesis for managed-state LLMs](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/5) | M1b | `agent/5-directional-thesis-audit` | `STOP` decision integration and independent review |
 
 ## Capability audit
 
@@ -42,12 +44,13 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 | Functional role | Assignment | Status | Handoff target |
 |---|---|---|---|
-| Sol-PI | M1b integration and gate ownership | Active | Issue #5 and eventual M1b decision PR |
-| Terra-Evidence | Memory-OS, agent-OS, stateful-agent, and position-framework prior art | Scheduled | `handoffs/2026-07-14-m1b-terra-stateful-systems.md` |
-| Sol-Theory | Generic-theory and implementation-neutral contract reduction | Scheduled | `handoffs/2026-07-14-m1b-sol-contract-reduction.md` |
-| Terra-Evidence / Sol-Theory | Adaptive-compute, metareasoning, caching, and regime-boundary prior art | Scheduled | `handoffs/2026-07-14-m1b-terra-regime-boundaries.md` |
-| Luna-Librarian | M1b metadata, locator, version, and venue audit | Pending after integration | `handoffs/2026-07-14-m1b-luna-librarian.md` |
-| Luna-QA / Luna-RedTeam | M1b anti-rewrite cross-review | Pending after integration | `handoffs/2026-07-14-m1b-luna-cross-review.md` |
+| Sol-PI | M1b integration and gate ownership | Active | Issue #5 and M1b decision PR |
+| Terra-Evidence | Memory-OS, agent-OS, stateful-agent, and position-framework prior art | Completed with `STOP` | `handoffs/2026-07-14-m1b-terra-stateful-systems.md` |
+| Sol-Theory | Generic-theory and implementation-neutral contract reduction | Completed with `STOP` | `handoffs/2026-07-14-m1b-sol-contract-reduction.md` |
+| Terra-Evidence / Sol-Theory | Adaptive-compute, metareasoning, caching, and regime-boundary prior art | Completed with `STOP` | `handoffs/2026-07-14-m1b-terra-regime-boundaries.md` |
+| Luna-QA | Literature-matrix collision coverage | Completed with `STOP` | `handoffs/2026-07-14-m1b-orbit-matrix-review.md` |
+| Luna-Librarian | M1b metadata, locator, version, and venue audit | Active | `handoffs/2026-07-14-m1b-luna-librarian.md` |
+| Luna-QA / Luna-RedTeam | M1b anti-rewrite cross-review | Pending after bibliographic integration | `handoffs/2026-07-14-m1b-luna-cross-review.md` |
 
 ## Input inventory
 
@@ -105,6 +108,12 @@ This machine is sufficient for governance and small deterministic harness work a
 16. Do not claim that M1 completed an exhaustive systematic search: several per-query totals, screening counts, exclusions, and interrupted-pass query strings are unavailable. The present `STOP` rests on direct positive anticipations and exact control reduction, not on an absence-of-prior-art inference.
 17. Close M1 only after PR #4 passed independent functional review and required CI, merged with linear history, issue #3 closed, and milestone M1 closed.
 18. Open issue #5 and milestone M1b for the directional thesis. Treat `T(Omega, G, B)` and every proposed regime prediction as unsupported candidates until they survive individual prior art, strongest-composite, and generic-theory reduction.
+19. Return `STOP` for the direction-setting thesis because State-Aware Runtime and PLACEMEM directly anticipate the direction and the strongest state-plus-compute composite.
+20. Reject `Omega`, `G`, `B`, `A`, and the qualitative transition rule `T` as distinct formal objects after reconstruction from contracts, QoS, vector resources, temporal data, provenance, metareasoning, Pareto comparison, and reject decisions.
+21. Classify the validity-before-compute residual as `UNSUPPORTED_NOT_DISTINCT`: its factorial is testable, but its conceptual basis is anticipated and no new estimator, law, theorem, or cross-family margin is specified.
+22. Keep all five M1b prediction candidates for falsifiability trace only. None authorizes an article or experiment because every disposition is anticipated, generic, tautological under its assumptions, or unsupported without a distinct object.
+23. Make no exhaustive-search or absence-of-prior-art claim. The M1b `STOP` rests on direct positive collisions and reductions recorded by three independent audits.
+24. Mark the direction-setting article `NOT_ELIGIBLE` and leave the program with no surviving article route. Reopening requires a new independently motivated `DISTINCT_CANDIDATE` before implementation.
 
 ## Blockers
 
@@ -118,7 +127,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
-| B-009 | Originality of the direction-setting transition framework has not been audited | The directional article cannot be drafted or declared eligible | Open a dedicated issue and milestone; compare against memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, and systems-roadmap literature |
+| B-010 | No original article route survives the M0, M1, and M1b gates | No manuscript, implementation, benchmark, training, or experiment is authorized | Owner supplies a new independently motivated question with a distinct technical object that survives prior-art and generic-theory reduction |
 
 ## Last valid experiment
 
@@ -126,18 +135,18 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Execute issue #5: register and run the primary-source search, define the candidate implementation-neutral contract and predictions, attempt strongest-composite and generic-theory reduction, and return `GO`, `PIVOT`, or `STOP`. Do not draft the article or implement a model or benchmark before this gate.
+Complete issue #5 governance: integrate the independent bibliographic audit, obtain an independent anti-rewrite cross-review of the exact decision head, pass required CI, merge the M1b decision PR, close issue #5, and close milestone M1b. After merge, no scientific or implementation action is authorized unless the owner supplies a new independently motivated question that satisfies the reopening conditions in Decision 0004.
 
 ## M1b exit checklist
 
-- [ ] Reproducible search and snowball log frozen.
-- [ ] Candidate contract, adequacy relation, transition rule, and boundary types operationalized.
-- [ ] Strongest-composite and generic-theory reductions completed.
-- [ ] Prediction and counterexample registers completed without component-encoded admission rules.
-- [ ] Minimum discriminating designs and resource estimates recorded.
+- [x] Reproducible search and snowball log frozen.
+- [x] Candidate contract, adequacy relation, transition rule, and boundary types operationalized.
+- [x] Strongest-composite and generic-theory reductions completed.
+- [x] Prediction and counterexample registers completed without component-encoded admission rules.
+- [x] Minimum discriminating designs and resource estimates recorded.
 - [ ] Independent bibliographic audit integrated.
 - [ ] Independent anti-rewrite review reports no blocking findings.
-- [ ] Explicit `GO`, `PIVOT`, or `STOP` decision recorded.
+- [x] Explicit `STOP` decision recorded.
 - [ ] Required CI passes and the M1b decision PR merges.
 
 ## M1 exit checklist

@@ -1,9 +1,9 @@
 # Novelty Review
 
-Status: `M1_CURRENT_ROUTES_STOPPED_DIRECTIONAL_PIVOT_PENDING_REVIEW`
-Protocol version: `0.2.0`
+Status: `M1B_ALL_ARTICLE_ROUTES_STOPPED_REVIEW_PENDING_MERGE`
+Protocol version: `0.3.0`
 Protocol recorded: `2026-07-14`
-Candidate gate: `PIVOT_PROGRAM_STOP_CURRENT_CLAIMS`
+Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
 ## Review question
 
@@ -178,3 +178,27 @@ Decision on current contribution routes: `STOP`.
 Program decision: `PIVOT` to a separately audited direction-setting technical thesis requested by the repository owner.
 
 That pivot must contribute an implementation-neutral transition framework for future LLM systems, technical contracts, measurable regime boundaries, and falsifiable predictions. It is not currently established as novel. It returns `STOP` if it reduces to a survey, taxonomy, manifesto, maturity model, migration diagram, or renamed synthesis of memory-OS, agent-OS, stateful-agent, long-context, test-time-learning, and systems-roadmap literature.
+
+## M1b final gate decision
+
+Decision: `STOP`.
+
+M1b audited the owner's direction-setting objective as a separate candidate contribution. It operationalized pre-outcome workload descriptors `Omega`, guarantee contracts `G`, vector resource envelopes `B`, an adequacy relation `A`, and a transition rule `T`. It also registered five falsifiable prediction candidates, eight counterexample regimes, and five minimum discriminating designs. Operationalization established testability, but it did not establish novelty.
+
+The broad direction is directly anticipated. [State-Aware Runtime](https://doi.org/10.33774/coe-2026-vt9t2-v2) already argues for replacing prompt accumulation with an explicit runtime-governance layer built around canonical state, validation, commit, rollback, recovery, permissions, and audit. [PLACEMEM](https://arxiv.org/abs/2607.04089v1) independently proposes a compute-aware and correction-aware memory plane with versioned validity, invalidation, reusable runtime state, and routing. Reorganizing that direction as `Omega/G/B/T` changes vocabulary, not an observable boundary.
+
+The formal shell also reduces to existing systems and decision-theory objects. Assume-guarantee contracts and implementation-neutral QoS specify environments, obligations, and refinement. Vector-resource allocation and working-set theory supply multidimensional budgets, locality, and feasibility. Temporal databases and W3C PROV supply valid-time, transaction-time, generation, use, and invalidation constraints. Pareto comparison, value of computation, and reject-option theory supply efficiency, adaptive computation, and abstention. The candidate derives no LLM-specific separation, estimator, theorem, invariant, or transportable coefficient beyond that reconstruction.
+
+The registered predictions do not rescue the article route:
+
+1. The context-only negative regime is `ANTICIPATED` by workload-dependent stateful-system studies and selective-memory comparisons.
+2. The current-version feasibility statement is `ANTICIPATED_OR_TAUTOLOGICAL` once the current update is declared unavailable to a frozen context-only system.
+3. The fixed-versus-adaptive compute boundary is `ANTICIPATED` by value-of-computation metareasoning and cost-quality routing.
+4. The validity-before-compute residual is `UNSUPPORTED_NOT_DISTINCT`: STALE, A-TMA, PLACEMEM, PersistBench, X-Router, and generic metareasoning reconstruct its conceptual motivation, while no new quantitative rule is specified here.
+5. Abstention under non-identifiability is `ANTICIPATED_BY_GENERIC_THEORY`.
+
+The search record contains twelve preregistered query families, four narrow state-validity-by-compute queries, fifteen exact identifier or canonical-record resolutions, and three independent reduction audits. It is targeted and family-saturated, not an exhaustive systematic review. This decision makes no absence-of-prior-art claim. `STOP` rests on positive direct collisions and formal reductions, each of which is sufficient to defeat the candidate originality claim.
+
+The direction may be useful engineering guidance, but usefulness is not the project's publication criterion. Under the owner's anti-rewrite requirement, a managed-state manifesto, transition roadmap, maturity model, survey, or unified notation article would be a narrative synthesis of the cited systems. The direction-setting article is therefore `NOT_ELIGIBLE`. No manuscript, framework implementation, benchmark run, model training, or paid compute is authorized from issue #5.
+
+The research program has no surviving article route. Reopening requires a new, independently motivated technical question that identifies a `DISTINCT_CANDIDATE` before implementation and survives label substitution, strongest-composite reduction, generic-theory reduction, at least one decisive falsifier, and an affordable discriminating design.
