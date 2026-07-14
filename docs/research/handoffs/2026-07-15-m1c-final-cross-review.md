@@ -14,6 +14,10 @@ Branche examinée: `agent/9-distinct-object-discovery`
 
 Commit scientifique examiné: `f25098c258072db39e213b6a072097bf5068e64a`
 
+Commit scientifique fusionné après rebase protégé: `1dd0c28d209db0de36ad9c4d73f64562a72495c1`
+
+Commit de handoff fusionné: `d413588cce7a7b877e87541cad0a003586d323b4`
+
 Verdict des trois fonctions indépendantes: `MERGE`
 
 Décision scientifique: `STOP`
@@ -45,7 +49,7 @@ Sont exclus:
 
 ## 4. Entrées et versions
 
-- Commit scientifique: `f25098c258072db39e213b6a072097bf5068e64a`.
+- Commit scientifique examiné: `f25098c258072db39e213b6a072097bf5068e64a`; équivalent byte-for-byte fusionné après rebase protégé: `1dd0c28d209db0de36ad9c4d73f64562a72495c1`.
 - Cutoff de recherche: `2026-07-15`.
 - Registre: `M1C-C01` à `M1C-C16`.
 - Preuves: `EV-0001` à `EV-0085`, dont les sources M1c décisives `EV-0064` à `EV-0085`.
@@ -105,7 +109,7 @@ Aucun document examiné ne rapporte l'inversion exacte entre classement reset-pe
 
 ## 8. Fichiers du commit scientifique
 
-Le commit `f25098c` modifie ou crée uniquement:
+L'arbre scientifique examiné sous `f25098c`, puis fusionné byte-for-byte sous `1dd0c28`, modifie ou crée uniquement:
 
 - `README.md`;
 - `docs/research/CHARTER.md`;
