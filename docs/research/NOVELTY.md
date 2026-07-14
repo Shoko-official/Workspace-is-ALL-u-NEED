@@ -74,7 +74,15 @@ Complete resource accounting is mandatory for valid comparisons but is not a new
 
 The minimum mechanism study requires matched fixed and separated controllers, equal information access, randomized multi-resource prices, a full observation-by-objective factorial, and replication. The minimum systems study requires reproducible adapters and lifecycle telemetry across approximately ten to twelve heterogeneous memory systems. No written compute, instrumentation, energy, storage, or labor budget supports either design. The gate would still be `STOP` if resources were unlimited because the distinct contribution is absent.
 
+### Search limitations do not support an absence claim
+
+The M1 closeout retained twelve exact free-text queries, direct-resolution bundles, normalized primary records, version chains, and one targeted backward/forward cycle. It did not retain stable per-query result totals, a complete initial-title list, abstract-only exclusion counts, or every query from the interrupted architecture pass. Those fields are `NON DISPONIBLE`, not reconstructed estimates.
+
+M1 therefore makes no exhaustive-search or absence-of-prior-art claim. The current routes stop because read primary records positively anticipate the decisive mechanisms and empirical phenomena, and because the proposed policy object reduces exactly to known constrained-control form. The separate directional route cannot inherit this incomplete search as evidence of originality.
+
 ## Preregistered search plan
+
+Historical status: the following plan was recorded before M1. Its execution was incomplete in the fields identified above, so it is preserved as protocol history rather than represented as a completed systematic-review flow.
 
 ### Sources
 

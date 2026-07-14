@@ -45,6 +45,12 @@ Complete accounting remains required experimental hygiene, but it is not an inde
 
 The minimum credible mechanism experiment would require same-component fixed and separated policies, matched information and controller capacity, randomized multi-resource price interventions, a full observation-by-objective factorial, and replication. The minimum credible systems experiment would require reproducible adapters and lifecycle traces across approximately ten to twelve heterogeneous memory systems. Neither design has a written compute, instrumentation, energy, storage, or labor budget, and the recorded local environment cannot execute it credibly. More importantly, neither design currently tests a distinct contribution.
 
+### Search-protocol deviation and sufficiency
+
+M1 did not retain a complete systematic-review flow. Several per-query corpus totals, initially surfaced titles, abstract-only exclusions, and free-text strings from an interrupted architecture pass are `NON DISPONIBLE`. The search log therefore cannot support an exhaustive recall claim or an inference that uncited prior work does not exist.
+
+This deviation does not convert the gate to `GO` or preserve either candidate route. The `STOP` rests on positive evidence: exact reduction to known control objects, direct primary records implementing the decisive learned operations, and existing benchmarks and systems studies measuring the proposed empirical phenomena. One counterexample is sufficient to defeat a novelty claim; exhaustive absence evidence is not required to record that defeat. The uncosted matched-composite experiment likewise remains unexecuted because the route fails the earlier assembly stop condition. Any future novelty-positive route must start a new search with complete query, result, screening, exclusion, and adaptation logs.
+
 ## Decision
 
 Return `STOP` for both M1 contribution routes and `PIVOT` for the research program.
@@ -89,7 +95,7 @@ The directional pivot also fails if it merely turns those same sources into a su
 
 ## Evidence
 
-- `docs/research/handoffs/2026-07-14-m1-terra-systematic-search.md`: reproducible narrowed search, deduplication, version chains, and snowball closure.
+- `docs/research/handoffs/2026-07-14-m1-terra-systematic-search.md`: retained narrowed-search trace, explicit unavailable fields, deduplication, version chains, and targeted snowball closure.
 - `docs/research/handoffs/2026-07-14-m1-sol-reducibility.md`: exact policy decomposition, CMDP/BMDP reduction, countermodels, and mechanism verdict.
 - `docs/research/handoffs/2026-07-14-m1-terra-empirical-route.md`: benchmark circularity, existing empirical coverage, accounting audit, feasibility, and stop rules.
 - `docs/research/handoffs/2026-07-14-m1-luna-librarian.md`: independent metadata, version, and locator verification.
