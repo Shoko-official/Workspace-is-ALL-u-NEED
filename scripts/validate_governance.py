@@ -259,6 +259,8 @@ def validate_m1b_cross_references(root: Path) -> list[str]:
     prediction_path = root / "docs/research/PREDICTION_REGISTER.csv"
     counterexample_path = root / "docs/research/COUNTEREXAMPLE_REGISTER.csv"
     evidence_path = root / "docs/research/EVIDENCE_LEDGER.csv"
+    claim_path = root / "docs/research/CLAIM_LEDGER.csv"
+    literature_path = root / "docs/research/LITERATURE_MATRIX.csv"
     designs_path = root / "docs/research/MINIMUM_DISCRIMINATING_DESIGNS.md"
 
     if not all(
@@ -267,6 +269,8 @@ def validate_m1b_cross_references(root: Path) -> list[str]:
             prediction_path,
             counterexample_path,
             evidence_path,
+            claim_path,
+            literature_path,
             designs_path,
         ]
     ):
@@ -274,9 +278,14 @@ def validate_m1b_cross_references(root: Path) -> list[str]:
 
     predictions = read_csv_rows(prediction_path)
     counterexamples = read_csv_rows(counterexample_path)
+    evidence_rows = read_csv_rows(evidence_path)
+    claim_rows = read_csv_rows(claim_path)
+    literature_rows = read_csv_rows(literature_path)
     evidence_ids = {
-        (row.get("evidence_id") or "").strip()
-        for row in read_csv_rows(evidence_path)
+        (row.get("evidence_id") or "").strip() for row in evidence_rows
+    }
+    claim_ids = {
+        (row.get("claim_id") or "").strip() for row in claim_rows
     }
     prediction_ids = {
         (row.get("prediction_id") or "").strip() for row in predictions
@@ -287,6 +296,30 @@ def validate_m1b_cross_references(root: Path) -> list[str]:
             designs_path.read_text(encoding="utf-8"),
         )
     )
+
+    for line_number, row in enumerate(evidence_rows, start=2):
+        for claim_id in split_ids(row.get("supports_claim_ids") or ""):
+            if claim_id not in claim_ids:
+                errors.append(
+                    f"{evidence_path}:{line_number}: unknown claim id "
+                    f"{claim_id!r}"
+                )
+
+    for line_number, row in enumerate(claim_rows, start=2):
+        for evidence_id in split_ids(row.get("evidence_ids") or ""):
+            if evidence_id not in evidence_ids:
+                errors.append(
+                    f"{claim_path}:{line_number}: unknown evidence id "
+                    f"{evidence_id!r}"
+                )
+
+    for line_number, row in enumerate(literature_rows, start=2):
+        for evidence_id in split_ids(row.get("evidence_ids") or ""):
+            if evidence_id not in evidence_ids:
+                errors.append(
+                    f"{literature_path}:{line_number}: unknown evidence id "
+                    f"{evidence_id!r}"
+                )
 
     referenced_design_ids: set[str] = set()
     for line_number, row in enumerate(predictions, start=2):
