@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1F_PROPOSED_STOP`
-Protocol version: `0.7.0`
+Status: `M1F_ACCEPTED_STOP`
+Protocol version: `0.7.1`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -270,9 +270,10 @@ manuscript is authorized. The full record is in
 `M1E_CANDIDATE_REGISTER.md`, `M1E_SCOPING_LOG.md`, accepted Decision 0007, and
 the two M1e independent-review handoffs.
 
-## M1f proposed gate decision
+## M1f accepted gate decision
 
-Decision: `STOP`, proposed pending independent review.
+Decision: `STOP`, accepted after independent review of scientific commit
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`.
 
 M1f changed the unit of search from a candidate batch to a sequential
 mechanism. It first crosswalked all 64 M1c-M1e formulations, then required each
@@ -309,4 +310,4 @@ Zero M1f objects are admitted. The search is targeted and non-exhaustive; its
 `STOP` rests on positive records, exact compilers, transcoding, generic
 reductions, and the full no-recycling crosswalk. No article or experiment is
 authorized. The complete record is in `M1F_CANDIDATE_REGISTER.md`,
-`M1F_SCOPING_LOG.md`, and proposed Decision 0008.
+`M1F_SCOPING_LOG.md`, accepted Decision 0008, and the two M1f review handoffs.

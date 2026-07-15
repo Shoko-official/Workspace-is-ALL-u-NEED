@@ -40,6 +40,8 @@ class GovernanceValidationTests(unittest.TestCase):
             "docs/research/handoffs/2026-07-15-m1d-final-cross-review.md",
             "docs/research/handoffs/2026-07-15-m1e-bibliographic-audit.md",
             "docs/research/handoffs/2026-07-15-m1e-final-cross-review.md",
+            "docs/research/handoffs/2026-07-15-m1f-bibliographic-audit.md",
+            "docs/research/handoffs/2026-07-15-m1f-final-cross-review.md",
         }
 
         self.assertTrue(expected.issubset(REQUIRED_PATHS))
