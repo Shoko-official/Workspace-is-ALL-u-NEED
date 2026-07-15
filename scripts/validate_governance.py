@@ -420,6 +420,14 @@ COUNTEREXAMPLE_RELATIONS = {
     "INDEPENDENT_CONTRACT_FALSIFIER",
 }
 
+M1G_PROBLEM_IDS = {f"M1G-P{index:02d}" for index in range(1, 9)}
+M1G_PRIOR_IDS = {
+    *(f"M1C-C{index:02d}" for index in range(1, 17)),
+    *(f"M1D-C{index:02d}" for index in range(1, 25)),
+    *(f"M1E-C{index:02d}" for index in range(1, 25)),
+    *(f"M1F-O{index:02d}" for index in range(1, 10)),
+}
+
 
 def validate_csv(
     path: Path,
@@ -628,6 +636,38 @@ def validate_m1b_search_log(path: Path) -> list[str]:
     return errors
 
 
+def validate_m1g_register(path: Path) -> list[str]:
+    if not path.is_file():
+        return []
+
+    text = path.read_text(encoding="utf-8")
+    errors: list[str] = []
+    problem_ids = re.findall(r"(?m)^### (M1G-P\d{2}):", text)
+    prior_ids = re.findall(
+        r"(?m)^\| (M1(?:[CDE]-C|F-O)\d{2}) \|",
+        text,
+    )
+
+    for label, actual, expected in [
+        ("problem", problem_ids, M1G_PROBLEM_IDS),
+        ("prior crosswalk", prior_ids, M1G_PRIOR_IDS),
+    ]:
+        duplicates = sorted(
+            item for item in set(actual) if actual.count(item) > 1
+        )
+        if duplicates:
+            errors.append(f"{path}: duplicate {label} ids {duplicates!r}")
+        actual_set = set(actual)
+        missing = sorted(expected - actual_set)
+        unexpected = sorted(actual_set - expected)
+        if missing:
+            errors.append(f"{path}: missing {label} ids {missing!r}")
+        if unexpected:
+            errors.append(f"{path}: unexpected {label} ids {unexpected!r}")
+
+    return errors
+
+
 def validate_markdown(path: Path, headings: list[str]) -> list[str]:
     text = path.read_text(encoding="utf-8")
     return [f"{path}: missing heading {heading!r}" for heading in headings if heading not in text]
@@ -729,6 +769,10 @@ def validate(root: Path) -> list[str]:
             )
         )
         errors.extend(validate_m1b_search_log(search_log_path))
+
+    errors.extend(
+        validate_m1g_register(root / "docs/research/M1G_PROBLEM_REGISTER.md")
+    )
 
     errors.extend(validate_m1b_cross_references(root))
 

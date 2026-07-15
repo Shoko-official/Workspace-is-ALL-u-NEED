@@ -43,15 +43,20 @@ unsupported exact result ended the attempt. Search silence was never used.
 - Two-factor necessity: persistence supplies a revocable version, but adaptive
   reasoning is not necessary. Any delayed deterministic transaction can race
   with revocation and exhibit the same stale commit.
-- Exact object: for revoked ancestry `R`, compare the post-revocation trace with
-  a counterfactual execution from which `R` and its descendants are removed,
-  `Delta_R = sup_E |P(E | actual) - P(E | replay_without_R)|`. Retained influence
-  makes `Delta_R > 0`; the expression adds no new consistency condition.
+- Exact object: separate lineage safety from observable effect. Let
+  `V_R = P(COMMIT and Anc(COMMIT) intersects R)` for revoked ancestry `R`.
+  `V_R>0` violates the declared no-revoked-ancestry commit rule. Separately,
+  `Delta_R = sup_(E in F_tau) |P_actual(E)-P_replay_without_R(E)|` measures an
+  observable counterfactual effect on the registered trace sigma-algebra
+  `F_tau`. Revoked ancestry alone does not imply `Delta_R>0`; that conclusion
+  requires the two observable laws to differ.
 - Strongest comparator: serialize revocation and commit, cancel in-flight work,
   invalidate descendants by dependency closure, or validate an epoch at commit
   and replay on mismatch.
-- Decisive falsifier: one symmetric construction that permits a stale
-  revocation epoch to commit while satisfying the proposed zero-residual law.
+- Decisive falsifier: one committed trace with ancestry intersecting `R`
+  falsifies the lineage-safety invariant `V_R=0`. A stale read whose registered
+  trace equals replay instead falsifies an effect-distance-only detector while
+  leaving the lineage violation visible.
 - Negative regime: no revocation, no derived work, or atomic epoch validation
   immediately before every effect.
 - Reduction boundary: linearizability, optimistic concurrency control,
@@ -70,17 +75,17 @@ unsupported exact result ended the attempt. Search silence was never used.
 - Two-factor necessity: persistence identifies a deletion target and adaptive
   updates can internalize it, but the resulting problem is exactly deletion
   from learned state rather than a new persistence-compute class.
-- Exact object: for update operator `U`, training history `Z_T`, and query
-  kernel `K_q`,
-  `R_U(X) = sup_q TV(K_q(U(Z_T)), K_q(U(Z_T^{-X})))`.
-  Removing an external row alone cannot force `R_U(X)=0` when parameters or
-  caches retain its influence.
+- Exact object: distinguish learning operator `A` from deletion procedure
+  `D_X`. For training history `Z_T` and query kernel `K_q`,
+  `R_D(X;Z_T) = sup_q TV(K_q(D_X(A(Z_T))), K_q(A(Z_T^{-X})))`.
+  Removing an external row alone cannot force `R_D(X;Z_T)=0` when parameters
+  or caches retain behaviorally relevant influence.
 - Strongest comparator: canonical retraining on `Z_T^{-X}`, dependency-aware
   exact or approximate unlearning, and an auditor charged for the information
   needed to distinguish the two output laws.
-- Decisive falsifier: a deletion-only procedure that matches canonical
-  retraining for every registered query and internal state without updating
-  any descendant of `X`.
+- Decisive falsifier: a declared `D_X` that leaves at least one causally
+  `X`-dependent component unchanged yet attains `R_D(X;Z_T)=0` for every
+  permitted continuation and registered trace.
 - Negative regime: `X` is never read or learned, all descendants are exactly
   reconstructible and removed, or the application requires only external-row
   deletion rather than behavioral deletion.
@@ -133,9 +138,11 @@ unsupported exact result ended the attempt. Search silence was never used.
 - Two-factor necessity: persistence enables delayed cross-context influence,
   but adaptive computation is not necessary. A deterministic lookup or
   workflow can violate the same purpose restriction.
-- Exact object: for low-equivalent replacement `r'`,
-  `Delta_scope = sup TV(P(Pi_not_Sigma tau | do(r), x),
-  P(Pi_not_Sigma tau | do(r'), x))`. Zero residual is probabilistic
+- Exact object: for admissible contexts `X`, low-equivalent replacements, and
+  the out-of-scope projection `Pi_not_Sigma`,
+  `Delta_scope = sup_(x in X, r' equiv_low r)
+  TV(Law(Pi_not_Sigma tau | do(r),x),
+  Law(Pi_not_Sigma tau | do(r'),x))`. Zero residual is probabilistic
   non-interference with an explicit declassification boundary.
 - Strongest comparator: information-flow labels, purpose-based access control,
   capabilities, complete mediation, conservative propagation, and explicit
@@ -163,17 +170,21 @@ unsupported exact result ended the attempt. Search silence was never used.
 - Two-factor necessity: adaptive computation creates a variable exposure
   interval, but persistent governed state is not necessary. A transient sensor
   snapshot in any dynamic planner has the same trade-off.
-- Exact object: `J(b) = q(b) S(tau(b)) - c(b)`. With hazard
+- Exact object: assume `q(b)>0`, `S(t)>0`, and `q`, `S`, `tau`, and `c` are
+  differentiable on the interior of the registered budget domain. Under the
+  product model `J(b) = q(b) S(tau(b)) - c(b)` and hazard
   `h(t) = -d log S(t)/dt`,
   `J'(b) = S(tau(b))[q'(b) - h(tau(b)) tau'(b) q(b)] - c'(b)`.
-  Without explicit cost, more compute hurts exactly when
+  With `c'(b)=0`, a local increase in compute hurts at `b` exactly when
   `d log q(b)/db < h(tau(b)) tau'(b)`.
 - Strongest comparator: refresh-on-change, age-aware stopping, snapshot
   validation at commit, optimistic retry, or a semi-Markov policy jointly
   choosing deliberate, refresh, and act under the same observations and cost.
-- Decisive falsifier: a registered process whose measured `q`, `S`, `tau`, and
-  `c` satisfy the derivative inequality while the direction of `J` changes
-  oppositely.
+- Decisive falsifier: two registered environments with the same marginal
+  `q`, `S`, `tau`, and `c` but different expected success because reasoning
+  quality and state changes are dependent. Such a pair falsifies transport of
+  the product model; conditional on the product model, the derivative is an
+  identity rather than an empirical claim.
 - Negative regime: static world, zero-latency reasoning, monotone freshness not
   required by the task, or free validation and replay.
 - Reduction boundary: the equation is the product rule for anytime quality and
@@ -195,15 +206,18 @@ unsupported exact result ended the attempt. Search silence was never used.
 - Two-factor necessity: clearing history removes the feedback state and fixing
   allocations removes adaptive amplification. Both factors can therefore be
   causal in a chosen recurrence.
-- Exact object: for disparity recurrence `d_(t+1)=F(d_t)`, the local multiplier
-  is `mu=F'(0)` and the local exponent is `Lambda=log|mu|`. Amplification iff
-  `|mu|>1` is the ordinary Jacobian stability criterion, not a new law.
+- Exact object: for differentiable disparity recurrence `d_(t+1)=F(d_t)` and a
+  fixed point `d*` satisfying `F(d*)=d*`, the perturbation multiplier is
+  `mu=F'(d*)` and its local exponent is `Lambda=log|mu|`. Perturbations are
+  locally unstable when `|mu|>1` and locally asymptotically stable when
+  `|mu|<1`; `|mu|=1` is inconclusive. This is the ordinary Jacobian stability
+  criterion, not a new law.
 - Strongest comparator: a fair constrained MDP or weakly coupled MDP with the
   same transition kernel, history, resource budget, utility objective, and
   group-symmetric or generalized-Gini constraint.
-- Decisive falsifier: a claimed local amplification regime with differentiable
-  `F`, `|F'(0)|<1`, and persistent growth from every sufficiently small
-  perturbation under the stated stationary assumptions.
+- Decisive falsifier: under the stated differentiability assumptions, either a
+  claimed locally unstable fixed point with `|F'(d*)|<1` or a claimed locally
+  asymptotically stable fixed point with `|F'(d*)|>1`.
 - Negative regime: history-independent allocation, contractive dynamics,
   symmetric outcomes, active equalization, or one-shot service.
 - Reduction boundary: Jacobian/Lyapunov stability, fair sequential decision
@@ -248,25 +262,27 @@ unsupported exact result ended the attempt. Search silence was never used.
 - Incident and harm: a low-cost hostile write remains stored and repeatedly
   triggers expensive retrieval, validation, tool use, or reasoning on future
   requests, exhausting a shared compute budget.
-- Fixed boundary: for write `w`, let
+- Fixed boundary: couple executions with and without write `w` on the same
+  requests and registered randomness. Let
   `Delta C_t(w)=[C_t^(+w)-C_t^(-w)]_+`, admission cost `a(w)>0`, horizon `H`,
-  and amplification `A_H(w)=E[sum_(t<=H) Delta C_t(w)]/a(w)`. Candidate and
-  comparator receive the same requests, state, cache, policy class, and total
-  resource budget.
+  and random amplification
+  `A_tilde_H(w)=sum_(t<=H) Delta C_t(w)/a(w)`. Candidate and comparator receive
+  the same requests, state, cache, policy class, and total resource budget.
 - Two-factor necessity: persistence enables repeated activation, but adaptive
   computation is not necessary for the horizon-linear bound. A fixed expensive
   handler triggered by retained state is enough.
-- Exact object: if the write remains eligible, activates each round with
-  conditional probability at least `p`, and incurs marginal cost at least
-  `kappa`, then `E[A_H(w)] >= H p kappa / a(w)`. This is linearity of
-  expectation under the assumptions, not a distinct persistence law.
+- Exact object: let `I_t` indicate activation. If the write remains eligible,
+  `P(I_t=1 | H_(t-1)) >= p`, and the coupled marginal cost satisfies
+  `Delta C_t(w) >= kappa` whenever `I_t=1`, then
+  `E[A_tilde_H(w)] >= H p kappa / a(w)`. This is conditional expectation plus
+  linearity under the assumptions, not a distinct persistence law.
 - Strongest comparator: charge every descendant activation to an immutable
   resource principal; enforce lifetime quota `Q_w`, lease or TTL, bounded
   validation fuel, admission price, caching, and revocation. Then
   `sum_t Delta C_t(w) <= Q_w` by construction.
-- Decisive falsifier: an admissible trace satisfying the retained-write,
-  activation-probability, and marginal-cost assumptions but violating the
-  expectation lower bound.
+- Decisive falsifier: a coupled trace process satisfying the retained-write,
+  conditional activation-probability, and conditional marginal-cost
+  assumptions but violating the expectation lower bound.
 - Negative regime: one-shot state, zero marginal activation cost, strict TTL,
   descendant caching, principal-level quota, or immediate revocation.
 - Reduction boundary: algorithmic-complexity denial of service, amortized

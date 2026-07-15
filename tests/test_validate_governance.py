@@ -12,6 +12,7 @@ from scripts.validate_governance import (
     REQUIRED_PATHS,
     validate,
     validate_csv,
+    validate_m1g_register,
 )
 
 
@@ -119,6 +120,23 @@ class GovernanceValidationTests(unittest.TestCase):
             )
 
         self.assertTrue(any("missing columns" in error for error in errors))
+
+    def test_incomplete_m1g_register_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "M1G_PROBLEM_REGISTER.md"
+            path.write_text(
+                "# Register\n\n### M1G-P01: Only problem\n\n"
+                "| Prior object | Relation | Result |\n"
+                "|---|---|---|\n"
+                "| M1C-C01 | relation | `RECYCLED` |\n",
+                encoding="utf-8",
+            )
+            errors = validate_m1g_register(path)
+
+        self.assertTrue(any("missing problem ids" in error for error in errors))
+        self.assertTrue(
+            any("missing prior crosswalk ids" in error for error in errors)
+        )
 
 
 if __name__ == "__main__":
