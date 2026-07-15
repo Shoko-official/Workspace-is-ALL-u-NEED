@@ -1,10 +1,11 @@
 # Decision 0006: Stop the M1d non-factorizing state-compute candidate set
 
 Date: `2026-07-15`
-Status: `PROPOSED`
+Status: `ACCEPTED`
 Issue: [#13](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/13)
 Milestone: `M1d - Non-factorizing state-compute object discovery`
 Supersedes: no prior `STOP`; Decisions 0002 through 0005 remain in force
+Reviewed scientific commit: `94fed8d8c893d76e96de23de165b535e73736e1e`
 
 ## Context
 

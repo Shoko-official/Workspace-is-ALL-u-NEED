@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `ALL_ARTICLE_ROUTES_STOPPED_M1C`
-Version: `0.4.0`
-Milestone: `M1c - Distinct technical object discovery`
-Tracking issue: [#9](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/9)
+Status: `ALL_ARTICLE_ROUTES_STOPPED_M1D`
+Version: `0.5.0`
+Milestone: `M1d - Non-factorizing state-compute object discovery`
+Tracking issue: [#13](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/13)
 
 ## Scientific question
 
@@ -14,6 +14,8 @@ The working title is **Budgeted Workspace Models: Joint Allocation of Attention,
 M1 rejected this question as an original architecture contribution and retired the working title. M1b separately audited the owner's objective of giving future LLM development a technically actionable direction toward managed state, persistent memory, and adaptive computation. That route also returned `STOP`: the broad direction is directly anticipated, the implementation-neutral transition shell reduces to known systems and decision-theory objects, and no distinct prediction survives.
 
 M1c then generated sixteen independently motivated objects covering revision repair, dependency closure, compaction certificates, concurrency, replay, migration, causal read sets, procedural drift, longitudinal feedback, revision hysteresis, evaluation carryover, and stability scaling. All sixteen failed direct anticipation, strongest-composite anticipation, generic reduction, or the requirement to specify distinct technical content. The program still has no article-eligible route.
+
+M1d next generated 24 objects specifically aimed at a non-factorizing relation between governed persistent state and adaptive compute. The gate excluded every M1c family, validity-before-compute restatements, another joint router, and narrative synthesis. One candidate was directly anticipated, six were reconstructed by positive composites, nine conditionally reduced to known theory, two were unsupported and non-distinct, and six violated the no-recycling boundary. Zero survived. The program still has no article-eligible route.
 
 ## Candidate contribution hypothesis
 
@@ -69,7 +71,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 and 0004 stop that scope and its direction-setting successor; neither is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0006 stop that scope, its direction-setting successor, and the M1c/M1d object sets; none is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
@@ -93,6 +95,10 @@ The direction-setting pivot could proceed to article design only if it defined a
 ### Distinct-object reopening gate
 
 M1c required every independently motivated object to state a new observable, mechanism, estimator, invariant, bound, or theorem; a decisive falsifier; a negative regime; the strongest prior-art composite; a generic-theory reduction; and a minimum discrimination burden. A testable LLM-specific relabeling of dynamic computation, semantic transactions, I-confluence, provenance, causal intervention, rejection, branching, stability, hysteresis, path effects, or carryover does not pass. An exact application axis being unreported also does not pass when a positive composite already supplies its protocol ingredients, phenomenon class, and ordinary estimator. M1c applied this rule and returned `STOP` for all sixteen candidates.
+
+### Non-factorizing state-compute gate
+
+M1d required a new mechanism, estimator, invariant, bound, theorem, or predictive law outside M1C-C01 through M1C-C16. Each object had to state a decisive falsifier, a negative regime, its strongest direct or composite collision, a generic reduction, an identified comparison class, and a minimum discrimination burden before implementation. A fixed-history behavioral joint distribution factorizes under unrestricted information passage, but this fact does not establish causal, computational, optimization, learning, or sample-efficiency equivalence. A future behavioral separation must prove a result inside a preregistered intrinsic information, communication, computation, or learning class; other claim types require their own matched estimand or bound. M1d applied this rule and returned `STOP` for all 24 candidates.
 
 ### M4 oracle gate
 

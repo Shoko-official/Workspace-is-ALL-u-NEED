@@ -30,6 +30,8 @@ class GovernanceValidationTests(unittest.TestCase):
             "docs/research/M1D_CANDIDATE_REGISTER.md",
             "docs/research/M1D_SCOPING_LOG.md",
             "docs/research/decisions/0006-stop-nonfactorizing-state-compute-discovery.md",
+            "docs/research/handoffs/2026-07-15-m1d-bibliographic-audit.md",
+            "docs/research/handoffs/2026-07-15-m1d-final-cross-review.md",
         }
 
         self.assertTrue(expected.issubset(REQUIRED_PATHS))

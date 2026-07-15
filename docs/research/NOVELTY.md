@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1C_DISTINCT_OBJECT_SET_STOPPED`
-Protocol version: `0.4.0`
+Status: `M1D_NONFACTORIZING_OBJECT_SET_STOPPED`
+Protocol version: `0.5.0`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -214,3 +214,15 @@ The formal candidates reduce to dynamic dependence graphs and change propagation
 The final reset-versus-persistent ranking residual also fails. No examined record reports the exact reset-per-episode versus persistent-stream ranking inversion. Artifact Ecology anticipates the inheritance protocol, ShiftBench already reports longitudinal memory-policy selection inversions, MemDelta reports controlled comparison reversals and recommends rank-order stability checks, and time-series potential outcomes supply the path contrast. The residual is therefore `ANTICIPATED_BY_COMPOSITE`, not `ANTICIPATED_DIRECTLY`: observing the exact cell would extend an anticipated phenomenon without adding a mechanism, estimator, invariant, or general law.
 
 The M1c search is targeted and non-exhaustive. `STOP` rests on positive primary-record collisions, explicit strongest-composite anticipations, generic reductions, and the absence of a specified distinct technical object within the candidates, not on search silence. Zero candidates are `DISTINCT_CANDIDATE`; no experiment or article is authorized. The full record is in `M1C_CANDIDATE_REGISTER.md`, `M1C_SCOPING_LOG.md`, and Decision 0005.
+
+## M1d final gate decision
+
+Decision: `STOP`.
+
+M1d searched for a mechanism, estimator, invariant, bound, theorem, or predictive law that couples governed persistent state and adaptive compute without recycling M1c, validity-before-compute, another joint router, or a narrative synthesis. Three independent discovery lanes generated 24 candidates. Every candidate records a decisive falsifier, a negative regime, a positive collision or conditional generic reduction, and a minimum discrimination burden.
+
+The unrestricted manager-router observation is deliberately narrow. At fixed history, a regular conditional factorizes the behavioral joint action distribution when information passage is unrestricted. This does not imply causal-order, computational-cost, learning, optimization, latency, private-information, or sample-efficiency equivalence. No M1d candidate supplies an intrinsic restricted comparison class and a new separation inside it, or an alternative matched estimand or bound for those other claim types.
+
+The final dispositions are exhaustive: one `ANTICIPATED_DIRECTLY`, six `ANTICIPATED_BY_COMPOSITE`, nine `REDUCED_TO_KNOWN_THEORY` under declared assumptions, two `UNSUPPORTED_NOT_DISTINCT`, and six `OUT_OF_SCOPE_RECYCLING`. Zero candidates are `DISTINCT_CANDIDATE`.
+
+The result is not an article. It is a negative originality gate backed by positive records, explicit composites, conditional reductions, and scope exclusions. The search is targeted and non-exhaustive; search silence is never used. No model, benchmark, implementation, training run, experiment, paid compute, or manuscript is authorized. The full record is in `M1D_CANDIDATE_REGISTER.md`, `M1D_SCOPING_LOG.md`, and Decision 0006.

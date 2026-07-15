@@ -2,7 +2,7 @@
 
 Snapshot: `2026-07-15`
 State schema: `1`
-Operational status: `SCIENTIFIC_REVIEW`
+Operational status: `READY_FOR_INTEGRATION`
 
 ## Current milestone
 
@@ -14,7 +14,7 @@ M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-i
 
 ## Current gate
 
-`M1D_PROPOSED_STOP_REVIEW`
+`M1D_STOP_ACCEPTED_PENDING_CI`
 
 The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -22,9 +22,9 @@ The owner's distinct direction-setting objective has now returned `STOP`. State-
 
 M1c independently generated sixteen revision, concurrency, migration, causal, procedural, longitudinal, and evaluation objects. Zero survive. Direct or strongest-composite anticipations include Cordon, CoAgent, Causal Agent Replay, CausalFlow, Rosetta Memory, AFTER, SkillGuard, A-MemGuard, Longitudinal Safety, the rate-distortion compaction analysis, Artifact Ecology, ShiftBench, MemDelta, adaptive-agent hysteresis, Hyperproperties, and time-series causal estimands. The remaining formulations reduce explicitly to dynamic dependence graphs, I-confluence, provenance, causal intervention, rejection, branching, stability, two-trace non-interference, path effects, or carryover, or fail to specify a distinct estimator, mechanism, invariant, bound, or theorem.
 
-M1d generated 24 additional candidates across formal identification, learning dynamics, and runtime mechanisms. The proposed Decision 0006 returns `STOP` with zero survivors. Positive records include ReasoningBank/MaTTS, BudgetMem, AdaMEM, MemoPilot, TrustMem, Memory-R2, Useful Memories, TriggerBench, CRAM, INFERCEPT, and Preble. CRAM directly anticipates one candidate; six others are reconstructed by positive composites. Remaining objects conditionally reduce to dynamic value of computation, augmented-state MDP/POMDP control, adaptive doubly robust evaluation, longitudinal mediation, adaptive submodularity, online optimization, scheduling, caching, checkpointing, or proof-carrying computation, are unsupported and non-distinct, or violate the no-recycling boundary.
+M1d generated 24 additional candidates across formal identification, learning dynamics, and runtime mechanisms. Accepted Decision 0006 returns `STOP` with zero survivors. Positive records include ReasoningBank/MaTTS, BudgetMem, AdaMEM, MemoPilot, TrustMem, Memory-R2, Useful Memories, TriggerBench, CRAM, INFERCEPT, and Preble. CRAM directly anticipates one candidate; six others are reconstructed by positive composites. Remaining objects conditionally reduce to dynamic value of computation, augmented-state MDP/POMDP control, adaptive doubly robust evaluation, longitudinal mediation, adaptive submodularity, online optimization, scheduling, caching, checkpointing, or proof-carrying computation, are unsupported and non-distinct, or violate the no-recycling boundary.
 
-The unrestricted behavioral joint-policy comparison is underidentified at fixed history: every `pi(m,c|h)` factorizes as `pi_M(m|h) pi_C(c|h,m)` when the manager may pass `(h,m)` to the router. This reproduces only the action distribution, not causal order, computational cost, learning, or sample efficiency. No candidate justifies an intrinsic restricted information, communication, computation, or learning class and proves its claimed separation within one. Decision 0006 is therefore in independent scientific and governance review after bibliographic audit. No model, benchmark, training, experiment, or manuscript is authorized.
+The unrestricted behavioral joint-policy comparison is underidentified at fixed history: every `pi(m,c|h)` factorizes as `pi_M(m|h) pi_C(c|h,m)` when the manager may pass `(h,m)` to the router. This reproduces only the action distribution, not causal order, computational cost, learning, or sample efficiency. No candidate justifies an intrinsic restricted information, communication, computation, or learning class and proves its claimed separation within one. Decision 0006 is accepted after independent scientific, bibliographic, and governance review and awaits protected CI and merge. No model, benchmark, training, experiment, or manuscript is authorized.
 
 ## Active issues
 
@@ -46,7 +46,7 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 ## Active agents
 
-The three M1d discovery lanes completed read-only with zero survivors. An independent bibliography audit is active. Independent scientific and governance review follow the decision draft; exact runtime model identities remain non-controllable.
+The three M1d discovery lanes and the independent scientific, bibliographic, and governance reviews completed read-only. All final reviews report `PASS`; exact runtime model identities remain non-controllable.
 
 ## Input inventory
 
@@ -127,6 +127,7 @@ This machine is sufficient for governance and small deterministic harness work a
 39. Require every joint-versus-separated claim to define its claim type and comparison class. At fixed history, an unrestricted chain-rule factorization `pi(m,c|h) = pi_M(m|h) pi_C(c|h,m)` reconstructs the behavioral action distribution, but does not establish causal, computational, optimization, learning, or sample-efficiency equivalence. Behavioral separation requires an intrinsic restricted interface; other separation claims require their own matched estimand or bound.
 40. Evaluate 24 M1d candidates across formal identification, learning dynamics, and runtime mechanisms. Record one direct anticipation, six strongest-composite anticipations, nine conditional generic reductions, two unsupported non-distinct objects, and six preregistered-scope violations; retain zero `DISTINCT_CANDIDATE` objects.
 41. Propose global `STOP` in Decision 0006. Do not authorize an experiment to repair a direct collision, generic reduction, underidentified comparator, or no-recycling violation. Keep the proposed decision in independent scientific and bibliographic review before acceptance.
+42. Accept Decision 0006 after corrected independent scientific, bibliographic, and governance reviews report no remaining blocker on scientific commit `94fed8d8c893d76e96de23de165b535e73736e1e`. Authorize only protected PR integration and post-merge reconciliation.
 
 ## Blockers
 
@@ -140,7 +141,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
-| B-010 | No original article route survives the M0, M1, M1b, M1c, or proposed M1d gates | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object survives positive prior-art comparison, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
+| B-010 | No original article route survives the M0, M1, M1b, M1c, or M1d gates | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object survives positive prior-art comparison, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
 
 ## Last valid experiment
 
@@ -148,19 +149,20 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Complete independent scientific, bibliographic, and governance review of proposed Decision 0006. If no blocker remains, accept the decision, run required validation, and integrate it through a protected PR. No experiment is authorized.
+Push the reviewed M1d decision branch, open a pull request with `Closes #13`, require the protected `validate` check, and merge only after it passes. No experiment is authorized.
 
 ## M1d exit checklist
 
 - [x] Issue #13 and milestone #7 define the admission gate and forbidden recycling.
 - [x] Three independent lanes generated 24 formal, learning, and runtime candidates.
 - [x] Every candidate records a decisive falsifier, negative regime, strongest reduction, and minimum burden.
-- [x] The unrestricted joint-policy factorization and restricted-interface requirement are explicit.
+- [x] The fixed-history unrestricted behavioral factorization, its limits, and the restricted-class requirement are explicit.
 - [x] Targeted discovery queries and exact positive records are retained without an exhaustive-search claim.
-- [x] Proposed Decision 0006 records `STOP` with zero survivors and no experiment authorization.
-- [ ] Independent bibliographic audit reports no blocking metadata or locator error.
-- [ ] Independent scientific and governance reviews report no blocking finding.
-- [ ] Required local and protected CI checks pass on the final M1d decision head.
+- [x] Decision 0006 records `STOP` with zero survivors and no experiment authorization.
+- [x] Independent bibliographic audit reports no blocking metadata or locator error.
+- [x] Independent scientific and governance reviews report no blocking finding.
+- [x] Required local governance validation, unit tests, and diff check pass.
+- [ ] Protected `validate` passes on the final M1d decision head.
 - [ ] Decision 0006 merges and issue #13 and milestone #7 close.
 
 ## M1c exit checklist
