@@ -138,10 +138,13 @@ relabeling.
 - Strongest comparator: a manager-router system judged on `(output,Tau)` and
   allowed constant-time padding, random delay, the same public seed, the same
   worst-case compute ceiling, and the same interaction horizon.
-- Candidate result: an `(epsilon,delta)` likelihood-ratio bound on the joint
-  observation `(output,Tau)`.
-- Decisive falsifier: two low-equivalent states with a trace event of unequal
-  probability, or a violation of the registered likelihood-ratio bound.
+- Candidate result: for every low-equivalent pair `s,s'` and measurable event
+  `E` of the joint observation `(output,Tau)`, both
+  `P_s(E) <= exp(epsilon) P_s'(E) + delta` and
+  `P_s'(E) <= exp(epsilon) P_s(E) + delta` hold.
+- Decisive falsifier: one registered event violates either inequality. Unequal
+  event probabilities alone falsify only the perfect-privacy case
+  `(epsilon,delta)=(0,0)`.
 - Negative regime: a public state, a constant trace, or padding to the declared
   worst case.
 - Reduction boundary: for any fixed interactive adversary, regard the complete
@@ -337,8 +340,9 @@ not mean that it survived a generic reduction or direct collision.
 The only primitives outside the exact 64-object surface were origin-bound
 authority, timing privacy, strategic reporting, universal executable-write
 verification, and shared circuit work-depth. They fail respectively by direct
-collision, generic IFC/DP, mechanism design, undecidability plus restricted
-verification, and a constant-factor compiler plus communication/pebbling.
+collision, output-plus-runtime timing privacy, mechanism design, undecidability
+plus restricted verification, and a constant-factor compiler plus
+communication/pebbling.
 
 ## Strongest-composite result
 
