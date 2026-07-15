@@ -269,3 +269,41 @@ model, benchmark, implementation, training run, experiment, paid compute, or
 manuscript is authorized. The full record is in
 `M1E_CANDIDATE_REGISTER.md`, `M1E_SCOPING_LOG.md`, accepted Decision 0007, and
 the two M1e independent-review handoffs.
+
+## M1f proposed gate decision
+
+Decision: `STOP`, proposed pending independent review.
+
+M1f changed the unit of search from a candidate batch to a sequential
+mechanism. It first crosswalked all 64 M1c-M1e formulations, then required each
+new attempt to fix its primitive, intrinsic class, strongest symmetric
+comparator, exact result, falsifier, negative regime, and reduction boundary.
+
+Nine attempts were tested. Evidence inflation and semantic ABI recycle earlier
+longitudinal, migration, and writer-reader objects. Experience-driven compute
+reduction and non-malleable persistent authority are directly occupied.
+Secret-dependent compute traces reduce to timing privacy and information-flow
+control. Strategic memory reports reduce to online information-acquisition and
+costly-audit mechanism design. Universal executable-write verification is a
+generic undecidability boundary with an existing restricted construction.
+
+The strongest formal escape also fails constructively. A randomized joint
+circuit with common input and seed can be duplicated in parallel to reproduce
+both outputs with at most twice the work, identical depth, and zero message.
+Private observations, private randomness, or isolated memory move the problem
+to communication, channel synthesis, or pebbling rather than create an
+intrinsic state-compute separation.
+
+The recovered upstream report was read in full and fixed by SHA-256. Its
+"tokenisation par mission" contribution does not survive source audit. UniTok
+maps recommender items to discrete identifiers, not text to lexical tokens.
+For reversible text tokenizers, exact transcode preserves the underlying text;
+for non-injective codebooks, later compute cannot reconstruct lost information.
+The remaining vocabulary, routing, MoE, SSM, speculative-decoding, and serving
+components form an untested assembly.
+
+Zero M1f objects are admitted. The search is targeted and non-exhaustive; its
+`STOP` rests on positive records, exact compilers, transcoding, generic
+reductions, and the full no-recycling crosswalk. No article or experiment is
+authorized. The complete record is in `M1F_CANDIDATE_REGISTER.md`,
+`M1F_SCOPING_LOG.md`, and proposed Decision 0008.
