@@ -2,7 +2,7 @@
 
 Cutoff: `2026-07-15`
 Issue: [#21](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/21)
-Gate result: `PROPOSED_STOP`
+Gate result: `ACCEPTED_STOP`
 Mechanism-first objects tested sequentially: `9`
 Admitted objects: `0`
 Surviving `DISTINCT_CANDIDATE` objects: `0`
@@ -391,5 +391,7 @@ M1f returns `STOP` for all nine sequential mechanism-first attempts.
 - No article, proof program, model, benchmark, implementation, training run,
   experiment, paid compute, or submission is authorized.
 
-This proposed decision requires independent scientific, bibliographic, and
-governance review before protected integration.
+Independent scientific, bibliographic, and governance reviews all returned
+`PASS` on scientific commit
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Protected integration remains
+required.

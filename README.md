@@ -19,9 +19,10 @@ depth. The recovered upstream report's "tokenisation par mission" route is also
 stopped: UniTok tokenizes recommendation items rather than text, reversible
 tokenizers transcode exactly, and the remaining pipeline is an assembly.
 
-Decision 0008 is proposed for independent review under issue #21. It is not yet
-accepted or merged.
+Decision 0008 is accepted after independent scientific, bibliographic, and
+governance reviews all returned `PASS` on scientific commit `76d3ae0`. Protected
+PR integration under issue #21 is still pending.
 
 No article, implementation, benchmark, training, or experiment is authorized.
-See [proposed decision 0008](docs/research/decisions/0008-stop-mechanism-first-object-discovery.md)
+See [accepted decision 0008](docs/research/decisions/0008-stop-mechanism-first-object-discovery.md)
 and the [M1f object register](docs/research/M1F_CANDIDATE_REGISTER.md).

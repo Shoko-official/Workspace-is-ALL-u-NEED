@@ -7,14 +7,14 @@ Operational status: `STOPPED`
 ## Current milestone
 
 Milestone #11, `M1f - Mechanism-first technical object discovery`, is active
-under issue #21. Its scientific package proposes `STOP` and is awaiting
-independent scientific, bibliographic, and governance review.
+under issue #21. Its scientific package has accepted `STOP` after independent
+review and is awaiting protected PR integration.
 
 M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14), and M1e by merged [PR #18](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/18). Issues #1, #3, #5, #9, #13, and #17 and their scientific milestones are closed. Issues #7, #11, #15, and #19 and milestones #4, #6, #8, and #10 tracked post-merge reconciliations and are closed without reopening scientific work.
 
 ## Current gate
 
-`M1F_INDEPENDENT_REVIEW`
+`M1F_PROTECTED_INTEGRATION`
 
 The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -49,14 +49,15 @@ directly; timing traces, strategic reports, and shared circuit resources reduce
 to established generic classes; executable-write verification meets
 undecidability plus an existing restricted construction. The recovered report's
 mission-tokenization route fails a source-category audit and an exact codec
-transcoding argument. Proposed Decision 0008 is not accepted until three
-independent reviews inspect one fixed scientific commit.
+transcoding argument. Decision 0008 is `ACCEPTED`: independent scientific,
+bibliographic, and governance reviews all returned `PASS` on fixed scientific
+commit `76d3ae0ee6266a5f8031e66f83f0d79b405fe033` after two correction rounds.
+Protected integration remains pending.
 
 ## Active issues
 
-Issue #21 and milestone #11 are active for M1f. They authorize only the
-mechanism-first originality gate, independent review, and protected integration.
-They do not authorize implementation or experiment.
+Issue #21 and milestone #11 are active only for protected integration of the
+accepted M1f `STOP`. They do not authorize implementation or experiment.
 
 ## Capability audit
 
@@ -75,8 +76,9 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 ## Active agents
 
 None. Four M1f construction and red-team lanes completed read-only with zero
-admitted objects. Independent review of the fixed scientific commit has not yet
-started. Exact runtime model identities remain non-controllable.
+admitted objects. Three independent review functions returned `PASS` on the
+same corrected scientific commit. Exact runtime model identities remain
+non-controllable.
 
 ## Input inventory
 
@@ -171,6 +173,7 @@ This machine is sufficient for governance and small deterministic harness work a
 53. Resolve input blocker B-001 after locating, hashing, rendering, and reading the 23-page upstream report in full. Treat it as input provenance rather than independent evidence.
 54. Test nine mechanisms and retain zero admissions. Reject mission tokenization by source-category audit and exact transcoding; reject shared-subcomputation separation by an exact factor-two compiler; reject the remaining objects by direct collision, recycling, generic reduction, or undecidability.
 55. Propose global `STOP` in Decision 0008. Authorize only independent scientific, bibliographic, and governance review of one fixed scientific commit before protected integration.
+56. Accept Decision 0008 after corrected independent scientific, bibliographic, and governance reviews report no remaining blocker on scientific commit `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Authorize only protected PR integration and post-merge reconciliation.
 
 ## Blockers
 
@@ -183,7 +186,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
-| B-010 | No original article route survives the M0, M1, M1b, M1c, M1d, accepted M1e, or proposed M1f gate | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object outside all 73 screened formulations survives positive prior-art comparison, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
+| B-010 | No original article route survives the M0, M1, M1b, M1c, M1d, accepted M1e, or accepted M1f gate | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object outside all 73 screened formulations survives positive prior-art comparison, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
 
 ## Last valid experiment
 
@@ -191,10 +194,9 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Fix the M1f scientific commit, run independent scientific, bibliographic, and
-governance reviews, correct any blocker, then use the protected issue-closing
-PR. No new discovery cycle, implementation, or experiment may overlap this
-review.
+Integrate accepted Decision 0008 through the protected issue-closing PR, then
+reconcile the post-merge operational snapshot. No new discovery cycle,
+implementation, or experiment may overlap this integration.
 
 ## M1f exit checklist
 
@@ -205,9 +207,10 @@ review.
   negative regime, and reduction boundary.
 - [x] Exact shared-controller and codec compilers are recorded.
 - [x] Zero objects are admitted and the experiment registry remains empty.
-- [x] Proposed Decision 0008 records `STOP` and the anti-rewrite boundary.
-- [ ] Independent scientific, bibliographic, and governance reviews agree on
-  one fixed scientific commit.
+- [x] Accepted Decision 0008 records `STOP` and the anti-rewrite boundary.
+- [x] Independent scientific, bibliographic, and governance reviews agree on
+  scientific commit `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`.
+- [x] Local governance validation, unit tests, and diff check pass.
 - [ ] Required protected `validate` passes and the M1f PR merges.
 
 ## M1e exit checklist

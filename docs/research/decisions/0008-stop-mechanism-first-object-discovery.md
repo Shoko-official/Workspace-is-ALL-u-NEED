@@ -1,11 +1,11 @@
 # Decision 0008: Stop M1f mechanism-first object discovery
 
 Date: `2026-07-15`
-Status: `PROPOSED`
+Status: `ACCEPTED`
 Issue: [#21](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/21)
 Milestone: `M1f - Mechanism-first technical object discovery`
 Supersedes: no prior `STOP`; Decisions 0002 through 0007 remain in force
-Reviewed scientific commit: pending
+Reviewed scientific commit: `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`
 
 ## Context
 
@@ -88,7 +88,7 @@ crosswalk itself from being misused as an exhaustiveness claim.
 
 ## Decision
 
-Propose global `STOP` for all nine M1f mechanism-first attempts.
+Accept global `STOP` for all nine M1f mechanism-first attempts.
 
 - No object is admitted.
 - No object is `DISTINCT_CANDIDATE`.
@@ -153,10 +153,11 @@ The following are explicitly insufficient for a future article:
 
 - Decisions 0002 through 0007 continue to stop every earlier route.
 - The experiment registry remains empty.
-- This proposal may become accepted only after independent scientific,
-  bibliographic, and governance reviews inspect one fixed scientific commit and
-  required protected CI passes.
-- If accepted, issue #21 and milestone M1f may close only through their PR.
+- Independent scientific, bibliographic, and governance reviews all returned
+  `PASS` on scientific commit
+  `76d3ae0ee6266a5f8031e66f83f0d79b405fe033` after two correction rounds.
+- Acceptance does not waive protected CI. Issue #21 and milestone M1f may close
+  only through their issue-closing PR after the required check passes.
 - A later cycle must begin from a problem and primitive outside all 73 screened
   objects, not from another component combination or an unreported application
   cell.

@@ -152,6 +152,8 @@ Nine mechanisms were tested sequentially. None passed admission:
 - the report-derived codec object is closed by exact transcoding, information
   loss, direct tokenizer work, and M1C-C09.
 
-The outcome is `PROPOSED_STOP`. No implementation or experiment is authorized.
-Independent scientific, bibliographic, and governance review must inspect the
-same scientific commit before the decision can be accepted.
+The outcome is `ACCEPTED_STOP`. No implementation or experiment is authorized.
+Independent scientific, bibliographic, and governance reviews all returned
+`PASS` on scientific commit
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`; protected integration remains
+required.

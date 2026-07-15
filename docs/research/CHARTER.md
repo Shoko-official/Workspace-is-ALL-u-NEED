@@ -1,7 +1,7 @@
 # Research Charter
 
-Status: `M1F_PROPOSED_STOP`
-Version: `0.7.0`
+Status: `M1F_ACCEPTED_STOP`
+Version: `0.7.1`
 Last scientific milestone: `M1f - Mechanism-first technical object discovery`
 Last scientific issue: [#21](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/21)
 
@@ -35,9 +35,10 @@ reduce to timing privacy, information flow, communication, pebbling, mechanism
 design, coding, migration, or verification, or are falsified by an exact
 compiler. The recovered upstream report is now available, but its central
 mission-tokenization proposal misclassifies recommender item tokenization as
-lexical tokenization and otherwise assembles established components. Proposed
-Decision 0008 returns `STOP` with zero admitted objects and awaits independent
-scientific, bibliographic, and governance review.
+lexical tokenization and otherwise assembles established components. Accepted
+Decision 0008 returns `STOP` with zero admitted objects after independent
+scientific, bibliographic, and governance reviews all passed on commit
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Protected integration is pending.
 
 ## Candidate contribution hypothesis
 
@@ -93,7 +94,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Proposed Decision 0008 additionally stops all nine M1f mechanism-first attempts unless independent review overturns it. Decision 0007 passed independent review and protected integration; none is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review. Decision 0007 passed protected integration; Decision 0008 still awaits it. None is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
