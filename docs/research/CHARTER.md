@@ -1,7 +1,7 @@
 # Research Charter
 
-Status: `M1G_PROPOSED_STOP`
-Version: `0.8.0`
+Status: `M1G_ACCEPTED_STOP`
+Version: `0.8.1`
 Current scientific milestone: `M1g - Problem-first invariant discovery`
 Current scientific issue: [#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25)
 
@@ -46,8 +46,10 @@ adaptive computation to be separately causally necessary before prior-art
 review. Six incidents fail that prerequisite. Deletion after internalization is
 machine unlearning, and history-dependent service disparity is generic fair
 sequential control plus a Jacobian stability condition. The full 73-object
-crosswalk leaves zero admissions. Decision 0009 therefore proposes `STOP` and
-remains under independent review; it does not yet constitute an accepted gate.
+crosswalk leaves zero admissions. Decision 0009 accepts `STOP` after independent
+scientific, bibliographic, and governance reviews all passed on commit
+`94af4acb8ef2db505e9596c0946c618fc136c641`. Protected integration is still
+pending.
 
 ## Candidate contribution hypothesis
 
@@ -103,7 +105,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review and protected integration. Proposed Decision 0009 retains `STOP` for eight M1g incident-first attempts while independent review is pending. None is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review and protected integration. Accepted Decision 0009 stops all eight M1g incident-first attempts after independent review and now awaits protected integration. None is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
@@ -169,8 +171,8 @@ symmetric comparator, generic-label substitution, the simplest non-LLM
 analogue, direct primary records, one decisive falsifier, and one negative
 regime. A failure that does not require both factors, an inherited identity or
 derivative, a generic systems or learning object, or an earlier formulation
-returns `STOP`. M1g applies this gate to eight incidents and proposes zero
-admissions pending independent review.
+returns `STOP`. M1g applies this gate to eight incidents and records zero
+admissions after independent review.
 
 ### M4 oracle gate
 

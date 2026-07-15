@@ -1,11 +1,11 @@
 # Decision 0009: Stop M1g problem-first invariant discovery
 
 Date: `2026-07-15`
-Status: `PROPOSED`
+Status: `ACCEPTED`
 Issue: [#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25)
 Milestone: `M1g - Problem-first invariant discovery`
 Supersedes: no prior `STOP`; Decisions 0002 through 0008 remain in force
-Reviewed scientific commit: `PENDING_INDEPENDENT_REVIEW`
+Reviewed scientific commit: `94af4acb8ef2db505e9596c0946c618fc136c641`
 
 ## Context
 
@@ -74,7 +74,7 @@ resource.
 
 ## Decision
 
-Propose global `STOP` for all eight M1g problem-first attempts.
+Accept global `STOP` for all eight M1g problem-first attempts.
 
 - No object is admitted.
 - No object is `DISTINCT_CANDIDATE`.
@@ -85,8 +85,9 @@ Propose global `STOP` for all eight M1g problem-first attempts.
 - The direction-setting objective remains active, but this cycle does not
   supply its article.
 
-This status remains `PROPOSED` until independent scientific, bibliographic, and
-governance reviews pass on the same fixed scientific commit.
+Independent scientific, bibliographic, and governance reviews all passed on
+the same fixed scientific commit. Acceptance does not waive protected CI or
+issue-closing integration.
 
 ## Anti-rewrite determination
 
@@ -144,9 +145,12 @@ The following are explicitly insufficient for a future article:
 
 - Decisions 0002 through 0008 continue to stop every earlier route.
 - The experiment registry remains empty.
-- Issue #25 and milestone M1g remain open during independent review.
-- Acceptance, protected integration, issue closure, and post-merge
-  reconciliation are not implied by this proposed record.
+- Issue #25 and milestone M1g remain open during protected integration.
+- Independent reviews passed on commit
+  `94af4acb8ef2db505e9596c0946c618fc136c641`; no reviewer modified the state it
+  reviewed.
+- Protected integration, issue closure, and post-merge reconciliation remain
+  pending and are not implied by acceptance.
 - If independent review confirms `STOP`, a later cycle must begin outside all
   81 screened objects with a genuinely different discovery method. It may not
   turn this negative register into the requested article.

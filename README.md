@@ -23,10 +23,12 @@ anytime quality times snapshot-survival probability minus cost. The forked-
 continuation residual reduces to state continuity, fork-linearizability,
 at-most-once effects, communication, or an external non-clonable resource.
 
-Decision 0009 is proposed for independent review under
-[#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25). It
-is not yet accepted or merged.
+Decision 0009 is accepted after independent scientific, bibliographic, and
+governance reviews all returned `PASS` on scientific commit `94af4ac`. It is
+awaiting protected integration under
+[#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25) and
+is not yet merged.
 
 No article, implementation, benchmark, training, or experiment is authorized.
-See [proposed Decision 0009](docs/research/decisions/0009-stop-problem-first-invariant-discovery.md)
+See [accepted Decision 0009](docs/research/decisions/0009-stop-problem-first-invariant-discovery.md)
 and the [M1g problem register](docs/research/M1G_PROBLEM_REGISTER.md).

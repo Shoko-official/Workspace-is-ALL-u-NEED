@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1G_PROPOSED_STOP`
-Protocol version: `0.8.0`
+Status: `M1G_ACCEPTED_STOP`
+Protocol version: `0.8.1`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -313,10 +313,12 @@ reductions, and the full no-recycling crosswalk. No article or experiment is
 authorized. The complete record is in `M1F_CANDIDATE_REGISTER.md`,
 `M1F_SCOPING_LOG.md`, accepted Decision 0008, and the two M1f review handoffs.
 
-## M1g proposed gate decision
+## M1g accepted gate decision
 
-Decision: proposed `STOP`, pending independent scientific, bibliographic, and
-governance review of one fixed scientific commit.
+Decision: accepted `STOP` after independent scientific, bibliographic, and
+governance review of scientific commit
+`94af4acb8ef2db505e9596c0946c618fc136c641`; protected integration remains
+pending.
 
 M1g began from eight externally observable deployment failures rather than a
 mechanism or component list. Every problem fixed its event order, observer,
@@ -345,5 +347,5 @@ targeted and non-exhaustive; it rests on positive records, exact identities,
 generic reductions, causal-necessity failures, and the complete crosswalk, not
 search silence. No article, experiment, implementation, benchmark, training
 run, proof project, paid compute, or submission is authorized. The complete
-proposed record is in `M1G_PROBLEM_REGISTER.md`, `M1G_SCOPING_LOG.md`, and
+accepted record is in `M1G_PROBLEM_REGISTER.md`, `M1G_SCOPING_LOG.md`, and
 Decision 0009.

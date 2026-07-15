@@ -9,7 +9,8 @@ Operational status: `STOPPED`
 Milestone [#13](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/milestone/13),
 `M1g - Problem-first invariant discovery`, is active under
 [issue #25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25).
-Its scientific package proposes `STOP` and is awaiting independent review.
+Its scientific package has accepted `STOP` after independent review and is
+awaiting protected PR integration.
 
 M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14), M1e by merged [PR #18](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/18), and M1f by merged [PR #22](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/22). Issues #1, #3, #5, #9, #13, #17, and #21 and their scientific milestones are closed. Issues #7, #11, #15, #19, and #23 and milestones #4, #6, #8, #10, and #12 tracked post-merge reconciliations and are closed without reopening scientific work.
 
@@ -21,7 +22,7 @@ closed. They did not reopen scientific work.
 
 ## Current gate
 
-`M1G_INDEPENDENT_REVIEW`
+`M1G_PROTECTED_INTEGRATION`
 
 The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -70,15 +71,16 @@ strongest comparator, exact result, falsifier, and negative regime. Six fail
 because one required factor is not causally necessary. Deletion after
 internalization is machine unlearning; service disparity is fair sequential
 control plus generic stability. The complete 73-object crosswalk leaves zero
-admissions. Decision 0009 is `PROPOSED`, not accepted. Independent scientific,
-bibliographic, and governance review of one fixed commit is the only currently
-authorized scientific action.
+admissions. Decision 0009 is `ACCEPTED`: independent scientific, bibliographic,
+and governance reviews all returned `PASS` on fixed scientific commit
+`94af4acb8ef2db505e9596c0946c618fc136c641` after one correction round. Only
+protected integration and post-merge reconciliation are now authorized.
 
 ## Active issues
 
-Issue #25 and milestone #13 are active for M1g independent review and protected
-integration only. They authorize no implementation, experiment, benchmark,
-training, proof project, paid compute, manuscript, or submission.
+Issue #25 and milestone #13 are active for protected M1g integration only. They
+authorize no implementation, experiment, benchmark, training, proof project,
+paid compute, manuscript, or submission.
 
 ## Capability audit
 
@@ -96,10 +98,10 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 ## Active agents
 
-The root agent is integrating the proposed M1g scientific package. Independent
-scientific, bibliographic, and governance review has not yet passed on a fixed
-commit. Prior incident-discovery, formal-reduction, crosswalk, and red-team
-lanes completed read-only with zero admitted objects. Exact runtime model
+No independent reviewer is active. Scientific, bibliographic, and governance
+functions all returned `PASS` on
+`94af4acb8ef2db505e9596c0946c618fc136c641`; none modified the reviewed state.
+The root agent is integrating the accepted package. Exact runtime model
 identities remain non-controllable.
 
 ## Input inventory
@@ -202,6 +204,7 @@ This machine is sufficient for governance and small deterministic harness work a
 60. Open issue #25 and milestone #13 for problem-first invariant discovery outside all 73 M1c-M1f formulations. Require a concrete incident, complete event boundary, two-factor causal necessity, strongest symmetric comparator, exact object, falsifier, negative regime, generic-label substitution, and full crosswalk before admission.
 61. Test eight incidents sequentially. Record six failures of two-factor necessity, one machine-unlearning reduction, one fair-control and generic-stability reduction, and zero `DISTINCT_CANDIDATE` objects.
 62. Propose global `STOP` in Decision 0009. Authorize only independent scientific, bibliographic, and governance review of one fixed scientific commit before protected integration.
+63. Reject initial scientific commit `7be694155782deda2a4492ff87a47274786aea28` after scientific and bibliographic blockers; correct the formal objects, source metadata, locators, scope, and reciprocity; accept Decision 0009 only after all three independent functions return `PASS` on `94af4acb8ef2db505e9596c0946c618fc136c641`.
 
 ## Blockers
 
@@ -214,7 +217,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
-| B-010 | No original article route survives the accepted M0-M1f gates or the proposed M1g gate | No manuscript, implementation, benchmark, training, or experiment is authorized | Independent review either identifies a valid M1g survivor or accepts `STOP`; any later reopening then requires a new object outside all 81 screened formulations that survives positive prior art, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
+| B-010 | No original article route survives the accepted M0-M1g gates | No manuscript, implementation, benchmark, training, or experiment is authorized | A later reopening requires a new object outside all 81 screened formulations that survives positive prior art, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
 
 ## Last valid experiment
 
@@ -222,10 +225,9 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Freeze the M1g scientific commit and obtain independent scientific,
-bibliographic, and governance reviews on that exact commit. Correct every
-blocking finding before protected integration. No implementation or experiment
-is authorized.
+Integrate accepted Decision 0009 through the issue-closing PR for #25 and the
+required protected `validate` check, then reconcile the post-merge state under
+a governance-only issue. No implementation or experiment is authorized.
 
 ## M1g exit checklist
 
@@ -238,11 +240,11 @@ is authorized.
 - [x] All 73 prior formulations are explicitly crosswalked.
 - [x] Targeted primary records and generic reductions are version-pinned without
   an exhaustive-search claim.
-- [x] Proposed Decision 0009 records `STOP` with zero admissions and keeps the
+- [x] Accepted Decision 0009 records `STOP` with zero admissions and keeps the
   experiment registry empty.
-- [ ] Independent scientific, bibliographic, and governance reviews agree on
-  one fixed scientific commit.
-- [ ] Local governance validation, unit tests, and diff check pass on the
+- [x] Independent scientific, bibliographic, and governance reviews agree on
+  scientific commit `94af4acb8ef2db505e9596c0946c618fc136c641`.
+- [x] Local governance validation, unit tests, and diff check pass on the
   accepted review state.
 - [ ] Required protected `validate` passes and the M1g issue-closing PR merges.
 
