@@ -14,7 +14,11 @@ Branche examinée: `agent/17-intrinsic-restricted-separation`
 
 Commit scientifique examiné: `265ad2605381d7c94c01355b54a10e1c57884680`
 
-Intégration protégée: `PENDING`
+Commit scientifique fusionné après rebase protégé: `f528d1e5940a3cef9ae2a417254396b990a0a89e`
+
+Commit de revue fusionné: `b85a870dd351761a67d56035304dd554a31d3f9c`
+
+Intégration protégée: `COMPLETE`
 
 Verdict des trois fonctions indépendantes: `MERGE`
 
@@ -60,6 +64,10 @@ du scope par simple relabeling LLM/workspace.
 
 - commit scientifique examiné:
   `265ad2605381d7c94c01355b54a10e1c57884680`;
+- arbre scientifique fusionné byte-for-byte sous
+  `f528d1e5940a3cef9ae2a417254396b990a0a89e`;
+- commit de revue fusionné:
+  `b85a870dd351761a67d56035304dd554a31d3f9c`;
 - cutoff bibliographique: `2026-07-15`;
 - formulations: `M1E-C01` à `M1E-C24`;
 - classes admises: 22; échecs d'admission: C10 et C23;
@@ -157,16 +165,18 @@ Le répertoire non suivi `.codex-remote-attachments/` reste hors périmètre.
 | `python scripts/validate_governance.py` | `PASS` |
 | `python -m unittest discover -s tests -v` | `5/5 PASS` |
 | `git diff --check` et `git show --check` | `PASS` |
+| Check protégé distant | [`validate` PASS](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/actions/runs/29423282594/job/87379013298) sur PR #18 |
+| Intégration | PR #18 fusionnée avec historique linéaire sous `b85a870dd351761a67d56035304dd554a31d3f9c` |
 | Registre | 24 identifiants; `9 + 1 + 9 + 3 + 2 = 24` |
 | Réciprocité claim-preuve-matrice | `PASS` |
 | BibTeX | 122 entrées et 122 clés uniques |
 | Registre expérimental | liste vide; aucune expérience autorisée |
-| Issue et milestone | issue #17 ouverte; milestone #9 ouvert |
+| Issue et milestone | issue #17 fermée; milestone #9 fermé |
 | Périmètre Git | `PASS`; attachment runtime non suivi |
 
 ## 10. Décision recommandée
 
-`MERGE` après passage du check distant protégé `validate`.
+`MERGE`, exécuté après passage du check distant protégé `validate`.
 
 Decision 0007 peut être `ACCEPTED` avec `STOP` pour les 24 formulations, zéro
 objet distinct et aucune autorisation d'article, modèle, benchmark,
@@ -174,11 +184,10 @@ implémentation, entraînement, expérience ou compute payant.
 
 ## 11. Prochaine action autorisée
 
-Pousser la branche, ouvrir une pull request contenant `Closes #17`, obtenir le
-check protégé `validate`, fusionner avec historique linéaire, fermer le milestone
-M1e, puis réconcilier l'état post-merge dans un nouveau cycle issue, milestone
-et PR. Toute reprise scientifique doit commencer par un objet extérieur aux 64
-formulations déjà filtrées et fournir le nouvel objet avant implémentation.
+Réconcilier l'état post-merge sous l'issue #19 et le milestone #10, sans modifier
+le contenu scientifique. Toute reprise scientifique doit ensuite commencer par
+un objet extérieur aux 64 formulations déjà filtrées et fournir le nouvel objet
+avant implémentation.
 
 ## 12. Rôles et indépendance
 

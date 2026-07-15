@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1E_STOP_REVIEWED_PENDING_INTEGRATION`
-Protocol version: `0.6.1`
+Status: `M1E_TERMINAL_STOP`
+Protocol version: `0.6.2`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -230,7 +230,7 @@ The result is not an article. It is a negative originality gate backed by positi
 ## M1e accepted gate decision
 
 Decision: `STOP`, accepted after independent scientific, bibliographic, and
-governance review; protected integration remains pending.
+governance review and merged through protected PR #18.
 
 M1e tested the restricted-class opening left by M1d rather than repeating
 unrestricted behavioral factorization. Three lanes screened 24 formulations

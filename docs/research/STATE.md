@@ -2,19 +2,19 @@
 
 Snapshot: `2026-07-15`
 State schema: `1`
-Operational status: `INTEGRATION_ONLY`
+Operational status: `STOPPED`
 
 ## Current milestone
 
-Milestone #9, `M1e - Intrinsic restricted-class separation discovery`, is
-active under issue [#17](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/17).
-M0, M1, M1b, M1c, and M1d remain closed.
+No scientific milestone. M0, M1, M1b, M1c, M1d, and M1e are closed. Milestone
+#10 and issue #19 are governance-only records for this reconciliation; their
+closure is coupled to the protected issue-closing reconciliation PR.
 
-M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), and M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14). Issues #1, #3, #5, #9, and #13 and their scientific milestones are closed. Issues #7, #11, and #15 and milestones #4, #6, and #8 tracked only post-merge reconciliation and are closed without reopening scientific work.
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14), and M1e by merged [PR #18](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/18). Issues #1, #3, #5, #9, #13, and #17 and their scientific milestones are closed. Issues #7, #11, and #15 and milestones #4, #6, and #8 tracked prior post-merge reconciliations and are closed without reopening scientific work. Issue #19 and milestone #10 track only the current reconciliation.
 
 ## Current gate
 
-`STOP_REVIEWED_PENDING_PROTECTED_INTEGRATION`
+`TERMINAL_STOP`
 
 The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -35,15 +35,18 @@ distinct. The accepted result is `STOP` with zero survivors:
 `9 direct / 1 composite / 9 reduced / 3 out of scope / 2 unsupported`.
 Decision 0007 is `ACCEPTED` after corrected independent scientific,
 bibliographic, and governance reviews all returned `PASS` on scientific commit
-`265ad2605381d7c94c01355b54a10e1c57884680`. Protected integration remains
-pending.
+`265ad2605381d7c94c01355b54a10e1c57884680`. Its tree was rebased byte-for-byte
+as `f528d1e5940a3cef9ae2a417254396b990a0a89e`; the accepted review state merged
+as `b85a870dd351761a67d56035304dd554a31d3f9c`. The protected `validate` check
+passed on PR #18, issue #17 closed, and milestone #9 closed.
 No model, benchmark, implementation, training, experiment, paid compute, or
 manuscript is authorized.
 
 ## Active issues
 
-Issue #17 and milestone #9 remain active only for protected integration and
-closeout of the reviewed M1e decision.
+Issue #19 and milestone #10 are active only for this post-merge reconciliation.
+They do not change scientific claims or authorize work, and close through the
+protected reconciliation lifecycle.
 
 ## Capability audit
 
@@ -61,10 +64,10 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 ## Active agents
 
-The three M1e generation lanes completed read-only with zero survivors. After
-two correction rounds, the independent scientific, bibliographic, and governance
-functions each returned `PASS` on the same commit. Exact runtime model identities
-remain non-controllable.
+None. The three M1e generation lanes completed read-only with zero survivors.
+After two correction rounds, the independent scientific, bibliographic, and
+governance functions each returned `PASS` on the same commit. Exact runtime
+model identities remain non-controllable.
 
 ## Input inventory
 
@@ -153,6 +156,8 @@ This machine is sufficient for governance and small deterministic harness work a
 47. Screen 24 M1e formulations across communication and streaming complexity, causal identification, and learning or sample efficiency. Record nine direct anticipations, one positive composite, nine generic reductions, three scope violations, and two unsupported non-distinct admission failures; retain zero `DISTINCT_CANDIDATE` objects.
 48. Propose global `STOP` in Decision 0007. Do not authorize a proof implementation or experiment for a candidate that is directly occupied, reconstructed, generically reduced, recycled, or only a relabeled classical open problem. Keep the decision in independent review before acceptance.
 49. Accept Decision 0007 after corrected independent scientific, bibliographic, and governance reviews report no remaining blocker on scientific commit `265ad2605381d7c94c01355b54a10e1c57884680`. Authorize only protected PR integration and post-merge reconciliation.
+50. Close M1e after the protected `validate` check passed on PR #18, PR #18 merged with linear history as `b85a870dd351761a67d56035304dd554a31d3f9c`, issue #17 closed, and milestone #9 closed.
+51. Reconcile the post-merge operational snapshot under issue #19 without changing scientific claims, evidence, candidate dispositions, experiments, or Decision 0007. Retain `TERMINAL_STOP`.
 
 ## Blockers
 
@@ -174,9 +179,10 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Push the reviewed branch, open a PR containing `Closes #17`, require the
-protected `validate` check, and merge only if it passes. Then close milestone #9
-and reconcile the post-merge state under a new issue, milestone, branch, and PR.
+Only a new issue-scoped discovery cycle may proceed, and only for a technical
+object outside all 64 M1c, M1d, and M1e formulations. Before implementation it
+must fix its comparison class, strongest comparator, claimed result, decisive
+falsifier, reduction boundary, and minimum discrimination burden.
 
 ## M1e exit checklist
 
@@ -189,8 +195,8 @@ and reconcile the post-merge state under a new issue, milestone, branch, and PR.
 - [x] Independent bibliographic review reports no blocking metadata, version, or locator error.
 - [x] Independent governance review reports no blocking cross-reference, status, or scope error.
 - [x] Local governance validation, unit tests, and diff check pass.
-- [ ] Protected `validate` passes on the final M1e decision head.
-- [ ] Decision 0007 merges and issue #17 and milestone #9 close.
+- [x] Protected `validate` passes on the final M1e decision head.
+- [x] Decision 0007 merges and issue #17 and milestone #9 close.
 
 ## M1d exit checklist
 

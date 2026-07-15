@@ -10,7 +10,8 @@ passed the admission-format gate and two retain unsupported, non-distinct
 residue. The accepted result is again zero survivors: nine are
 directly anticipated, one is reconstructed by a positive composite, nine reduce
 to known theory, three violate scope, and two fail admission. Decision 0007
-is accepted after independent review; protected integration remains pending.
+is accepted and merged after independent review and a successful protected
+`validate` check on PR #18.
 
 No article, implementation, benchmark, training, or experiment is authorized.
 See [decision 0007](docs/research/decisions/0007-stop-intrinsic-restricted-class-discovery.md)
