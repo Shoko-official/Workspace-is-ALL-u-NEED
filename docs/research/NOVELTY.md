@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1E_PROPOSED_STOP_UNDER_REVIEW`
-Protocol version: `0.6.0`
+Status: `M1E_STOP_REVIEWED_PENDING_INTEGRATION`
+Protocol version: `0.6.1`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -227,11 +227,12 @@ The final dispositions are exhaustive: one `ANTICIPATED_DIRECTLY`, six `ANTICIPA
 
 The result is not an article. It is a negative originality gate backed by positive records, explicit composites, conditional reductions, and scope exclusions. The search is targeted and non-exhaustive; search silence is never used. No model, benchmark, implementation, training run, experiment, paid compute, or manuscript is authorized. The full record is in `M1D_CANDIDATE_REGISTER.md`, `M1D_SCOPING_LOG.md`, and Decision 0006.
 
-## M1e proposed gate decision
+## M1e accepted gate decision
 
-Proposed decision: `STOP`, pending independent review.
+Decision: `STOP`, accepted after independent scientific, bibliographic, and
+governance review; protected integration remains pending.
 
-M1e tests the restricted-class opening left by M1d rather than repeating
+M1e tested the restricted-class opening left by M1d rather than repeating
 unrestricted behavioral factorization. Three lanes screened 24 formulations
 across communication and streaming complexity, online causal identification,
 and learning or sample efficiency. Twenty-two fix the admission fields. C10's
@@ -266,4 +267,5 @@ targeted and non-exhaustive; positive records, reductions, scope rules, and
 explicit admission failures, not search silence, determine the result. No
 model, benchmark, implementation, training run, experiment, paid compute, or
 manuscript is authorized. The full record is in
-`M1E_CANDIDATE_REGISTER.md`, `M1E_SCOPING_LOG.md`, and proposed Decision 0007.
+`M1E_CANDIDATE_REGISTER.md`, `M1E_SCOPING_LOG.md`, accepted Decision 0007, and
+the two M1e independent-review handoffs.
