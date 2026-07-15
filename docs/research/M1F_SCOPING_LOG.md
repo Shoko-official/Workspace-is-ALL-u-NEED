@@ -146,8 +146,8 @@ Nine mechanisms were tested sequentially. None passed admission:
 
 - two recycle earlier formulations and also meet direct LLM-memory records;
 - two more are directly anticipated in their stated LLM form;
-- three reduce to timing privacy/IFC, circuit/communication/pebbling, or
-  mechanism design;
+- three reduce to output-plus-runtime timing privacy,
+  circuit/communication/pebbling, or mechanism design;
 - one combines generic undecidability with an existing restricted construction;
 - the report-derived codec object is closed by exact transcoding, information
   loss, direct tokenizer work, and M1C-C09.
