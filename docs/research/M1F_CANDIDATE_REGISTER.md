@@ -131,25 +131,28 @@ relabeling.
 
 ### M1F-O05: Persistent-secret leakage through adaptive-compute traces
 
-- Primitive: a secret-to-trace channel from persistent state `S` to observable
-  `Tau = (depth, halt time, latency, calls, addresses, branches)`.
+- Primitive: a secret-to-runtime channel from persistent state `S` to observable
+  `Tau = (depth, stopping time, latency)`.
 - Class: `H` adaptive interactions in which the adversary selects the next
   public query from earlier traces while the same secret persists.
 - Strongest comparator: a manager-router system judged on `(output,Tau)` and
   allowed constant-time padding, random delay, the same public seed, the same
-  worst-case compute ceiling, and adaptive privacy composition.
-- Candidate result: noninterference of low-equivalent states, or an
-  `(epsilon,delta)` likelihood-ratio bound on the enriched output trace.
+  worst-case compute ceiling, and the same interaction horizon.
+- Candidate result: an `(epsilon,delta)` likelihood-ratio bound on the joint
+  observation `(output,Tau)`.
 - Decisive falsifier: two low-equivalent states with a trace event of unequal
   probability, or a violation of the registered likelihood-ratio bound.
 - Negative regime: a public state, a constant trace, or padding to the declared
   worst case.
-- Reduction boundary: once `Tau` is treated as output, the object is timing
-  privacy, information-flow noninterference, covert-channel capacity, and
-  adaptive DP composition. Ratliff and Vadhan define precisely this output-plus-
-  runtime privacy class (`EV-0159`). M1e already charged every timing, address,
-  and action side channel to the transcript.
-- Disposition: `REDUCED_TO_TIMING_PRIVACY_IFC_DP`.
+- Reduction boundary: for any fixed interactive adversary, regard the complete
+  interaction as one randomized program and expose the per-step `Tau` values in
+  its output. Ratliff and Vadhan define privacy when both program output and
+  runtime are observed and construct timing-private programs from timing
+  stability plus random delay (`EV-0159`). This is definitional containment,
+  not a claim of adaptive-composition guarantees. Broader address, branch,
+  call, or action traces require separate information-flow or side-channel
+  models and are not attributed to this record.
+- Disposition: `REDUCED_TO_OUTPUT_RUNTIME_TIMING_PRIVACY`.
 
 ### M1F-O06: Shared-subcomputation work-depth separation
 
@@ -162,9 +165,12 @@ relabeling.
 - Candidate result: a superconstant work or depth separation for jointly
   choosing a memory action and a compute action.
 - Decisive falsifier: run two copies of `J` with the same `(h,r)`, retain one
-  output from each, and obtain the exact joint law with work at most `2W`, depth
-  `D`, and zero message. Alternatively, execute `J` once and transmit `c` in
-  `ceil(log |C|)` bits. This compiler already falsifies the candidate.
+  output from each, and obtain the exact joint law with work at most `2W`,
+  parallel depth `D`, aggregate fast memory at most `2S`, and zero message. If
+  `S` is a system-wide ceiling, run the copies sequentially with work `2W`,
+  depth `2D`, and fast memory `S`. Alternatively, for finite output alphabet
+  `C`, execute `J` once and transmit `c` in `ceil(log_2 |C|)` bits. These
+  constant-factor compilers already falsify a superconstant separation.
 - Negative regime: common inputs and randomness, bounded outputs, or a message
   large enough to carry one output.
 - Reduction boundary: private or late inputs yield communication complexity;
@@ -179,21 +185,25 @@ relabeling.
 ### M1F-O07: Universal gate for executable persistent writes
 
 - Primitive: a total gate `V(p,sigma)` deciding whether every future execution
-  of a persisted program or policy `p` satisfies a nontrivial trace property.
+  of a persisted program or policy `p` satisfies a declared nontrivial
+  extensional semantic safety property.
 - Class: Turing-complete writes, unbounded inputs and horizons, and adaptive
   scheduling.
 - Strongest comparator: any total computable verifier with the same program,
   specification, and resources.
 - Candidate result: `V(p)=1` iff all executions are safe, with both soundness and
   completeness.
-- Decisive falsifier: a total sound and complete verifier for the declared
-  nontrivial semantic property, or a property that is actually syntactic.
+- Decisive falsifier: a total sound and complete decision procedure for the
+  declared undecidable semantic property, or evidence that the property and
+  program class actually lie in a decidable restricted domain.
 - Negative regime: finite automata, bounded horizons, total DSLs, decidable
   contracts, or proof-carrying restricted writes.
-- Reduction boundary: Rice's theorem, halting, and ordinary program
-  verification; it also recycles M1C-C11 and M1D-C18. SEVerA already supplies a
-  recent restricted constructive branch using formal contracts, rejection
-  sampling, verified fallback, and synthesis (`EV-0163`).
+- Reduction boundary: given program `q` and input `y`, construct `p_(q,y)` that
+  executes `q(y)` and emits a forbidden action iff `q(y)` halts. A total sound
+  and complete `V` would decide halting. This is the ordinary Rice/halting and
+  program-verification boundary; it also recycles M1C-C11 and M1D-C18. SEVerA
+  already supplies a recent restricted constructive branch using formal
+  contracts, rejection sampling, verified fallback, and synthesis (`EV-0163`).
 - Disposition: `GENERIC_UNDECIDABILITY_PLUS_PRIOR_RESTRICTED_CONSTRUCTION`.
 
 ### M1F-O08: Mission-switch codec closure

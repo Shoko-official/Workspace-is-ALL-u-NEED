@@ -13,8 +13,9 @@ inflation, cross-model semantic ABI, experience-driven compute displacement,
 origin-bound authority, timing leakage, shared-subcomputation complexity,
 executable writes, mission-conditioned tokenization, and strategic audits.
 None is admitted. The strongest apparent escape, a shared joint controller, is
-compiled exactly into two modules with at most twice the work and no depth
-loss. The recovered upstream report's "tokenisation par mission" route is also
+compiled exactly into two modules with at most twice the work and aggregate
+memory and no depth loss; a sequential form preserves memory with twice the
+depth. The recovered upstream report's "tokenisation par mission" route is also
 stopped: UniTok tokenizes recommendation items rather than text, reversible
 tokenizers transcode exactly, and the remaining pipeline is an assembly.
 
