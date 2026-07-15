@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `M1E_TERMINAL_STOP`
-Version: `0.6.2`
-Last scientific milestone: `M1e - Intrinsic restricted-class separation discovery`
-Last scientific issue: [#17](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/17)
+Status: `M1F_PROPOSED_STOP`
+Version: `0.7.0`
+Last scientific milestone: `M1f - Mechanism-first technical object discovery`
+Last scientific issue: [#21](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/21)
 
 ## Scientific question
 
@@ -28,6 +28,16 @@ violations, two unsupported non-distinct sketches, and zero survivors. Decision
 0007 passed independent scientific, bibliographic, and governance review and
 merged through protected PR #18. The program still has no article-eligible
 route.
+
+M1f mapped all 64 prior formulations before constructing nine objects
+sequentially. The apparently external primitives either collide directly,
+reduce to timing privacy, information flow, communication, pebbling, mechanism
+design, coding, migration, or verification, or are falsified by an exact
+compiler. The recovered upstream report is now available, but its central
+mission-tokenization proposal misclassifies recommender item tokenization as
+lexical tokenization and otherwise assembles established components. Proposed
+Decision 0008 returns `STOP` with zero admitted objects and awaits independent
+scientific, bibliographic, and governance review.
 
 ## Candidate contribution hypothesis
 
@@ -83,7 +93,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Decision 0007 passed independent review and protected integration; none is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Proposed Decision 0008 additionally stops all nine M1f mechanism-first attempts unless independent review overturns it. Decision 0007 passed independent review and protected integration; none is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
@@ -125,6 +135,18 @@ distributed-learning, and optimization reductions. A relabeled generic open
 problem, different operation class, weaker comparator, recycled M1c/M1d object,
 unsupported sketch, or empirical interaction cannot pass. M1e returns `STOP`
 for all 24 screened formulations after corrected independent review.
+
+### Mechanism-first object gate
+
+M1f requires a complete crosswalk against M1C-C01 through M1E-C24 before an
+object may be admitted. The object must fix a primitive, intrinsic class,
+strongest symmetric comparator, exact result, decisive falsifier, negative
+regime, and generic-reduction boundary before an empirical search. Public
+inputs, randomness, codecs, shared activations, and permitted frontends must be
+available symmetrically. A category error, constant-factor common-subexpression
+saving, exact transcode, generic privacy or mechanism-design problem, direct
+collision, or recycled migration object returns `STOP`. M1f applies this gate
+to nine sequential attempts and proposes zero admissions.
 
 ### M4 oracle gate
 
