@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `M1G_ACCEPTED_STOP`
-Version: `0.8.1`
-Current scientific milestone: `M1g - Problem-first invariant discovery`
-Current scientific issue: [#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25)
+Status: `M1G_TERMINAL_STOP`
+Version: `0.8.2`
+Last scientific milestone: `M1g - Problem-first invariant discovery`
+Last scientific issue: [#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25)
 
 ## Scientific question
 
@@ -48,8 +48,9 @@ machine unlearning, and history-dependent service disparity is generic fair
 sequential control plus a Jacobian stability condition. The full 73-object
 crosswalk leaves zero admissions. Decision 0009 accepts `STOP` after independent
 scientific, bibliographic, and governance reviews all passed on commit
-`94af4acb8ef2db505e9596c0946c618fc136c641`. Protected integration is still
-pending.
+`94af4acb8ef2db505e9596c0946c618fc136c641`. Protected integration is
+complete: PR #26 passed `validate` and merged with linear history as
+`777293f87a79d95d39a516097be2246716dd55d5`.
 
 ## Candidate contribution hypothesis
 
@@ -105,7 +106,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review and protected integration. Accepted Decision 0009 stops all eight M1g incident-first attempts after independent review and now awaits protected integration. None is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review and protected integration. Accepted Decision 0009 stops all eight M1g incident-first attempts after independent review and protected integration. None is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 

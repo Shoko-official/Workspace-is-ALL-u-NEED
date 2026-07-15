@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1G_ACCEPTED_STOP`
-Protocol version: `0.8.1`
+Status: `M1G_TERMINAL_STOP`
+Protocol version: `0.8.2`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -317,8 +317,9 @@ authorized. The complete record is in `M1F_CANDIDATE_REGISTER.md`,
 
 Decision: accepted `STOP` after independent scientific, bibliographic, and
 governance review of scientific commit
-`94af4acb8ef2db505e9596c0946c618fc136c641`; protected integration remains
-pending.
+`94af4acb8ef2db505e9596c0946c618fc136c641`. Its byte-identical scientific tree
+was rebased as `64b79fbc2296d618ba5b5ec4b8c9e0a7fceecea6`; protected PR #26 passed and
+merged as `777293f87a79d95d39a516097be2246716dd55d5`.
 
 M1g began from eight externally observable deployment failures rather than a
 mechanism or component list. Every problem fixed its event order, observer,

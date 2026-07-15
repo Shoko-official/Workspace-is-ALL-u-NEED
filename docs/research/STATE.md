@@ -6,13 +6,11 @@ Operational status: `STOPPED`
 
 ## Current milestone
 
-Milestone [#13](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/milestone/13),
-`M1g - Problem-first invariant discovery`, is active under
-[issue #25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25).
-Its scientific package has accepted `STOP` after independent review and is
-awaiting protected PR integration.
+No scientific milestone. M0, M1, M1b, M1c, M1d, M1e, M1f, and M1g are closed.
+Milestone #14 and issue #27 are governance-only records for this reconciliation;
+their closure is coupled to the protected issue-closing reconciliation PR.
 
-M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14), M1e by merged [PR #18](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/18), and M1f by merged [PR #22](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/22). Issues #1, #3, #5, #9, #13, #17, and #21 and their scientific milestones are closed. Issues #7, #11, #15, #19, and #23 and milestones #4, #6, #8, #10, and #12 tracked post-merge reconciliations and are closed without reopening scientific work.
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14), M1e by merged [PR #18](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/18), M1f by merged [PR #22](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/22), and M1g by merged [PR #26](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/26). Issues #1, #3, #5, #9, #13, #17, #21, and #25 and their scientific milestones are closed. Issues #7, #11, #15, #19, and #23 and milestones #4, #6, #8, #10, and #12 tracked prior post-merge reconciliations and are closed without reopening scientific work. Issue #27 and milestone #14 track only the current reconciliation.
 
 The M1f reconciliation completed through protected
 [PR #24](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/24),
@@ -22,7 +20,7 @@ closed. They did not reopen scientific work.
 
 ## Current gate
 
-`M1G_PROTECTED_INTEGRATION`
+`TERMINAL_STOP`
 
 The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -73,14 +71,17 @@ internalization is machine unlearning; service disparity is fair sequential
 control plus generic stability. The complete 73-object crosswalk leaves zero
 admissions. Decision 0009 is `ACCEPTED`: independent scientific, bibliographic,
 and governance reviews all returned `PASS` on fixed scientific commit
-`94af4acb8ef2db505e9596c0946c618fc136c641` after one correction round. Only
-protected integration and post-merge reconciliation are now authorized.
+`94af4acb8ef2db505e9596c0946c618fc136c641` after one correction round. Its tree
+was rebased byte-for-byte as
+`64b79fbc2296d618ba5b5ec4b8c9e0a7fceecea6`; the accepted review state merged
+as `777293f87a79d95d39a516097be2246716dd55d5`. Protected `validate` run
+`29440629617` passed on PR #26, issue #25 closed, and milestone #13 closed.
 
 ## Active issues
 
-Issue #25 and milestone #13 are active for protected M1g integration only. They
-authorize no implementation, experiment, benchmark, training, proof project,
-paid compute, manuscript, or submission.
+Issue #27 and milestone #14 are active only for this post-merge reconciliation.
+They do not change scientific claims or authorize work, and close through the
+protected reconciliation lifecycle.
 
 ## Capability audit
 
@@ -101,7 +102,7 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 No independent reviewer is active. Scientific, bibliographic, and governance
 functions all returned `PASS` on
 `94af4acb8ef2db505e9596c0946c618fc136c641`; none modified the reviewed state.
-The root agent is integrating the accepted package. Exact runtime model
+The root agent is reconciling post-merge metadata only. Exact runtime model
 identities remain non-controllable.
 
 ## Input inventory
@@ -205,6 +206,8 @@ This machine is sufficient for governance and small deterministic harness work a
 61. Test eight incidents sequentially. Record six failures of two-factor necessity, one machine-unlearning reduction, one fair-control and generic-stability reduction, and zero `DISTINCT_CANDIDATE` objects.
 62. Propose global `STOP` in Decision 0009. Authorize only independent scientific, bibliographic, and governance review of one fixed scientific commit before protected integration.
 63. Reject initial scientific commit `7be694155782deda2a4492ff87a47274786aea28` after scientific and bibliographic blockers; correct the formal objects, source metadata, locators, scope, and reciprocity; accept Decision 0009 only after all three independent functions return `PASS` on `94af4acb8ef2db505e9596c0946c618fc136c641`.
+64. Close M1g after protected `validate` run `29440629617` passed, PR #26 merged with linear history as `777293f87a79d95d39a516097be2246716dd55d5`, issue #25 closed, and milestone #13 closed.
+65. Reconcile the post-merge operational snapshot under issue #27 without changing scientific claims, evidence, problem dispositions, experiments, or Decision 0009. Retain `TERMINAL_STOP`.
 
 ## Blockers
 
@@ -225,9 +228,10 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Integrate accepted Decision 0009 through the issue-closing PR for #25 and the
-required protected `validate` check, then reconcile the post-merge state under
-a governance-only issue. No implementation or experiment is authorized.
+Complete the governance-only reconciliation through issue #27 and its protected
+PR. After closure, only a new issue-scoped discovery cycle outside all 81
+screened formulations may proceed. No implementation or experiment is
+authorized.
 
 ## M1g exit checklist
 
@@ -246,7 +250,21 @@ a governance-only issue. No implementation or experiment is authorized.
   scientific commit `94af4acb8ef2db505e9596c0946c618fc136c641`.
 - [x] Local governance validation, unit tests, and diff check pass on the
   accepted review state.
-- [ ] Required protected `validate` passes and the M1g issue-closing PR merges.
+- [x] Required protected `validate` passed on PR #26, the PR merged as
+  `777293f87a79d95d39a516097be2246716dd55d5`, and issue #25 and milestone #13
+  closed.
+
+## M1g reconciliation checklist
+
+- [x] Issue #27 and milestone #14 define a governance-only reconciliation.
+- [x] PR #26, protected run `29440629617`, issue #25, and milestone #13 are
+  recorded.
+- [x] Scientific commits `94af4ac` and `64b79fb` share tree
+  `fecb7464f85930bb2efd372133c631c4e3de6245`.
+- [x] Scientific claims, evidence, dispositions, Decision 0009, and the empty
+  experiment registry remain unchanged.
+- [x] Local governance validation, unit tests, and diff check pass.
+- [ ] Protected reconciliation PR passes and issue #27 and milestone #14 close.
 
 ## M1f exit checklist
 
