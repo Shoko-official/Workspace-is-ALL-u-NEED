@@ -17,13 +17,16 @@ M1c then generated sixteen independently motivated objects covering revision rep
 
 M1d next generated 24 objects specifically aimed at a non-factorizing relation between governed persistent state and adaptive compute. The gate excluded every M1c family, validity-before-compute restatements, another joint router, and narrative synthesis. One candidate was directly anticipated, six were reconstructed by positive composites, nine conditionally reduced to known theory, two were unsupported and non-distinct, and six violated the no-recycling boundary. Zero survived. The program still has no article-eligible route.
 
-M1e directly tested the restricted-class opening left by M1d. It generated 24
-communication, streaming, causal-identification, and learning objects with
-fully fixed information, order, state, transcript, compute, feedback,
-randomness, training, and strongest factorized comparison classes. The proposed
-result is eight direct anticipations, three positive composites, ten generic
-reductions, three scope violations, and zero survivors. Decision 0007 remains
-under independent review. The program still has no article-eligible route.
+M1e directly tested the restricted-class opening left by M1d. It screened 24
+communication, streaming, causal-identification, and learning formulations. Of
+these, 22 fix the required information, order, state, transcript, compute,
+feedback, randomness, training, and strongest factorized comparison classes;
+two are retained as unsupported admission failures rather than being
+misreported as reductions. The corrected proposed result is eight direct
+anticipations, two positive composites, nine generic reductions, three scope
+violations, two unsupported non-distinct sketches, and zero survivors. Decision
+0007 awaits corrected independent review. The program still has no article-
+eligible route.
 
 ## Candidate contribution hypothesis
 
@@ -119,8 +122,8 @@ must state a theorem, identified estimand, or transportable law that survives
 communication, streaming, cell-probe, time-space, causal, POMDP, online,
 distributed-learning, and optimization reductions. A relabeled generic open
 problem, different operation class, weaker comparator, recycled M1c/M1d object,
-or empirical interaction cannot pass. M1e proposes `STOP` for all 24 candidates
-and awaits independent review.
+unsupported sketch, or empirical interaction cannot pass. M1e proposes `STOP`
+for all 24 screened formulations and awaits corrected independent review.
 
 ### M4 oracle gate
 

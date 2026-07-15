@@ -33,6 +33,13 @@ A candidate was admissible only if it:
 No experiment was admissible as a means of creating novelty after this formal
 gate failed.
 
+The register retains all 24 screened formulations, including admission
+failures. Twenty-two formulations fix a comparison class and a decision object.
+M1E-C10 does not supply the claimed necessary-and-sufficient compressed-state
+threshold, and M1E-C23 does not select a single task family and frontier. They
+are recorded as `UNSUPPORTED_NOT_DISTINCT`, not silently counted as reductions
+or survivors.
+
 ### Matched factorized comparator
 
 Across lanes, the strongest comparator was not a pair of independently trained
@@ -187,15 +194,17 @@ different operation class.
 #### M1E-C07: Element distinctness under bounded workspace
 
 - Claim type: random-access time-space complexity.
-- Class: a read-only input is accessed by a randomized RAM or branching
-  program using `S` workspace and `T` time or probes.
+- Class: the word-RAM model of `EV-0150`: read-only random access to `n`
+  integers in `[poly(n)]`, `S` bits of working memory, `T` word-RAM time, and
+  one-way access to fresh random bits that do not count toward `S`. Random-
+  oracle access and branching-program lower bounds are not part of this class.
 - Candidate result: a smooth strong lower bound matching the best known
   element-distinctness upper bound.
 - Decisive falsifier: an algorithm below the proposed curve.
 - Negative regime: sorted inputs, small universe, frequent duplicates, or
   linear workspace.
-- Strongest factorized comparator: the entire randomized RAM or branching
-  program class with the same access, space, time, and randomness.
+- Strongest factorized comparator: every randomized word-RAM algorithm with the
+  same read-only input access, working memory, time, one-way coins, and error.
 - Reduction: the missing matching lower bound is a classical open problem
   (`EV-0150`).
   Solving it would be a generic complexity result, but the candidate supplies
@@ -230,6 +239,24 @@ different operation class.
 
 ### Online causality, identification, and endogenous observation
 
+#### Shared causal-lane contract
+
+Unless a candidate states a stricter restriction, C09 through C16 use a finite
+horizon `H` and the following online order. At round `t`, the declared observed
+history `X_{\le t}` and persistent state `S_t` are available before a manager
+chooses write `W_t` and emits message `M_t`; a router then chooses charged
+compute `C_t` and the declared action, audit, or intervention `A_t`; only then
+does the declared outcome feedback arrive and `S_{t+1}` become available.
+Latent variables remain unobserved. Total persistent state is at most `B_s`
+bits, the complete cross-module transcript, including action, address, and
+timing side channels, is at most `B_m` bits, and compute is at most `B_c`
+declared oracle calls or word-RAM operations. Logged propensities are available
+only where stated. Policies use the same public seed, offline logs, training
+distribution, gradients, and evaluation feedback; no module receives an
+intermediate label or private observation withheld from its comparator. The
+strongest factorized comparator is jointly trained and may condition on the
+entire allowed history and transcript under exactly these budgets.
+
 #### M1E-C09: Audit floor under endogenous labels
 
 - Claim type: causal identification.
@@ -249,7 +276,9 @@ different operation class.
   transcript.
 - Reduction: selective labels plus longitudinal g-formula, IPW, or adaptive
   OPE. Hidden confounding moves the problem to proximal or POMDP OPE.
-  The decision-critical records are `EV-0128` and `EV-0129`.
+  `EV-0128` and `EV-0129` cover selective observation and adaptive inference;
+  `EV-0134` and `EV-0139` supply the sequentially ignorable policy-value and
+  longitudinal-treatment mappings required for future write effects.
 - Minimum burden: an identification theorem outside these assumptions and
   existing bridge constructions.
 - Disposition: `REDUCED_TO_KNOWN_THEORY`.
@@ -258,9 +287,10 @@ different operation class.
 
 - Claim type: causal identification under compression.
 - Class: a proxy history `Z_{\le t}` for latent `U_t` is compressed to
-  `S_t=e(Z_{\le t})` of at most `B_s` bits; only `(S_t,C_t,Y_t)` remain
-  available for OPE.
-- Candidate result: identification exactly when the compressed proxy operator
+  `S_t=e(Z_{\le t})` of at most `B_s` bits; only logged
+  `(S_t,A_t,Y_t)` and behavior propensities remain available for OPE. Charged
+  compute `C_t` cannot inspect the discarded proxy history.
+- Screened result: identification exactly when the compressed proxy operator
   admits a bridge, with a finite-alphabet rank or bit threshold.
 - Decisive falsifier: universal nonparametric identification below the proposed
   rank, or equal-rank operators with opposite identification status under the
@@ -269,22 +299,26 @@ different operation class.
   proxies.
 - Strongest factorized comparator: a co-designed encoder and target-policy
   evaluator under the same state and transcript budgets.
-- Reduction: proximal/POMDP OPE already uses completeness and rank conditions
-  (`EV-0130`; `EV-0131`);
-  data processing and communication-constrained inference supply any induced
-  bit lower bound.
+- Reduction audit: proximal/POMDP OPE supplies sufficient bridge,
+  completeness, rank, and invertibility conditions (`EV-0130`; `EV-0131`). It
+  does not supply the screened necessary-and-sufficient threshold as a function
+  of `B_s`; generic data processing does not close that gap either.
 - Minimum burden: a new causal complexity parameter with a proved necessary
   and sufficient compressed-state threshold.
-- Disposition: `REDUCED_TO_KNOWN_THEORY`.
+- Disposition: `UNSUPPORTED_NOT_DISTINCT`.
 
 #### M1E-C11: Randomized encouragement to commit
 
 - Claim type: longitudinal causal identification.
-- Class: a randomized recommendation `Z_t` affects actual write `W_t`, which
-  affects persistent state and later outcomes; latent `U_t` may confound write
-  and outcome.
+- Class: at one registered commit opportunity `tau`, a randomized
+  recommendation `Z_tau` affects actual write `W_tau`, which affects persistent
+  state and a declared later outcome; latent `U_tau` may confound write and
+  outcome.
 - Estimand: a local average effect of commit among compliers under relevance,
   independence, exclusion, and monotonicity.
+- Candidate result: with a nonzero first stage, the complier-average commit
+  effect is identified by the Wald ratio under the stated relevance,
+  independence, exclusion, and monotonicity assumptions.
 - Decisive falsifier: a direct path from encouragement to the outcome, failed
   monotonicity, or observationally equivalent compatible laws with different
   LATE.
@@ -360,28 +394,34 @@ different operation class.
   the same adaptive interventions and observations with the same DAG and
   budget.
 - Reduction: causal bandits and adaptive experimental design already supply
-  the separating systems, track-and-stop rules, and lower bounds. Persistence
-  only reindexes the intervention across episodes.
-  `EV-0137` is the decision-critical positive record.
+  the separating systems, track-and-stop rules, fixed-budget best-intervention
+  error or simple-regret bounds, and general-SCM regret bounds. Persistence only
+  reindexes the intervention across episodes. `EV-0137`, `EV-0151`, and
+  `EV-0152` are the decision-critical positive records.
 - Minimum burden: a new causal structural parameter or bound created by an
   operation absent from the existing intervention model.
 - Disposition: `ANTICIPATED_BY_COMPOSITE`.
 
 #### M1E-C15: Dual audit against epistemic lock-in
 
-- Claim type: Bayes-adaptive control.
-- Class: a belief over latent environment and model parameters is compressed
-  into persistent state; actions either exploit or purchase informative audits.
-- Candidate result: an audit threshold or regret guarantee relative to the
-  Bayes-optimal controller.
-- Decisive falsifier: the proposed policy rejects a positive-value audit, or a
-  lower-resource policy dominates it over the registered class.
+- Claim type: online decision efficiency and sufficient-state representation.
+- Class: the registered finite environment/model family has at most `2^B_s`
+  reachable exact Bayes-adaptive beliefs, so its belief hyperstate is
+  representable within `B_s`; actions either exploit or purchase informative
+  audits. No lossy belief compression guarantee is claimed.
+- Candidate result: the exact belief hyperstate is sufficient for optimal
+  history-dependent control, so audit value and exploitation can be optimized
+  in the corresponding Bayes-adaptive POMDP.
+- Decisive falsifier: two compatible histories with the same exact belief have
+  different Bayes-optimal continuation values, or the belief-MDP optimum differs
+  from the history-dependent optimum in the registered model.
 - Negative regime: known model, uninformative observations, unit horizon, or
   audits whose cost exceeds their value.
-- Strongest factorized comparator: a co-designed belief updater and compute or
-  audit policy sharing the compressed belief and same resources.
+- Strongest factorized comparator: a co-designed exact-belief updater and
+  compute or audit policy sharing the belief and same resources.
 - Reduction: Bayes-adaptive POMDPs (`EV-0138`), dual control, and information-reward POMDPs
-  already represent the persistent belief and epistemic actions.
+  already represent the exact persistent belief and epistemic actions. No cited
+  result supports a guarantee after lossy belief compression.
 - Minimum burden: a new sufficient statistic or performance bound outside the
   belief-MDP representation.
 - Disposition: `REDUCED_TO_KNOWN_THEORY`.
@@ -475,21 +515,26 @@ different operation class.
 
 #### M1E-C20: Recurrent state and adaptive depth
 
-- Claim type: length generalization and computational expressivity.
+- Claim type: computational expressivity; empirical length generalization is a
+  separate observation, not the theorem claim.
 - Class: a shared block is looped `T(n)` times on iterative `n`-RASP-L tasks,
   with fixed activations, training compute, inference FLOPs, stopping
   information, and supervision.
-- Candidate result: length generalization from recurrent state and
-  input-dependent depth.
-- Decisive falsifier: a separated transition block and stopping controller with
-  the same state and compute generalizes equally.
+- Candidate result: the registered parity, copy, and addition families admit
+  `n`-RASP-L decompositions using `T(n)` applications of one shared step. No
+  theorem that training learns those decompositions out of distribution is
+  claimed.
+- Decisive falsifier: any registered family lacks the claimed `n`-RASP-L
+  decomposition or requires more than the stated `T(n)` shared-step
+  applications or an operation outside the declared class.
 - Negative regime: no shared iterative transition, unknown or unidentifiable
   iteration count, or non-iterative tasks.
 - Strongest factorized comparator: the same tied transition and a jointly
   trained halting module with complete access to the recurrent state.
-- Reduction: looped-Transformer results (`EV-0119`) already establish adaptive-step length
-  generalization, and related results show Transformers implementing multi-step
-  gradients.
+- Reduction: `EV-0119` formally proves the registered iterative decompositions
+  and supplies the looped architecture and adaptive stopping method. Its length-
+  generalization results are empirical; they do not establish a learning or
+  generalization theorem.
 - Minimum burden: a cross-task persistence theorem that is not ordinary
   meta-learning or recurrence.
 - Disposition: `ANTICIPATED_DIRECTLY`.
@@ -534,23 +579,29 @@ different operation class.
 #### M1E-C23: Meta-state with adaptive inner-loop depth
 
 - Claim type: online and meta-learning efficiency.
-- Class: sequential tasks expose support and query losses; persistent state
-  stores initialization and similarity information, while a scheduler chooses
-  a charged number of gradient, Hessian, and hypergradient calls.
-- Candidate result: a new joint memory-oracle frontier or dynamic-regret bound.
-- Decisive falsifier: the matched modular meta-learner and scheduler attain the
-  same frontier.
+- Class: `SCREENED_SKETCH_NOT_ADMITTED`. The sketch alternates between an
+  unspecified memory-oracle frontier and dynamic regret without fixing one task
+  family, loss assumptions, horizon, feedback law, stopping information, or
+  target asymptotic relation. The proposed envelope was `B_s` persistent bits
+  and `B_c` gradient, Hessian, and hypergradient calls under the shared training
+  contract, but that envelope does not define a theorem class.
+- Candidate result: no single result is fixed; “a joint frontier or a dynamic-
+  regret bound” is not a theorem statement.
+- Decisive falsifier: unavailable until one task family, frontier, and error or
+  regret criterion are fixed.
 - Negative regime: homogeneous well-conditioned tasks or exact convex
   objectives.
 - Strongest factorized comparator: an end-to-end trained meta-learner and
   scheduler with a common loss, common hypergradients, and the same persistent
   state and oracle budget.
-- Reduction: adaptive gradient meta-learning, online meta-learning, memory-
-  reduced bilevel optimization, and modular credit assignment reconstruct the
-  object (`EV-0122`; `EV-0123`; `EV-0124`; `EV-0125`).
-- Minimum burden: a new lower or upper bound depending on a state-compute
-  structural parameter not present in bilevel optimization.
-- Disposition: `ANTICIPATED_BY_COMPOSITE`.
+- Reduction audit: adaptive gradient meta-learning, online meta-learning,
+  memory-reduced bilevel optimization, and modular credit assignment cover
+  separate components (`EV-0122`; `EV-0123`; `EV-0124`; `EV-0125`). None proves
+  adaptive inner-loop stopping or a joint memory-oracle frontier.
+- Minimum burden: fix one task family and feedback process, define one memory-
+  oracle or regret frontier, and prove a lower or upper bound depending on a
+  state-compute parameter absent from ordinary bilevel optimization.
+- Disposition: `UNSUPPORTED_NOT_DISTINCT`.
 
 #### M1E-C24: Co-learning under a bounded transcript
 
@@ -588,37 +639,41 @@ The maximum comparator closes the apparent architectural gap in every lane:
   plus adaptive computation; and
 - distributed learning reconstructs private views plus bounded transcripts.
 
-The positive literature goes further than a generic reconstruction. It already
+The positive literature goes further than a generic reconstruction for the 22
+admitted formulations. It already
 contains attention-cache lower bounds, adaptive-probe gaps, multi-pass
 space-pass bounds, chain-of-thought learning separations, selective-label and
 POMDP identification conditions, causal-bandit designs, test-time-training
-sample gains, sparse-retrieval separations, looped-Transformer length
-generalization, and lifelong-representation bounds.
+sample gains, sparse-retrieval separations, formal looped-Transformer task
+decompositions, and lifelong-representation bounds. C10 and C23 fail earlier:
+their claimed residual results are not supplied by their sources or fixed as
+admitted theorem objects.
 
 ## Minimum-design decision
 
 No proof or experiment is authorized for this candidate set.
 
 M1E-C07 points to a real generic open problem, but the register supplies neither
-a proof nor a state-compute-specific parameter. Every other minimum burden
-requires a new theorem or estimand before implementation. Measuring one more
-interaction, adding an LLM benchmark, or weakening the factorized comparator
-cannot satisfy that burden.
+a proof nor a state-compute-specific parameter. C10 and C23 retain unsupported
+residue rather than being misreported as known reductions; neither is an
+admitted distinct object. Every other minimum burden requires a new theorem or
+estimand before implementation. Measuring one more interaction, adding an LLM
+benchmark, or weakening the factorized comparator cannot satisfy that burden.
 
 ## Decision
 
-Propose `STOP` for all 24 M1e candidates:
+Propose `STOP` for all 24 M1e screened formulations:
 
 - zero `DISTINCT_CANDIDATE` objects survive;
 - eight candidates are directly anticipated;
-- three are anticipated by positive composites;
-- ten reduce to established communication, streaming, data-structure,
+- two are anticipated by positive composites;
+- nine reduce to established communication, streaming, data-structure,
   causal, control, learning, or optimization theory; and
-- three violate the no-recycling or no-generic-open-problem boundary.
+- three violate the no-recycling or no-generic-open-problem boundary; and
+- two are unsupported, non-distinct admission failures.
 
-The exact labels overlap in two composite cases, so the disposition tally used
-for governance is exclusive: `8 direct / 3 composite / 10 reduced / 3 out of
-scope = 24`.
+The exclusive disposition tally is `8 direct / 2 composite / 9 reduced / 3 out
+of scope / 2 unsupported = 24`.
 
 This register is a negative scientific result. It is not an article, survey,
 taxonomy, manifesto, benchmark proposal, or permission to rewrite prior work.

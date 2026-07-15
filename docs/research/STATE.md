@@ -27,13 +27,14 @@ M1d generated 24 additional candidates across formal identification, learning dy
 The unrestricted behavioral joint-policy comparison is underidentified at fixed history: every `pi(m,c|h)` factorizes as `pi_M(m|h) pi_C(c|h,m)` when the manager may pass `(h,m)` to the router. This reproduces only the action distribution, not causal order, computational cost, learning, or sample efficiency. No candidate justifies an intrinsic restricted information, communication, computation, or learning class and proves its claimed separation within one. Decision 0006 and its independent cross-review are merged. The protected `validate` check passed, PR #14 merged with linear history, issue #13 closed, and milestone M1d closed. No model, benchmark, training, experiment, or manuscript is authorized.
 
 M1e now tests that restricted-class opening directly. Three read-only lanes
-generated 24 fully specified communication, streaming, causal-identification,
-and learning candidates. Every class fixes observation order, online causality,
-persistent and transcript bits, compute or oracle budget, feedback, shared
-randomness, training information, and the strongest jointly trained factorized
-protocol. The proposed result is `STOP` with zero survivors:
-`8 direct / 3 composite / 10 reduced / 3 out of scope`. Decision 0007 remains
-`PROPOSED` until independent scientific, bibliographic, and governance review.
+screened 24 communication, streaming, causal-identification, and learning
+formulations. Twenty-two fix the required class and result fields. C10's
+necessary-and-sufficient compressed-state threshold is unsupported, and C23
+does not select one task family and frontier; neither is counted as reduced or
+distinct. The corrected proposed result is `STOP` with zero survivors:
+`8 direct / 2 composite / 9 reduced / 3 out of scope / 2 unsupported`.
+Decision 0007 remains `PROPOSED` until corrected independent scientific,
+bibliographic, and governance review.
 No model, benchmark, implementation, training, experiment, paid compute, or
 manuscript is authorized.
 
@@ -59,8 +60,9 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 ## Active agents
 
 The three M1e generation lanes completed read-only with zero proposed survivors.
-Independent scientific, bibliographic, and governance review is pending; exact
-runtime model identities remain non-controllable.
+Initial independent scientific, bibliographic, and governance reviews returned
+correctable blockers; corrected rereview is pending. Exact runtime model
+identities remain non-controllable.
 
 ## Input inventory
 
@@ -146,7 +148,7 @@ This machine is sufficient for governance and small deterministic harness work a
 44. Reconcile the post-merge operational snapshot under issue #15 without changing scientific claims, evidence, candidate dispositions, experiments, or Decision 0006. Retain `TERMINAL_STOP`.
 45. Open issue #17 and milestone #9 only for a separation inside an intrinsic restricted communication, information, online-causality, computation, or learning class. Forbid unrestricted chain-rule arguments, weak independently trained comparators, M1c or M1d recycling, generic-bound relabeling, assemblies, narrative articles, and experiments intended to create novelty.
 46. Match the factorized comparator on all allowed observations, online order, persistent and transcript bits, rounds, probes, passes, parameters, samples, training information, randomness, feedback, oracle calls, and compute. Permit co-design and joint training.
-47. Evaluate 24 M1e candidates across communication and streaming complexity, causal identification, and learning or sample efficiency. Record eight direct anticipations, three positive composites, ten generic reductions, and three scope violations; retain zero `DISTINCT_CANDIDATE` objects.
+47. Screen 24 M1e formulations across communication and streaming complexity, causal identification, and learning or sample efficiency. Record eight direct anticipations, two positive composites, nine generic reductions, three scope violations, and two unsupported non-distinct admission failures; retain zero `DISTINCT_CANDIDATE` objects.
 48. Propose global `STOP` in Decision 0007. Do not authorize a proof implementation or experiment for a candidate that is directly occupied, reconstructed, generically reduced, recycled, or only a relabeled classical open problem. Keep the decision in independent review before acceptance.
 
 ## Blockers
@@ -169,15 +171,16 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Run independent scientific, bibliographic, and governance review on the M1e
-scientific commit. Only corrections, validation, protected PR integration, and
-post-merge reconciliation are authorized if the proposed `STOP` survives.
+Run corrected independent scientific, bibliographic, and governance review on
+the M1e scientific commit. Only corrections, validation, protected PR
+integration, and post-merge reconciliation are authorized if the proposed
+`STOP` survives.
 
 ## M1e exit checklist
 
 - [x] Issue #17 and milestone #9 define the intrinsic restricted-class gate.
 - [x] Three read-only lanes generate 24 communication, causal, and learning candidates.
-- [x] Every candidate fixes its class, strongest comparator, candidate result, falsifier, negative regime, reduction, and minimum burden.
+- [x] Every admitted candidate fixes its class, strongest comparator, candidate result, falsifier, negative regime, reduction, and minimum burden; C10 and C23 are explicitly retained as admission failures.
 - [x] Targeted primary-record resolutions and version corrections are retained without an exhaustive-search claim.
 - [x] Decision 0007 proposes `STOP` with zero survivors and no experiment authorization.
 - [ ] Independent scientific review reports no blocking distinctness or matching error.
