@@ -16,12 +16,13 @@ narrower possibility: an original separation in a class with intrinsic
 restrictions on information, communication, online order, space, time,
 feedback, or learning.
 
-M1e tested that possibility directly. Three lanes generated 24 candidates in
+M1e tested that possibility directly. Three lanes screened 24 formulations in
 communication and streaming complexity, causal identification, and learning or
-sample efficiency. Every candidate fixed its task, observation order, budgets,
-feedback, randomness, training information, allowed transcript, strongest
-factorized comparator, candidate theorem or estimand, falsifier, negative
-regime, and minimum burden.
+sample efficiency. Twenty-two fix the required class, comparator, result,
+falsifier, negative regime, and minimum burden. C10 and C23 are retained as
+unsupported admission failures because the former lacks its claimed finite-bit
+if-and-only-if result and the latter does not select one task family and
+frontier.
 
 ## Findings
 
@@ -72,13 +73,17 @@ problem as an LLM direction would violate the admission gate.
 
 ### Causal restrictions identify known estimands
 
-Endogenous audits reduce to selective labels followed by g-formula, IPW, or
-adaptive OPE under the declared assumptions. Compressed proxies reduce to
-completeness and bridge conditions in proximal or POMDP OPE. Randomized commit
+Endogenous audits reduce to selective labels followed by longitudinal g-
+formula, IPW, or adaptive or partially observed OPE under the declared
+assumptions. Existing compressed-proxy results supply sufficient completeness,
+bridge, rank, and invertibility conditions, but not C10's proposed necessary-
+and-sufficient bit threshold; C10 is therefore unsupported rather than reduced.
+Randomized commit
 encouragement is an instrumental-variable problem. Long-run feedback through
 future request populations is stationary OPE, performative prediction, or
 carryover. Bounded private causal views reduce to distributed estimation.
-Persistent interventions are causal bandits or adaptive experimental design.
+Persistent interventions are best-intervention causal bandits, general-SCM
+causal regret, or adaptive experimental design.
 Epistemic audits are dual control. Compute effects mediated by future writes
 are longitudinal mediation, MSM, SNMM, or proximal mediation.
 
@@ -94,13 +99,16 @@ Existing theory already establishes:
 - different sample rates for self-consistency and best-of-n, plus
   self-correction as online expert learning;
 - Transformer-versus-recurrent sparse-retrieval sample separation;
-- looped-Transformer length generalization with adaptive iteration counts;
+- formal looped-Transformer task decompositions with adaptive iteration counts,
+  accompanied by empirical rather than theorem-level length generalization;
 - lifelong acquisition guarantees for costly shared features; and
 - lifelong representation upper and black-box lower bounds.
 
-Meta-state plus adaptive inner-loop depth is reconstructed by online
-meta-learning, adaptive gradient methods, memory-reduced bilevel optimization,
-and modular credit assignment. Private support plus a bounded transcript is
+Online meta-learning, adaptive gradient methods, memory-reduced bilevel
+optimization, and modular credit assignment reconstruct components of C23, but
+do not establish adaptive stopping or a joint memory-oracle frontier. Because
+C23 fixes neither one task class nor one theorem, it is unsupported rather than
+anticipated by that composite. Private support plus a bounded transcript is
 distributed learning and sparse-recovery communication complexity.
 
 In several direct collisions, the apparent advantage compares different
@@ -113,10 +121,11 @@ be granted to the matched comparator as well.
 The exclusive result is:
 
 - eight `ANTICIPATED_DIRECTLY`;
-- three `ANTICIPATED_BY_COMPOSITE`;
-- ten conditional reductions to known theory; and
+- two `ANTICIPATED_BY_COMPOSITE`;
+- nine conditional reductions to known theory;
 - three scope violations through forbidden recycling or a relabeled generic
-  open problem.
+  open problem; and
+- two `UNSUPPORTED_NOT_DISTINCT` admission failures.
 
 The targeted search is current through 15 July 2026. It is not exhaustive and
 does not infer novelty or non-novelty from search silence. The proposed stop
@@ -125,7 +134,7 @@ and scope violations.
 
 ## Decision
 
-Return global `STOP` for all 24 M1e candidates.
+Return global `STOP` for all 24 M1e screened formulations.
 
 - Zero candidates are `DISTINCT_CANDIDATE`.
 - No theorem, estimator, invariant, complexity parameter, or transportable
@@ -180,9 +189,10 @@ The following are explicitly insufficient for a future article:
 
 ## Evidence
 
-- `docs/research/M1E_CANDIDATE_REGISTER.md`: 24 complete classes, strongest
-  comparators, candidate results, falsifiers, negative regimes, reductions,
-  minimum burdens, and dispositions.
+- `docs/research/M1E_CANDIDATE_REGISTER.md`: 24 screened formulations, 22
+  admitted classes, two explicit admission failures, strongest comparators,
+  candidate results, falsifiers, negative regimes, reductions, minimum burdens,
+  and dispositions.
 - `docs/research/M1E_SCOPING_LOG.md`: targeted queries, exact primary-record
   resolutions, version corrections, and limitations.
 - `docs/research/EVIDENCE_LEDGER.csv`: exact source metadata and locators.
@@ -200,5 +210,5 @@ The following are explicitly insufficient for a future article:
   bibliographic, and governance review, local validation, required protected
   CI, and merge.
 - Any later reopening must begin with a new issue and a technical object outside
-  all 64 candidates tested in M1c, M1d, and M1e. It must supply the new theorem,
+  all 64 formulations screened in M1c, M1d, and M1e. It must supply the new theorem,
   estimand, or parameter before implementation.
