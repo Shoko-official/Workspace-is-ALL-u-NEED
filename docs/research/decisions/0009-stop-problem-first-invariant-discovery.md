@@ -6,6 +6,9 @@ Issue: [#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25
 Milestone: `M1g - Problem-first invariant discovery`
 Supersedes: no prior `STOP`; Decisions 0002 through 0008 remain in force
 Reviewed scientific commit: `94af4acb8ef2db505e9596c0946c618fc136c641`
+Rebased scientific commit: `64b79fbc2296d618ba5b5ec4b8c9e0a7fceecea6`
+Integrated by: [PR #26](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/26)
+Merged review commit: `777293f87a79d95d39a516097be2246716dd55d5`
 
 ## Context
 
@@ -145,12 +148,13 @@ The following are explicitly insufficient for a future article:
 
 - Decisions 0002 through 0008 continue to stop every earlier route.
 - The experiment registry remains empty.
-- Issue #25 and milestone M1g remain open during protected integration.
+- Protected PR #26 passed required `validate`, merged with linear history, and
+  closed issue #25; milestone #13 is closed.
 - Independent reviews passed on commit
   `94af4acb8ef2db505e9596c0946c618fc136c641`; no reviewer modified the state it
   reviewed.
-- Protected integration, issue closure, and post-merge reconciliation remain
-  pending and are not implied by acceptance.
+- Post-merge reconciliation remains governance-only and cannot change the
+  accepted scientific result.
 - If independent review confirms `STOP`, a later cycle must begin outside all
   81 screened objects with a genuinely different discovery method. It may not
   turn this negative register into the requested article.

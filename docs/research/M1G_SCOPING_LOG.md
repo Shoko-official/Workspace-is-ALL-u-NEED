@@ -161,5 +161,6 @@ registry remains empty, and no article, implementation, benchmark, proof
 project, training run, experiment, paid compute, or submission is authorized.
 Independent scientific, bibliographic, and governance reviews all returned
 `PASS` on scientific commit
-`94af4acb8ef2db505e9596c0946c618fc136c641`. Protected integration remains
-pending.
+`94af4acb8ef2db505e9596c0946c618fc136c641`. Its tree was rebased byte-for-byte
+as `64b79fbc2296d618ba5b5ec4b8c9e0a7fceecea6`; protected PR #26 passed and
+merged as `777293f87a79d95d39a516097be2246716dd55d5`.

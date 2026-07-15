@@ -24,10 +24,10 @@ continuation residual reduces to state continuity, fork-linearizability,
 at-most-once effects, communication, or an external non-clonable resource.
 
 Decision 0009 is accepted after independent scientific, bibliographic, and
-governance reviews all returned `PASS` on scientific commit `94af4ac`. It is
-awaiting protected integration under
-[#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25) and
-is not yet merged.
+governance reviews all returned `PASS` on scientific commit `94af4ac`. The
+protected `validate` check passed and
+[PR #26](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/26)
+merged with linear history as `777293f`; issue #25 and milestone #13 are closed.
 
 No article, implementation, benchmark, training, or experiment is authorized.
 See [accepted Decision 0009](docs/research/decisions/0009-stop-problem-first-invariant-discovery.md)

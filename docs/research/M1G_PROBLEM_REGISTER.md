@@ -425,5 +425,6 @@ scientific, bibliographic, and governance reviews passed on commit
   project, paid compute, or submission is authorized.
 
 The direction-setting objective remains active. This accepted decision is a
-negative originality gate, not the requested article. Protected integration
-remains pending.
+negative originality gate, not the requested article. Protected PR #26 passed
+and merged as `777293f87a79d95d39a516097be2246716dd55d5`; issue #25 and milestone
+#13 are closed.

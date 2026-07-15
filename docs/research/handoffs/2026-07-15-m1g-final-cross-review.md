@@ -14,9 +14,13 @@ Branche examinée: `research/25-problem-first-invariant`
 
 Commit scientifique examiné: `94af4acb8ef2db505e9596c0946c618fc136c641`
 
-Intégration protégée: `PENDING`
+Commit scientifique fusionné après rebase protégé: `64b79fbc2296d618ba5b5ec4b8c9e0a7fceecea6`
 
-Verdict des trois fonctions indépendantes: `MERGE_AFTER_PROTECTED_VALIDATE`
+Commit de revue fusionné: `777293f87a79d95d39a516097be2246716dd55d5`
+
+Intégration protégée: `COMPLETE`
+
+Verdict des trois fonctions indépendantes: `MERGE`
 
 Décision scientifique: `STOP`
 
@@ -64,6 +68,11 @@ créer la nouveauté après l'échec du gate.
 - commit initial rejeté: `7be694155782deda2a4492ff87a47274786aea28`;
 - commit scientifique corrigé et final:
   `94af4acb8ef2db505e9596c0946c618fc136c641`;
+- arbre scientifique fusionné byte-for-byte sous
+  `64b79fbc2296d618ba5b5ec4b8c9e0a7fceecea6`, arbre
+  `fecb7464f85930bb2efd372133c631c4e3de6245`;
+- état de revue fusionné sous
+  `777293f87a79d95d39a516097be2246716dd55d5`;
 - problèmes: `M1G-P01` à `M1G-P08`;
 - crosswalk: 16 M1c, 24 M1d, 24 M1e et 9 M1f, soit 73 lignes uniques;
 - preuves: 182 au total, dont `EV-0170` à `EV-0182` nouvelles;
@@ -156,14 +165,14 @@ Le répertoire non suivi `.codex-remote-attachments/` reste hors périmètre.
 | Réciprocité claim-preuve M1g | `PASS` |
 | BibTeX | 151 entrées et 151 clés uniques |
 | Registre expérimental | liste vide; aucune expérience autorisée |
-| Check protégé distant | `PENDING` |
-| Intégration | `PENDING` |
-| Issue et milestone scientifiques | issue #25 ouverte; milestone #13 ouvert |
+| Check protégé distant | [`validate` PASS](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/actions/runs/29440629617/job/87438348089) sur PR #26 |
+| Intégration | PR #26 fusionnée avec historique linéaire sous `777293f87a79d95d39a516097be2246716dd55d5` |
+| Issue et milestone scientifiques | issue #25 fermée; milestone #13 fermé |
 | Périmètre Git | attachment runtime non suivi |
 
 ## 10. Décision recommandée
 
-`MERGE_AFTER_PROTECTED_VALIDATE`.
+`MERGE`, exécuté après passage du check distant protégé `validate`.
 
 Decision 0009 est `ACCEPTED` avec `STOP` pour les huit problèmes, zéro objet
 distinct et aucune autorisation d'article, modèle, benchmark, implémentation,
@@ -171,10 +180,10 @@ entraînement, expérience, preuve implémentée ou compute payant.
 
 ## 11. Prochaine action autorisée
 
-Soumettre le lot accepté au PR fermant #25 et au check protégé `validate`.
-Après merge, réconcilier l'état sous une issue et un milestone de gouvernance
-sans changer le contenu scientifique. Aucun article ou experiment n'est
-autorisé.
+Réconcilier l'état post-merge sous l'issue #27 et le milestone #14 sans changer
+le contenu scientifique. Après leur fermeture protégée, seule une nouvelle
+recherche issue-scoped et extérieure aux 81 formulations peut rouvrir le
+programme. Aucun article ou experiment n'est autorisé.
 
 ## 12. Rôles et indépendance
 
