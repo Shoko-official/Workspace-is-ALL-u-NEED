@@ -2,7 +2,7 @@
 
 Cutoff: `2026-07-15`
 Issue: [#17](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/17)
-Gate result: `PROPOSED_STOP`
+Gate result: `ACCEPTED_STOP`
 Candidates tested: `24`
 Surviving `DISTINCT_CANDIDATE` objects: `0`
 
@@ -680,7 +680,7 @@ benchmark, or weakening the factorized comparator cannot satisfy that burden.
 
 ## Decision
 
-Propose `STOP` for all 24 M1e screened formulations:
+Return `STOP` for all 24 M1e screened formulations:
 
 - zero `DISTINCT_CANDIDATE` objects survive;
 - nine candidates are directly anticipated;

@@ -1,7 +1,7 @@
 # Research Charter
 
-Status: `M1E_PROPOSED_STOP_UNDER_REVIEW`
-Version: `0.6.0`
+Status: `M1E_STOP_REVIEWED_PENDING_INTEGRATION`
+Version: `0.6.1`
 Milestone: `M1e - Intrinsic restricted-class separation discovery`
 Tracking issue: [#17](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/17)
 
@@ -22,11 +22,12 @@ communication, streaming, causal-identification, and learning formulations. Of
 these, 22 fix the required information, order, state, transcript, compute,
 feedback, randomness, training, and strongest factorized comparison classes;
 two are retained as unsupported admission failures rather than being
-misreported as reductions. The corrected proposed result is nine direct
+misreported as reductions. The accepted result is nine direct
 anticipations, one positive composite, nine generic reductions, three scope
 violations, two unsupported non-distinct sketches, and zero survivors. Decision
-0007 awaits corrected independent review. The program still has no article-
-eligible route.
+0007 passed independent scientific, bibliographic, and governance review;
+protected integration remains pending. The program still has no article-eligible
+route.
 
 ## Candidate contribution hypothesis
 
@@ -82,7 +83,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0006 stop that scope, its direction-setting successor, and the M1c/M1d object sets. Proposed Decision 0007 stops the M1e set pending independent review; none is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Decision 0007 passed independent review and awaits protected integration; none is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
@@ -122,8 +123,8 @@ must state a theorem, identified estimand, or transportable law that survives
 communication, streaming, cell-probe, time-space, causal, POMDP, online,
 distributed-learning, and optimization reductions. A relabeled generic open
 problem, different operation class, weaker comparator, recycled M1c/M1d object,
-unsupported sketch, or empirical interaction cannot pass. M1e proposes `STOP`
-for all 24 screened formulations and awaits corrected independent review.
+unsupported sketch, or empirical interaction cannot pass. M1e returns `STOP`
+for all 24 screened formulations after corrected independent review.
 
 ### M4 oracle gate
 

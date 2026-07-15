@@ -1,11 +1,11 @@
 # Decision 0007: Stop the M1e intrinsic restricted-class candidate set
 
 Date: `2026-07-15`
-Status: `PROPOSED`
+Status: `ACCEPTED`
 Issue: [#17](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/17)
 Milestone: `M1e - Intrinsic restricted-class separation discovery`
 Supersedes: no prior `STOP`; Decisions 0002 through 0006 remain in force
-Reviewed scientific commit: `PENDING_INDEPENDENT_REVIEW`
+Reviewed scientific commit: `265ad2605381d7c94c01355b54a10e1c57884680`
 
 ## Context
 
@@ -129,7 +129,7 @@ The exclusive result is:
 - two `UNSUPPORTED_NOT_DISTINCT` admission failures.
 
 The targeted search is current through 15 July 2026. It is not exhaustive and
-does not infer novelty or non-novelty from search silence. The proposed stop
+does not infer novelty or non-novelty from search silence. The accepted stop
 rests on positive primary records, exact matched classes, generic reductions,
 and scope violations.
 
@@ -207,9 +207,9 @@ The following are explicitly insufficient for a future article:
   benchmark, accounting, directional, distinct-object, and unrestricted
   non-factorization route.
 - The experiment registry remains empty.
-- Issue #17 and milestone M1e may close only after independent scientific,
-  bibliographic, and governance review, local validation, required protected
-  CI, and merge.
+- Independent scientific, bibliographic, and governance reviews passed on the
+  recorded scientific commit. Issue #17 and milestone M1e may close only after
+  required protected CI and merge.
 - Any later reopening must begin with a new issue and a technical object outside
   all 64 formulations screened in M1c, M1d, and M1e. It must supply the new theorem,
   estimand, or parameter before implementation.

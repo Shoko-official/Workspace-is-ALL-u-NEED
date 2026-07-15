@@ -35,6 +35,8 @@ class GovernanceValidationTests(unittest.TestCase):
             "docs/research/decisions/0007-stop-intrinsic-restricted-class-discovery.md",
             "docs/research/handoffs/2026-07-15-m1d-bibliographic-audit.md",
             "docs/research/handoffs/2026-07-15-m1d-final-cross-review.md",
+            "docs/research/handoffs/2026-07-15-m1e-bibliographic-audit.md",
+            "docs/research/handoffs/2026-07-15-m1e-final-cross-review.md",
         }
 
         self.assertTrue(expected.issubset(REQUIRED_PATHS))

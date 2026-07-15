@@ -2,7 +2,7 @@
 
 Snapshot: `2026-07-15`
 State schema: `1`
-Operational status: `REVIEW_ONLY`
+Operational status: `INTEGRATION_ONLY`
 
 ## Current milestone
 
@@ -14,7 +14,7 @@ M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-i
 
 ## Current gate
 
-`PROPOSED_STOP_PENDING_INDEPENDENT_REVIEW`
+`STOP_REVIEWED_PENDING_PROTECTED_INTEGRATION`
 
 The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -26,22 +26,24 @@ M1d generated 24 additional candidates across formal identification, learning dy
 
 The unrestricted behavioral joint-policy comparison is underidentified at fixed history: every `pi(m,c|h)` factorizes as `pi_M(m|h) pi_C(c|h,m)` when the manager may pass `(h,m)` to the router. This reproduces only the action distribution, not causal order, computational cost, learning, or sample efficiency. No candidate justifies an intrinsic restricted information, communication, computation, or learning class and proves its claimed separation within one. Decision 0006 and its independent cross-review are merged. The protected `validate` check passed, PR #14 merged with linear history, issue #13 closed, and milestone M1d closed. No model, benchmark, training, experiment, or manuscript is authorized.
 
-M1e now tests that restricted-class opening directly. Three read-only lanes
+M1e tested that restricted-class opening directly. Three read-only lanes
 screened 24 communication, streaming, causal-identification, and learning
 formulations. Twenty-two fix the required class and result fields. C10's
 necessary-and-sufficient compressed-state threshold is unsupported, and C23
 does not select one task family and frontier; neither is counted as reduced or
-distinct. The corrected proposed result is `STOP` with zero survivors:
+distinct. The accepted result is `STOP` with zero survivors:
 `9 direct / 1 composite / 9 reduced / 3 out of scope / 2 unsupported`.
-Decision 0007 remains `PROPOSED` until corrected independent scientific,
-bibliographic, and governance review.
+Decision 0007 is `ACCEPTED` after corrected independent scientific,
+bibliographic, and governance reviews all returned `PASS` on scientific commit
+`265ad2605381d7c94c01355b54a10e1c57884680`. Protected integration remains
+pending.
 No model, benchmark, implementation, training, experiment, paid compute, or
 manuscript is authorized.
 
 ## Active issues
 
-Issue #17 and milestone #9 are active only for M1e restricted-class discovery,
-independent review, protected integration, and closeout.
+Issue #17 and milestone #9 remain active only for protected integration and
+closeout of the reviewed M1e decision.
 
 ## Capability audit
 
@@ -59,10 +61,10 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 ## Active agents
 
-The three M1e generation lanes completed read-only with zero proposed survivors.
-Initial independent scientific, bibliographic, and governance reviews returned
-correctable blockers; corrected rereview is pending. Exact runtime model
-identities remain non-controllable.
+The three M1e generation lanes completed read-only with zero survivors. After
+two correction rounds, the independent scientific, bibliographic, and governance
+functions each returned `PASS` on the same commit. Exact runtime model identities
+remain non-controllable.
 
 ## Input inventory
 
@@ -150,6 +152,7 @@ This machine is sufficient for governance and small deterministic harness work a
 46. Match the factorized comparator on all allowed observations, online order, persistent and transcript bits, rounds, probes, passes, parameters, samples, training information, randomness, feedback, oracle calls, and compute. Permit co-design and joint training.
 47. Screen 24 M1e formulations across communication and streaming complexity, causal identification, and learning or sample efficiency. Record nine direct anticipations, one positive composite, nine generic reductions, three scope violations, and two unsupported non-distinct admission failures; retain zero `DISTINCT_CANDIDATE` objects.
 48. Propose global `STOP` in Decision 0007. Do not authorize a proof implementation or experiment for a candidate that is directly occupied, reconstructed, generically reduced, recycled, or only a relabeled classical open problem. Keep the decision in independent review before acceptance.
+49. Accept Decision 0007 after corrected independent scientific, bibliographic, and governance reviews report no remaining blocker on scientific commit `265ad2605381d7c94c01355b54a10e1c57884680`. Authorize only protected PR integration and post-merge reconciliation.
 
 ## Blockers
 
@@ -163,7 +166,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
-| B-010 | No original article route survives the M0, M1, M1b, M1c, M1d, or proposed M1e gate | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object survives positive prior-art comparison, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
+| B-010 | No original article route survives the M0, M1, M1b, M1c, M1d, or accepted M1e gate | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object survives positive prior-art comparison, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
 
 ## Last valid experiment
 
@@ -171,10 +174,9 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Run corrected independent scientific, bibliographic, and governance review on
-the M1e scientific commit. Only corrections, validation, protected PR
-integration, and post-merge reconciliation are authorized if the proposed
-`STOP` survives.
+Push the reviewed branch, open a PR containing `Closes #17`, require the
+protected `validate` check, and merge only if it passes. Then close milestone #9
+and reconcile the post-merge state under a new issue, milestone, branch, and PR.
 
 ## M1e exit checklist
 
@@ -182,11 +184,11 @@ integration, and post-merge reconciliation are authorized if the proposed
 - [x] Three read-only lanes generate 24 communication, causal, and learning candidates.
 - [x] Every admitted candidate fixes its class, strongest comparator, candidate result, falsifier, negative regime, reduction, and minimum burden; C10 and C23 are explicitly retained as admission failures.
 - [x] Targeted primary-record resolutions and version corrections are retained without an exhaustive-search claim.
-- [x] Decision 0007 proposes `STOP` with zero survivors and no experiment authorization.
-- [ ] Independent scientific review reports no blocking distinctness or matching error.
-- [ ] Independent bibliographic review reports no blocking metadata, version, or locator error.
-- [ ] Independent governance review reports no blocking cross-reference, status, or scope error.
-- [ ] Local governance validation, unit tests, and diff check pass.
+- [x] Decision 0007 records `STOP` with zero survivors and no experiment authorization.
+- [x] Independent scientific review reports no blocking distinctness or matching error.
+- [x] Independent bibliographic review reports no blocking metadata, version, or locator error.
+- [x] Independent governance review reports no blocking cross-reference, status, or scope error.
+- [x] Local governance validation, unit tests, and diff check pass.
 - [ ] Protected `validate` passes on the final M1e decision head.
 - [ ] Decision 0007 merges and issue #17 and milestone #9 close.
 

@@ -166,7 +166,7 @@ candidates are two recycled longitudinal write-effect objects and one relabeled
 generic open lower-bound problem. C10 and C23 are retained as unsupported,
 non-distinct admission failures; neither is counted as a known reduction.
 
-M1e therefore proposes `STOP`. The search does not establish that no original
+M1e therefore returns `STOP`. The search does not establish that no original
 state-compute theorem can ever exist. It establishes that none of the 22
 admitted candidates survives and neither of the two rejected sketches supplies
 an admitted theorem object. No proof or experiment is currently authorized.
