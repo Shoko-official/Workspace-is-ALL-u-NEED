@@ -2,6 +2,14 @@
 
 Research repository for falsifiable originality gates on stateful LLM directions.
 
-The budgeted-workspace architecture and benchmark routes failed M1. The managed-state direction-setting thesis failed M1b, and M1c stopped sixteen independently motivated formal, systems, and longitudinal objects. M1d then tested 24 new state-compute mechanisms, estimators, bounds, invariants, and predictive laws under a strict no-recycling gate. Zero survived: one is directly anticipated, six are reconstructed by positive composites, nine conditionally reduce to known theory, two are unsupported and non-distinct, and six violate the preregistered scope.
+The budgeted-workspace architecture and benchmark routes failed M1. The managed-state direction-setting thesis failed M1b, M1c stopped sixteen independently motivated technical objects, and M1d stopped 24 additional state-compute candidates.
 
-The fixed-history chain-rule result is limited to behavioral distributions; it does not claim causal, computational, or learning equivalence. No article, implementation, benchmark, training, or experiment is authorized. See [decision 0006](docs/research/decisions/0006-stop-nonfactorizing-state-compute-discovery.md) and the [M1d candidate register](docs/research/M1D_CANDIDATE_REGISTER.md).
+M1e now tests the remaining restricted-class possibility with 24 fully matched
+communication, streaming, causal-identification, and learning candidates. The
+proposed result is again zero survivors: eight are directly anticipated, three
+are reconstructed by positive composites, ten reduce to known theory, and
+three violate scope. Decision 0007 remains under independent review.
+
+No article, implementation, benchmark, training, or experiment is authorized.
+See [decision 0007](docs/research/decisions/0007-stop-intrinsic-restricted-class-discovery.md)
+and the [M1e candidate register](docs/research/M1E_CANDIDATE_REGISTER.md).
