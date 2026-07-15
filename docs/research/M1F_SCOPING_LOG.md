@@ -40,7 +40,7 @@ claimed as exhaustive.
 | Compatibility | `cross LLM writer reader memory compatibility model upgrade semantic ABI` | Reused Rosetta Memory and AFTER after exact interface matching |
 | Experience/compute | `past experience accelerate LLM reasoning adaptive compute memory` | Resolved directly to SpeedupLLM |
 | Authority | `persistent LLM memory origin authority non-malleable poisoning IFC capabilities` | Resolved to TMA-NM, f-secure, CaMeL, and Fides |
-| Timing | `secret persistent state adaptive depth latency trace timing privacy LLM` | Mapped enriched traces to timing privacy, TIFC, Nickel, and adaptive composition |
+| Timing | `secret persistent state adaptive depth latency trace timing privacy LLM` | Resolved declared depth, stopping-time, and latency leakage to output-plus-runtime timing privacy; broader trace channels were not claimed |
 | Shared work | `joint controller shared computation factorized circuit common information channel synthesis pebbling` | Tested the two-copy compiler, SFRL, exact channel synthesis, and multiprocessor pebbling |
 | Executable writes | `self evolving LLM agent verified program synthesis persistent policy contract` | Resolved the restricted constructive branch to SEVerA |
 | Incentives | `strategic memory writes costly audits online information acquisition mechanism design` | Resolved to online information acquisition and adaptive costly audits |
@@ -89,8 +89,10 @@ ordinary information loss.
 ### Shared controller and correlated sampling
 
 For any randomized joint circuit `J(h,r)=(m,c)` with common input and seed, two
-parallel copies reproduce the exact joint law with at most twice the work and
-the same depth. A single copy plus transmission of one output gives the
+parallel copies reproduce the exact joint law with at most twice the work,
+twice the aggregate fast memory, and the same depth. Sequential copies preserve
+the original fast-memory ceiling with at most twice the depth. For a finite
+output alphabet, a single copy plus transmission of one output gives the
 alternative communication bound. Private inputs, isolated memories, or private
 randomness move the object into communication, pebbling, or channel synthesis.
 
@@ -104,8 +106,10 @@ shared-trunk architecture over attention, experts/depth, and cache precision.
   laundering channels directly. f-secure and CaMeL (`EV-0156`; `EV-0157`)
   provide information-flow and capability defenses.
 - Ratliff and Vadhan (`EV-0159`) define privacy when both output and runtime are
-  observable. Adding adaptive compute traces to the output therefore does not
-  define a new privacy primitive.
+  observable. Treating one full interaction as a randomized program and its
+  per-step depth, stopping-time, and latency vector as output therefore does not
+  define a new privacy primitive. No adaptive-composition theorem or broader
+  address, branch, call, or action trace is attributed to this source.
 - A universal sound and complete verifier for arbitrary executable writes is a
   program-verification impossibility. SEVerA (`EV-0163`) supplies the restricted
   contract-and-fallback construction rather than a universal gate.

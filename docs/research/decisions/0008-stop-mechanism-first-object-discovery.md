@@ -46,10 +46,12 @@ already stopped representation-migration and writer-reader objects.
 ### Shared computation cannot create the requested separation
 
 Let a joint randomized circuit `J(h,r)` return memory and compute actions
-`(m,c)` with work `W` and depth `D`. With common public input and randomness,
-two parallel copies reproduce the exact joint law using at most `2W` work,
-depth `D`, and no message. A single execution followed by transmission of one
-output gives a second compiler.
+`(m,c)` with work `W`, depth `D`, and fast memory `S`. With common public input
+and randomness, two parallel copies reproduce the exact joint law using at
+most `2W` work, aggregate fast memory `2S`, depth `D`, and no message.
+Sequential copies instead use fast memory `S` and depth `2D`. For a finite
+output alphabet, a single execution followed by transmission of one output
+gives a second compiler.
 
 Any superconstant separation therefore requires private or late observations,
 private randomness, isolated memories, restricted fanout, or a bounded
@@ -67,9 +69,10 @@ theme, although its July 2026 preprint remains unreviewed and unreplicated.
 - Durable experience displacing reasoning compute is stated by SpeedupLLM.
 - Non-malleable origin-bound authority is stated by TMA-NM and composed from
   established information-flow and capability mechanisms.
-- Secret-dependent compute traces are timing privacy, noninterference, covert
-  channels, and adaptive privacy composition once the trace is counted as an
-  output.
+- Secret-dependent depth, stopping-time, and latency traces are the established
+  output-plus-runtime timing-privacy object when the full interaction for a
+  fixed adversary is treated as one randomized program. Broader address,
+  branch, call, or action channels are outside this source-backed disposition.
 - A universal executable-write gate is ordinary undecidability and program
   verification; SEVerA supplies a restricted constructive regime.
 - Strategic memory contribution with costly audits is online mechanism design
@@ -126,8 +129,8 @@ The following are explicitly insufficient for a future article:
 - `GO` on shared computation was rejected by the exact two-copy compiler and
   the single-copy-plus-message compiler.
 - `GO` on origin-bound authority was rejected by the direct TMA-NM collision.
-- `GO` on trace privacy was rejected because the trace is an output channel in
-  timing privacy and IFC.
+- `GO` on trace privacy was rejected because declared depth, stopping time, and
+  latency are observable runtime in timing privacy.
 - `GO` on executable persistent skills was rejected by generic undecidability
   and the existing restricted SEVerA construction.
 - `GO` on strategic records was rejected by online information-acquisition and

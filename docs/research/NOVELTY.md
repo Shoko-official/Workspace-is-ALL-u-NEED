@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1E_TERMINAL_STOP`
-Protocol version: `0.6.2`
+Status: `M1F_PROPOSED_STOP`
+Protocol version: `0.7.0`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -282,14 +282,17 @@ comparator, exact result, falsifier, negative regime, and reduction boundary.
 Nine attempts were tested. Evidence inflation and semantic ABI recycle earlier
 longitudinal, migration, and writer-reader objects. Experience-driven compute
 reduction and non-malleable persistent authority are directly occupied.
-Secret-dependent compute traces reduce to timing privacy and information-flow
-control. Strategic memory reports reduce to online information-acquisition and
-costly-audit mechanism design. Universal executable-write verification is a
-generic undecidability boundary with an existing restricted construction.
+Secret-dependent depth, stopping-time, and latency traces reduce to
+output-plus-runtime timing privacy. Strategic memory reports reduce to online
+information-acquisition and costly-audit mechanism design. Universal
+executable-write verification is a generic undecidability boundary with an
+existing restricted construction.
 
 The strongest formal escape also fails constructively. A randomized joint
 circuit with common input and seed can be duplicated in parallel to reproduce
-both outputs with at most twice the work, identical depth, and zero message.
+both outputs with at most twice the work, twice the aggregate fast memory,
+identical depth, and zero message. A sequential duplicate preserves the
+fast-memory ceiling at the cost of twice the depth.
 Private observations, private randomness, or isolated memory move the problem
 to communication, channel synthesis, or pebbling rather than create an
 intrinsic state-compute separation.
