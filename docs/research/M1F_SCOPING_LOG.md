@@ -155,5 +155,6 @@ Nine mechanisms were tested sequentially. None passed admission:
 The outcome is `ACCEPTED_STOP`. No implementation or experiment is authorized.
 Independent scientific, bibliographic, and governance reviews all returned
 `PASS` on scientific commit
-`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`; protected integration remains
-required.
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Its tree was rebased byte-for-byte
+as `e5b4bd69a06b6959fd6c7d524a65ace396ad8112`; protected PR #22 passed and
+merged.

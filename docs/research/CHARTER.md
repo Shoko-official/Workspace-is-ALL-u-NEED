@@ -1,7 +1,7 @@
 # Research Charter
 
-Status: `M1F_ACCEPTED_STOP`
-Version: `0.7.1`
+Status: `M1F_TERMINAL_STOP`
+Version: `0.7.2`
 Last scientific milestone: `M1f - Mechanism-first technical object discovery`
 Last scientific issue: [#21](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/21)
 
@@ -38,7 +38,8 @@ mission-tokenization proposal misclassifies recommender item tokenization as
 lexical tokenization and otherwise assembles established components. Accepted
 Decision 0008 returns `STOP` with zero admitted objects after independent
 scientific, bibliographic, and governance reviews all passed on commit
-`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Protected integration is pending.
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Protected `validate` passed and
+PR #22 merged with linear history under `67c0bdcf4b68671cda91d40c56bde99333dc36c8`.
 
 ## Candidate contribution hypothesis
 
@@ -94,7 +95,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review. Decision 0007 passed protected integration; Decision 0008 still awaits it. None is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review and protected integration. None is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 

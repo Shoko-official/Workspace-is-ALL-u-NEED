@@ -393,5 +393,6 @@ M1f returns `STOP` for all nine sequential mechanism-first attempts.
 
 Independent scientific, bibliographic, and governance reviews all returned
 `PASS` on scientific commit
-`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Protected integration remains
-required.
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Its tree was rebased byte-for-byte
+as `e5b4bd69a06b6959fd6c7d524a65ace396ad8112`; protected PR #22 passed and
+merged.
