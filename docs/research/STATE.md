@@ -2,29 +2,33 @@
 
 Snapshot: `2026-07-15`
 State schema: `1`
-Operational status: `STOPPED`
+Operational status: `SCIENTIFIC_REVIEW`
 
 ## Current milestone
 
-None. M0, M1, M1b, and M1c are closed.
+M1d, `Non-factorizing state-compute object discovery`, is active under issue
+[#13](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/13) and
+milestone #7. M0, M1, M1b, and M1c remain closed.
 
-M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), and M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10). Issues #1, #3, #5, and #9 and their scientific milestones are closed. Issues #7 and #11 and milestones #4 and #6 tracked only post-merge reconciliation and are closed without reopening scientific work.
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), and M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10). Issues #1, #3, #5, and #9 and their scientific milestones are closed. Issues #7 and #11 and milestones #4 and #6 tracked only post-merge reconciliation and are closed without reopening scientific work. M1d is a new discovery cycle and does not reopen any stopped claim.
 
 ## Current gate
 
-`TERMINAL_STOP`
+`M1D_PROPOSED_STOP_REVIEW`
 
-The broad and narrowed architecture claims are `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes are also `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
+The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
 The owner's distinct direction-setting objective has now returned `STOP`. State-Aware Runtime and PLACEMEM directly anticipate the broad shift from prompt accumulation toward managed state and compute-aware memory. The implementation-neutral `Omega/G/B/Adeq/Cert/Cmp/T*/T_hat` shell reduces to known contracts, resource allocation, temporal data, provenance, evidence certification, metareasoning, Pareto comparison, and reject decisions. Four registered predictions are `ANTICIPATED`; the validity-before-compute prediction is `UNSUPPORTED` and `UNSUPPORTED_NOT_DISTINCT` as a novelty disposition.
 
 M1c independently generated sixteen revision, concurrency, migration, causal, procedural, longitudinal, and evaluation objects. Zero survive. Direct or strongest-composite anticipations include Cordon, CoAgent, Causal Agent Replay, CausalFlow, Rosetta Memory, AFTER, SkillGuard, A-MemGuard, Longitudinal Safety, the rate-distortion compaction analysis, Artifact Ecology, ShiftBench, MemDelta, adaptive-agent hysteresis, Hyperproperties, and time-series causal estimands. The remaining formulations reduce explicitly to dynamic dependence graphs, I-confluence, provenance, causal intervention, rejection, branching, stability, two-trace non-interference, path effects, or carryover, or fail to specify a distinct estimator, mechanism, invariant, bound, or theorem.
 
-The direction-setting article remains `NOT_ELIGIBLE`. Decision 0005 and its independent cross-review are merged. The protected `validate` check passed, PR #10 merged with linear history, issue #9 closed, and milestone M1c closed. No model, benchmark, training, experiment, or manuscript is authorized.
+M1d generated 24 additional candidates across formal identification, learning dynamics, and runtime mechanisms. The proposed Decision 0006 returns `STOP` with zero survivors. Positive records include ReasoningBank/MaTTS, BudgetMem, AdaMEM, MemoPilot, TrustMem, Memory-R2, Useful Memories, TriggerBench, CRAM, INFERCEPT, and Preble. CRAM directly anticipates one candidate; six others are reconstructed by positive composites. Remaining objects conditionally reduce to dynamic value of computation, augmented-state MDP/POMDP control, adaptive doubly robust evaluation, longitudinal mediation, adaptive submodularity, online optimization, scheduling, caching, checkpointing, or proof-carrying computation, are unsupported and non-distinct, or violate the no-recycling boundary.
+
+The unrestricted behavioral joint-policy comparison is underidentified at fixed history: every `pi(m,c|h)` factorizes as `pi_M(m|h) pi_C(c|h,m)` when the manager may pass `(h,m)` to the router. This reproduces only the action distribution, not causal order, computational cost, learning, or sample efficiency. No candidate justifies an intrinsic restricted information, communication, computation, or learning class and proves its claimed separation within one. Decision 0006 is therefore in independent scientific and governance review after bibliographic audit. No model, benchmark, training, experiment, or manuscript is authorized.
 
 ## Active issues
 
-None. Issue #11 and milestone #6 tracked only this post-merge reconciliation and closed without changing scientific claims or authorizing work.
+Issue #13 is active under milestone #7 for M1d discovery and review. It authorizes only evidence, formal reduction, governance validation, and decision integration.
 
 ## Capability audit
 
@@ -42,7 +46,7 @@ Exact Sol, Terra, and Luna model selection is not exposed by this runtime. Funct
 
 ## Active agents
 
-None. The three M1c discovery lanes and the independent final scientific, bibliographic, and governance reviews completed. No blocking finding remains.
+The three M1d discovery lanes completed read-only with zero survivors. An independent bibliography audit is active. Independent scientific and governance review follow the decision draft; exact runtime model identities remain non-controllable.
 
 ## Input inventory
 
@@ -119,6 +123,10 @@ This machine is sufficient for governance and small deterministic harness work a
 35. Accept the corrected independent final reviews: scientific distinctness, source metadata, CSV reciprocity, governance validation, tests, and Git scope report no remaining blocker before CI and protected merge.
 36. Close M1c after the protected `validate` check passed on PR #10, PR #10 merged with linear history, issue #9 closed, and milestone #5 closed.
 37. Reconcile the post-merge operational snapshot under issue #11 without changing scientific claims, evidence, candidate dispositions, experiments, or Decision 0005. Retain `TERMINAL_STOP`.
+38. Open issue #13 and milestone M1d only for a non-factorizing mechanism, estimator, invariant, bound, theorem, or predictive law outside M1C-C01 through M1C-C16. Forbid another joint router, validity-before-compute score, recycled M1c object, benchmark axis, survey, taxonomy, manifesto, or search-silence claim.
+39. Require every joint-versus-separated claim to define its claim type and comparison class. At fixed history, an unrestricted chain-rule factorization `pi(m,c|h) = pi_M(m|h) pi_C(c|h,m)` reconstructs the behavioral action distribution, but does not establish causal, computational, optimization, learning, or sample-efficiency equivalence. Behavioral separation requires an intrinsic restricted interface; other separation claims require their own matched estimand or bound.
+40. Evaluate 24 M1d candidates across formal identification, learning dynamics, and runtime mechanisms. Record one direct anticipation, six strongest-composite anticipations, nine conditional generic reductions, two unsupported non-distinct objects, and six preregistered-scope violations; retain zero `DISTINCT_CANDIDATE` objects.
+41. Propose global `STOP` in Decision 0006. Do not authorize an experiment to repair a direct collision, generic reduction, underidentified comparator, or no-recycling violation. Keep the proposed decision in independent scientific and bibliographic review before acceptance.
 
 ## Blockers
 
@@ -132,7 +140,7 @@ This machine is sufficient for governance and small deterministic harness work a
 | B-006 | No independent GitHub identity is configured | GitHub cannot enforce a distinct human approval | Independent functional review recorded now; repository reviewer identity added before confirmatory merges |
 | B-007 | The confirmatory matrix is unbounded and unaffordable on the recorded machine | M2 and later cannot freeze or schedule a fair program | Freeze baseline tiers, grids, retention, power, and written compute/storage ceilings; cost the minimum decisive experiment first |
 | B-008 | Recent 2026 prior-art records are changing rapidly | Titles, authors, claims, and locators can drift | Pin exact versions now and recheck at protocol freeze and submission |
-| B-010 | No original article route survives the M0, M1, M1b, and M1c gates | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object survives positive prior-art comparison, strongest-composite and generic-theory reduction, falsifiability, and minimum-design review |
+| B-010 | No original article route survives the M0, M1, M1b, M1c, or proposed M1d gates | No manuscript, implementation, benchmark, training, or experiment is authorized | A new independently motivated technical object survives positive prior-art comparison, strongest-composite and generic-theory reduction, an identified comparison class, falsifiability, and minimum-design review |
 
 ## Last valid experiment
 
@@ -140,7 +148,20 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-None. The program remains at `TERMINAL_STOP`. A later M1d cycle may open only through a new issue and milestone for an independently motivated object outside M1C-C01 through M1C-C16 that satisfies Decisions 0004 and 0005 before implementation.
+Complete independent scientific, bibliographic, and governance review of proposed Decision 0006. If no blocker remains, accept the decision, run required validation, and integrate it through a protected PR. No experiment is authorized.
+
+## M1d exit checklist
+
+- [x] Issue #13 and milestone #7 define the admission gate and forbidden recycling.
+- [x] Three independent lanes generated 24 formal, learning, and runtime candidates.
+- [x] Every candidate records a decisive falsifier, negative regime, strongest reduction, and minimum burden.
+- [x] The unrestricted joint-policy factorization and restricted-interface requirement are explicit.
+- [x] Targeted discovery queries and exact positive records are retained without an exhaustive-search claim.
+- [x] Proposed Decision 0006 records `STOP` with zero survivors and no experiment authorization.
+- [ ] Independent bibliographic audit reports no blocking metadata or locator error.
+- [ ] Independent scientific and governance reviews report no blocking finding.
+- [ ] Required local and protected CI checks pass on the final M1d decision head.
+- [ ] Decision 0006 merges and issue #13 and milestone #7 close.
 
 ## M1c exit checklist
 
