@@ -7,8 +7,8 @@ The budgeted-workspace architecture and benchmark routes failed M1. The managed-
 M1e now tests the remaining restricted-class possibility. It screened 24
 communication, streaming, causal-identification, and learning formulations; 22
 passed the admission-format gate and two retain unsupported, non-distinct
-residue. The corrected proposed result is again zero survivors: eight are
-directly anticipated, two are reconstructed by positive composites, nine reduce
+residue. The corrected proposed result is again zero survivors: nine are
+directly anticipated, one is reconstructed by a positive composite, nine reduce
 to known theory, three violate scope, and two fail admission. Decision 0007
 awaits corrected independent review.
 

@@ -155,18 +155,25 @@ different operation class.
 #### M1E-C05: Recurrent passes over a graph stream
 
 - Claim type: streaming space-pass complexity.
-- Class: graph edges arrive in adversarial order; a randomized algorithm makes
-  `p` complete passes, keeps `S` bits between passes, and returns a promised
-  graph statistic. Local per-edge computation is not the bottleneck.
-- Candidate result: a polynomial-space or logarithmic-pass lower bound.
-- Decisive falsifier: an algorithm below the registered space-pass curve solves
-  the same promised family.
-- Negative regime: enough passes to materialize the structure, or enough space
-  to retain the graph.
+- Class: edges of an `n`-vertex planar graph arrive in adversarial insertion-
+  only order; a randomized algorithm makes `p` complete passes, retains `S`
+  bits between passes, and returns a `(1+\varepsilon)` approximation of maximum
+  matching size with success probability at least `2/3`, for fixed
+  `\varepsilon \in (0,\varepsilon_0)`.
+- Candidate result: every such algorithm requires
+  `S = n^{1-g(\varepsilon,p)}`, where
+  `g(\varepsilon,p)=O(\varepsilon^{c/p})` for the
+  absolute constant `c` in Result 2(ii) of `EV-0148`; hence logarithmically many
+  passes or polynomial space are required in its stated regimes.
+- Decisive falsifier: a `p`-pass algorithm with success at least `2/3` and space
+  `o(n^{1-g(\varepsilon,p)})` achieves the same approximation on the registered
+  planar family.
+- Negative regime: enough passes to materialize the structure, enough space to
+  retain the graph, or an approximation factor outside the registered regime.
 - Strongest factorized comparator: every `p`-pass streaming algorithm whose
   transitions and final computation are co-designed.
-- Reduction: multi-pass streaming lower bounds (`EV-0148`) already use multi-round
-  communication, hidden matching, or pointer chasing for these graph problems.
+- Reduction: this is exactly the planar maximum-matching-size branch of Result
+  2(ii) in `EV-0148`, obtained from its multi-round OMC lower bound.
 - Minimum burden: a distinct persistent operation that yields a new
   space-pass theorem rather than an LLM interpretation of a graph-stream bound.
 - Disposition: `REDUCED_TO_STREAMING`.
@@ -337,9 +344,12 @@ entire allowed history and transcript under exactly these budgets.
 #### M1E-C12: Stationary effect on a performative population
 
 - Claim type: stationary policy-value identification.
-- Class: persistent state changes write and compute actions, which change the
-  future request population. One adaptive trajectory is observed under
-  sequential ignorability, overlap, and mixing assumptions.
+- Class: explicit exception to the finite-`H` default. A continuing ergodic
+  process follows the shared causal order with `B_s` persistent bits and per-
+  round `B_m` transcript bits and `B_c` compute. Persistent state changes write
+  and compute actions, which change the future request population. One infinite-
+  horizon trajectory is observed under sequential ignorability, overlap, and
+  geometric mixing assumptions.
 - Estimand: the difference in long-run average outcome between two policies.
 - Candidate result: an identified estimator with a rate depending on mixing
   time and overlap.
@@ -379,28 +389,34 @@ entire allowed history and transcript under exactly these budgets.
   not a central-versus-distributed information gap.
 - Disposition: `REDUCED_TO_KNOWN_THEORY`.
 
-#### M1E-C14: Causal bandit over persistent interventions
+#### M1E-C14: Fixed-budget selection of a persistent intervention
 
-- Claim type: causal discovery and best-intervention sample efficiency.
-- Class: each episode intervenes on one persistent-state cell, then allocates
-  `B_c` observations to descendants in a declared DAG.
-- Candidate result: simple-regret or identification bounds controlled by a
-  separating system or causal coverage parameter.
-- Decisive falsifier: regret exceeds the bound under its hypotheses, or a
-  lower-bound instance is solved with fewer interventions.
-- Negative regime: no shared causal information, non-identifiability under the
-  allowed interventions, or dominant intervention cost.
+- Claim type: fixed-budget best-intervention simple regret.
+- Class: a known acyclic causal graph has one intervention source `V`, one
+  bounded downstream target `Y`, and `K` allowed soft interventions with the
+  likelihood information required by `EV-0151`. Across `T` sampling episodes,
+  an acquisition policy chooses interventions under average cost budget `B`;
+  `B_s` is declared large enough for SRISv1's `K` sufficient statistics and
+  selected arm, while the router allocates the same `T` samples and compute. It
+  then selects one intervention for persistent deployment.
+- Candidate result: the SRISv1 policy satisfies the gap-dependent fixed-budget
+  simple-regret upper bound in Theorems 2 and 5 of `EV-0151`, parameterized by
+  `T`, intervention gaps, costs, and the effective standard deviation of
+  Definition 3.
+- Decisive falsifier: SRISv1 violates that simple-regret bound under its stated
+  support, likelihood, sampling, and cost assumptions.
+- Negative regime: indistinguishable interventions, failed likelihood support,
+  unknown required intervention distributions, or an infeasible cost budget.
 - Strongest factorized comparator: a manager and acquisition router choosing
   the same adaptive interventions and observations with the same DAG and
   budget.
-- Reduction: causal bandits and adaptive experimental design already supply
-  the separating systems, track-and-stop rules, fixed-budget best-intervention
-  error or simple-regret bounds, and general-SCM regret bounds. Persistence only
-  reindexes the intervention across episodes. `EV-0137`, `EV-0151`, and
-  `EV-0152` are the decision-critical positive records.
+- Reduction: `EV-0151` directly supplies the registered task, acquisition
+  policy, cost-aware effective variance, and simple-regret theorem. Persistence
+  names the final deployment decision; it does not change the identification
+  problem.
 - Minimum burden: a new causal structural parameter or bound created by an
   operation absent from the existing intervention model.
-- Disposition: `ANTICIPATED_BY_COMPOSITE`.
+- Disposition: `ANTICIPATED_DIRECTLY`.
 
 #### M1E-C15: Dual audit against epistemic lock-in
 
@@ -626,7 +642,8 @@ entire allowed history and transcript under exactly these budgets.
 
 ## Strongest-composite result
 
-The maximum comparator closes the apparent architectural gap in every lane:
+For the 22 admitted formulations, the maximum comparator closes the apparent
+architectural gap in every lane:
 
 - streaming summaries plus adaptive query algorithms reconstruct persistent
   state followed by compute;
@@ -635,8 +652,9 @@ The maximum comparator closes the apparent architectural gap in every lane:
 - longitudinal causal policies reconstruct write, compute, audit, and future
   outcomes;
 - belief-state control reconstructs epistemic state and information purchase;
-- jointly trained representation and scheduler modules reconstruct meta-state
-  plus adaptive computation; and
+- online, meta, and bilevel methods separately represent persistent meta-state,
+  similarity adaptation, and charged gradient or hypergradient calls without
+  claiming C23's absent joint adaptive-stopping frontier; and
 - distributed learning reconstructs private views plus bounded transcripts.
 
 The positive literature goes further than a generic reconstruction for the 22
@@ -665,14 +683,14 @@ benchmark, or weakening the factorized comparator cannot satisfy that burden.
 Propose `STOP` for all 24 M1e screened formulations:
 
 - zero `DISTINCT_CANDIDATE` objects survive;
-- eight candidates are directly anticipated;
-- two are anticipated by positive composites;
+- nine candidates are directly anticipated;
+- one is anticipated by a positive composite;
 - nine reduce to established communication, streaming, data-structure,
   causal, control, learning, or optimization theory; and
 - three violate the no-recycling or no-generic-open-problem boundary; and
 - two are unsupported, non-distinct admission failures.
 
-The exclusive disposition tally is `8 direct / 2 composite / 9 reduced / 3 out
+The exclusive disposition tally is `9 direct / 1 composite / 9 reduced / 3 out
 of scope / 2 unsupported = 24`.
 
 This register is a negative scientific result. It is not an article, survey,

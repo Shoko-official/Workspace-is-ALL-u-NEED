@@ -22,8 +22,8 @@ communication, streaming, causal-identification, and learning formulations. Of
 these, 22 fix the required information, order, state, transcript, compute,
 feedback, randomness, training, and strongest factorized comparison classes;
 two are retained as unsupported admission failures rather than being
-misreported as reductions. The corrected proposed result is eight direct
-anticipations, two positive composites, nine generic reductions, three scope
+misreported as reductions. The corrected proposed result is nine direct
+anticipations, one positive composite, nine generic reductions, three scope
 violations, two unsupported non-distinct sketches, and zero survivors. Decision
 0007 awaits corrected independent review. The program still has no article-
 eligible route.
