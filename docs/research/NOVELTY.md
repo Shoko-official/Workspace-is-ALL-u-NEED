@@ -226,3 +226,42 @@ The unrestricted manager-router observation is deliberately narrow. At fixed his
 The final dispositions are exhaustive: one `ANTICIPATED_DIRECTLY`, six `ANTICIPATED_BY_COMPOSITE`, nine `REDUCED_TO_KNOWN_THEORY` under declared assumptions, two `UNSUPPORTED_NOT_DISTINCT`, and six `OUT_OF_SCOPE_RECYCLING`. Zero candidates are `DISTINCT_CANDIDATE`.
 
 The result is not an article. It is a negative originality gate backed by positive records, explicit composites, conditional reductions, and scope exclusions. The search is targeted and non-exhaustive; search silence is never used. No model, benchmark, implementation, training run, experiment, paid compute, or manuscript is authorized. The full record is in `M1D_CANDIDATE_REGISTER.md`, `M1D_SCOPING_LOG.md`, and Decision 0006.
+
+## M1e proposed gate decision
+
+Proposed decision: `STOP`, pending independent review.
+
+M1e tests the restricted-class opening left by M1d rather than repeating
+unrestricted behavioral factorization. Three lanes generated 24 candidates
+across communication and streaming complexity, online causal identification,
+and learning or sample efficiency. Every candidate fixes its information and
+observation order, state and transcript bits, rounds, probes or passes, compute
+or oracle calls, feedback, randomness, training information, and strongest
+jointly trained factorized comparator.
+
+The communication lane finds direct positive records for attention-cache and
+associative-retrieval lower bounds, chain-of-thought parity, and existing
+cell-probe, multi-pass streaming, and pointer-chasing reductions. A matching
+Element Distinctness lower bound remains a classical open problem, but M1e
+neither solves it nor introduces a governed-state parameter.
+
+The causal lane reduces endogenous audits, compressed proxies, commit
+encouragement, performative populations, private observations, persistent
+interventions, epistemic audits, and write mediation to selective labels,
+adaptive or partially observed OPE, bridge functions, instruments, distributed
+estimation, causal experimental design, Bayes-adaptive control, MSM, SNMM,
+switchbacks, and proximal mediation. The delayed-write candidates also recycle
+M1d.
+
+The learning lane finds direct or composite collisions in test-time training,
+test-time scaling, online experts, sparse retrieval, looped Transformers,
+lifelong costly-feature acquisition, lifelong representation, online
+meta-learning, memory-reduced bilevel optimization, and communication-
+constrained distributed learning.
+
+The exclusive disposition is `8 direct / 3 composite / 10 reduced / 3 out of
+scope`. Zero candidates are `DISTINCT_CANDIDATE`. The search is targeted and
+non-exhaustive; positive records and reductions, not search silence, determine
+the result. No model, benchmark, implementation, training run, experiment, paid
+compute, or manuscript is authorized. The full record is in
+`M1E_CANDIDATE_REGISTER.md`, `M1E_SCOPING_LOG.md`, and proposed Decision 0007.

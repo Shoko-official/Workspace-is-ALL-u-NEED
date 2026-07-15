@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `ALL_ARTICLE_ROUTES_STOPPED_M1D`
-Version: `0.5.0`
-Milestone: `M1d - Non-factorizing state-compute object discovery`
-Tracking issue: [#13](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/13)
+Status: `M1E_PROPOSED_STOP_UNDER_REVIEW`
+Version: `0.6.0`
+Milestone: `M1e - Intrinsic restricted-class separation discovery`
+Tracking issue: [#17](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/17)
 
 ## Scientific question
 
@@ -16,6 +16,14 @@ M1 rejected this question as an original architecture contribution and retired t
 M1c then generated sixteen independently motivated objects covering revision repair, dependency closure, compaction certificates, concurrency, replay, migration, causal read sets, procedural drift, longitudinal feedback, revision hysteresis, evaluation carryover, and stability scaling. All sixteen failed direct anticipation, strongest-composite anticipation, generic reduction, or the requirement to specify distinct technical content. The program still has no article-eligible route.
 
 M1d next generated 24 objects specifically aimed at a non-factorizing relation between governed persistent state and adaptive compute. The gate excluded every M1c family, validity-before-compute restatements, another joint router, and narrative synthesis. One candidate was directly anticipated, six were reconstructed by positive composites, nine conditionally reduced to known theory, two were unsupported and non-distinct, and six violated the no-recycling boundary. Zero survived. The program still has no article-eligible route.
+
+M1e directly tested the restricted-class opening left by M1d. It generated 24
+communication, streaming, causal-identification, and learning objects with
+fully fixed information, order, state, transcript, compute, feedback,
+randomness, training, and strongest factorized comparison classes. The proposed
+result is eight direct anticipations, three positive composites, ten generic
+reductions, three scope violations, and zero survivors. Decision 0007 remains
+under independent review. The program still has no article-eligible route.
 
 ## Candidate contribution hypothesis
 
@@ -71,7 +79,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0006 stop that scope, its direction-setting successor, and the M1c/M1d object sets; none is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0006 stop that scope, its direction-setting successor, and the M1c/M1d object sets. Proposed Decision 0007 stops the M1e set pending independent review; none is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
@@ -99,6 +107,20 @@ M1c required every independently motivated object to state a new observable, mec
 ### Non-factorizing state-compute gate
 
 M1d required a new mechanism, estimator, invariant, bound, theorem, or predictive law outside M1C-C01 through M1C-C16. Each object had to state a decisive falsifier, a negative regime, its strongest direct or composite collision, a generic reduction, an identified comparison class, and a minimum discrimination burden before implementation. A fixed-history behavioral joint distribution factorizes under unrestricted information passage, but this fact does not establish causal, computational, optimization, learning, or sample-efficiency equivalence. A future behavioral separation must prove a result inside a preregistered intrinsic information, communication, computation, or learning class; other claim types require their own matched estimand or bound. M1d applied this rule and returned `STOP` for all 24 candidates.
+
+### Intrinsic restricted-class gate
+
+M1e requires the task, observation order, online causality, persistent and
+message budgets, compute or oracle budget, feedback, shared randomness,
+training information, and allowed communication to be fixed before evaluation.
+The strongest factorized comparator may be co-designed and jointly trained and
+receives every resource and observation allowed to the candidate. A candidate
+must state a theorem, identified estimand, or transportable law that survives
+communication, streaming, cell-probe, time-space, causal, POMDP, online,
+distributed-learning, and optimization reductions. A relabeled generic open
+problem, different operation class, weaker comparator, recycled M1c/M1d object,
+or empirical interaction cannot pass. M1e proposes `STOP` for all 24 candidates
+and awaits independent review.
 
 ### M4 oracle gate
 
