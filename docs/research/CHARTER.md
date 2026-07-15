@@ -1,9 +1,9 @@
 # Research Charter
 
-Status: `M1F_TERMINAL_STOP`
-Version: `0.7.2`
-Last scientific milestone: `M1f - Mechanism-first technical object discovery`
-Last scientific issue: [#21](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/21)
+Status: `M1G_PROPOSED_STOP`
+Version: `0.8.0`
+Current scientific milestone: `M1g - Problem-first invariant discovery`
+Current scientific issue: [#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25)
 
 ## Scientific question
 
@@ -40,6 +40,14 @@ Decision 0008 returns `STOP` with zero admitted objects after independent
 scientific, bibliographic, and governance reviews all passed on commit
 `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Protected `validate` passed and
 PR #22 merged with linear history under `67c0bdcf4b68671cda91d40c56bde99333dc36c8`.
+
+M1g then began from eight concrete incidents and required persistent state and
+adaptive computation to be separately causally necessary before prior-art
+review. Six incidents fail that prerequisite. Deletion after internalization is
+machine unlearning, and history-dependent service disparity is generic fair
+sequential control plus a Jacobian stability condition. The full 73-object
+crosswalk leaves zero admissions. Decision 0009 therefore proposes `STOP` and
+remains under independent review; it does not yet constitute an accepted gate.
 
 ## Candidate contribution hypothesis
 
@@ -95,7 +103,7 @@ After complete resource accounting and uncertainty estimation, the proposed cont
 
 ## Scope
 
-The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review and protected integration. None is authorized for drafting or implementation.
+The historical M0 paper scope covered bounded workspace communication, selected lossless episodic memory, fixed-size compressed state, bounded adaptive computation, provenance, recall, temporal mutations, length extrapolation, and physical cost. Decisions 0003 through 0007 stop that scope, its direction-setting successor, and the M1c/M1d/M1e object sets. Accepted Decision 0008 additionally stops all nine M1f mechanism-first attempts after independent review and protected integration. Proposed Decision 0009 retains `STOP` for eight M1g incident-first attempts while independent review is pending. None is authorized for drafting or implementation.
 
 Advanced security mechanisms such as ACL systems, capability models, taint tracking, prompt-injection defenses, and exfiltration controls are a separate extension. Explicit causal world models, counterfactual objectives, and causal losses are also a separate extension.
 
@@ -149,6 +157,20 @@ available symmetrically. A category error, constant-factor common-subexpression
 saving, exact transcode, generic privacy or mechanism-design problem, direct
 collision, or recycled migration object returns `STOP`. M1f applies this gate
 to nine sequential attempts and proposes zero admissions.
+
+### Problem-first invariant gate
+
+M1g begins from an externally observable incident and fixes event order,
+observer, information, persistent state, computation, intervention, and
+resources before naming a mechanism. Removing either persistent state or
+adaptive computation must eliminate or materially change the claimed result.
+The object must then survive a complete M1c-M1f crosswalk, the strongest
+symmetric comparator, generic-label substitution, the simplest non-LLM
+analogue, direct primary records, one decisive falsifier, and one negative
+regime. A failure that does not require both factors, an inherited identity or
+derivative, a generic systems or learning object, or an earlier formulation
+returns `STOP`. M1g applies this gate to eight incidents and proposes zero
+admissions pending independent review.
 
 ### M4 oracle gate
 
