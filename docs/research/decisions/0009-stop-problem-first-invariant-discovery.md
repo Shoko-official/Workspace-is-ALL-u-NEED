@@ -40,9 +40,10 @@ trade-off only for its declared convex-model setting; M1g derives neither a
 universal audit impossibility nor a stronger verifier.
 
 History-dependent compute disparity can require both persistent history and an
-adaptive allocator, but its proposed multiplier is `F'(0)` and its local
-exponent is `log|F'(0)|`. That is the ordinary Jacobian/Lyapunov stability test
-inside a fair sequential-resource-control problem.
+adaptive allocator, but around any fixed point `d*=F(d*)` its proposed
+multiplier is `F'(d*)` and its local exponent is `log|F'(d*)|`. That is the
+ordinary Jacobian/Lyapunov stability test inside a fair sequential-resource-
+control problem.
 
 ### Exact formulas do not leave a distinct residual
 
@@ -54,11 +55,13 @@ deliberation dates to Yamada's 1996 planning work. The formula is an engineering
 decision rule obtained by the product and chain rules, not a new state-compute
 law.
 
-The denial-of-wallet bound is similarly exact but inherited. If a retained
-write activates with probability at least `p` per round and costs at least
-`kappa`, expected descendant cost grows at least as `H p kappa`. Principal-
-level lifetime quotas bound it by construction. AgentDoS and Resource
-Containers already occupy the application and generic accounting branches.
+The denial-of-wallet bound is similarly exact but inherited. Under paired
+counterfactual requests and randomness, if a retained write has conditional
+activation probability at least `p` per round and conditional marginal cost at
+least `kappa` on activation, expected descendant cost grows at least as
+`H p kappa`. Principal-level lifetime quotas bound it by construction. AgentDoS
+and Resource Containers already occupy the application and generic accounting
+branches.
 
 ### Complete no-recycling audit
 
