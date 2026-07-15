@@ -14,6 +14,10 @@ Branche examinée: `agent/13-nonfactorizing-state-compute`
 
 Commit scientifique examiné: `94fed8d8c893d76e96de23de165b535e73736e1e`
 
+Commit scientifique fusionné après rebase protégé: `0504c3582e4617aa9c0feb71d6582caf1478c0bc`
+
+Commit de revue fusionné: `107e1fc7677df6a0f303f524801e517b371dfed4`
+
 Verdict des trois fonctions indépendantes: `MERGE`
 
 Décision scientifique: `STOP`
@@ -53,7 +57,9 @@ validation de résultats empiriques non exécutés dans ce dépôt.
 
 ## 4. Entrées et versions
 
-- commit scientifique: `94fed8d8c893d76e96de23de165b535e73736e1e`;
+- commit scientifique examiné: `94fed8d8c893d76e96de23de165b535e73736e1e`;
+- arbre scientifique fusionné byte-for-byte sous `0504c3582e4617aa9c0feb71d6582caf1478c0bc`;
+- commit de revue fusionné: `107e1fc7677df6a0f303f524801e517b371dfed4`;
 - cutoff bibliographique: `2026-07-15`;
 - candidats: `M1D-C01` à `M1D-C24`;
 - preuves M1d: 30 entrées décisives jusqu'à `EV-0115`, avec réutilisation
