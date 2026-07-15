@@ -22,11 +22,14 @@ class GovernanceValidationTests(unittest.TestCase):
     def test_repository_snapshot_passes(self) -> None:
         self.assertEqual(validate(ROOT), [])
 
-    def test_m1c_decision_artifacts_are_governed(self) -> None:
+    def test_scientific_decision_artifacts_are_governed(self) -> None:
         expected = {
             "docs/research/M1C_CANDIDATE_REGISTER.md",
             "docs/research/M1C_SCOPING_LOG.md",
             "docs/research/decisions/0005-stop-distinct-object-discovery.md",
+            "docs/research/M1D_CANDIDATE_REGISTER.md",
+            "docs/research/M1D_SCOPING_LOG.md",
+            "docs/research/decisions/0006-stop-nonfactorizing-state-compute-discovery.md",
         }
 
         self.assertTrue(expected.issubset(REQUIRED_PATHS))
