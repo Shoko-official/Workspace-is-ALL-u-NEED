@@ -156,8 +156,10 @@ Eight incident-first problems were tested. None passed admission:
 - history-dependent disparity is generic dynamical stability inside fair
   sequential resource allocation.
 
-The outcome is `PROPOSED_STOP`. Zero objects are admitted, the experiment
+The outcome is `ACCEPTED_STOP`. Zero objects are admitted, the experiment
 registry remains empty, and no article, implementation, benchmark, proof
 project, training run, experiment, paid compute, or submission is authorized.
-Decision 0009 remains proposed until independent scientific, bibliographic, and
-governance reviews agree on one fixed scientific commit.
+Independent scientific, bibliographic, and governance reviews all returned
+`PASS` on scientific commit
+`94af4acb8ef2db505e9596c0946c618fc136c641`. Protected integration remains
+pending.

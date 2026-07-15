@@ -2,7 +2,7 @@
 
 Cutoff: `2026-07-15`
 Issue: [#25](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/25)
-Gate result: `PROPOSED_STOP`
+Gate result: `ACCEPTED_STOP`
 Incident-first problems tested sequentially: `8`
 Admitted objects: `0`
 Surviving `DISTINCT_CANDIDATE` objects: `0`
@@ -408,7 +408,9 @@ analogue, and independent contradictory review.
 
 ## Decision
 
-Propose `STOP` for all eight M1g incident-first problems.
+Accept `STOP` for all eight M1g incident-first problems after independent
+scientific, bibliographic, and governance reviews passed on commit
+`94af4acb8ef2db505e9596c0946c618fc136c641`.
 
 - Zero objects are admitted.
 - Zero objects are `DISTINCT_CANDIDATE`.
@@ -422,5 +424,6 @@ Propose `STOP` for all eight M1g incident-first problems.
 - No article, implementation, benchmark, training run, experiment, proof
   project, paid compute, or submission is authorized.
 
-The direction-setting objective remains active. This proposed decision is a
-negative originality gate, not the requested article.
+The direction-setting objective remains active. This accepted decision is a
+negative originality gate, not the requested article. Protected integration
+remains pending.
