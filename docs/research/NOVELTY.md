@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1F_TERMINAL_STOP`
-Protocol version: `0.7.2`
+Status: `M1G_PROPOSED_STOP`
+Protocol version: `0.8.0`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -312,3 +312,38 @@ Zero M1f objects are admitted. The search is targeted and non-exhaustive; its
 reductions, and the full no-recycling crosswalk. No article or experiment is
 authorized. The complete record is in `M1F_CANDIDATE_REGISTER.md`,
 `M1F_SCOPING_LOG.md`, accepted Decision 0008, and the two M1f review handoffs.
+
+## M1g proposed gate decision
+
+Decision: proposed `STOP`, pending independent scientific, bibliographic, and
+governance review of one fixed scientific commit.
+
+M1g began from eight externally observable deployment failures rather than a
+mechanism or component list. Every problem fixed its event order, observer,
+information, state, computation, intervention, resources, strongest symmetric
+comparator, exact object, falsifier, and negative regime. The register also
+crosswalks all 73 M1c-M1f formulations before admission.
+
+Six incidents fail the preregistered requirement that persistent state and
+adaptive computation both be causally necessary. Revocation races, forked
+effects, purpose violations, undeclared hidden state, and repeated cost triggers
+do not require adaptive computation. Snapshot staleness during deliberation
+does not require persistent governed state. Deletion after adaptive
+internalization is machine unlearning with a canonical-retraining comparator;
+history-dependent service disparity is fair sequential allocation plus generic
+Jacobian or Lyapunov stability.
+
+The exact real-time objective `q(b)S(tau(b))-c(b)` supplies a useful stopping
+condition, but its derivative is a compositional identity and the incident is
+directly occupied by dynamic-environment reasoning and older persistence-
+probability deliberation control. The persistent-cost lower bound is linearity
+of expectation under positive repeated marginal cost, while immutable resource
+principals and lifetime quotas bound the descendant cost by construction.
+
+Zero M1g objects are admitted and zero are `DISTINCT_CANDIDATE`. The result is
+targeted and non-exhaustive; it rests on positive records, exact identities,
+generic reductions, causal-necessity failures, and the complete crosswalk, not
+search silence. No article, experiment, implementation, benchmark, training
+run, proof project, paid compute, or submission is authorized. The complete
+proposed record is in `M1G_PROBLEM_REGISTER.md`, `M1G_SCOPING_LOG.md`, and
+Decision 0009.
