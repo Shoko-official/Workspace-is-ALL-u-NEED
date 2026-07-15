@@ -32,7 +32,7 @@ formulations. Twenty-two fix the required class and result fields. C10's
 necessary-and-sufficient compressed-state threshold is unsupported, and C23
 does not select one task family and frontier; neither is counted as reduced or
 distinct. The corrected proposed result is `STOP` with zero survivors:
-`8 direct / 2 composite / 9 reduced / 3 out of scope / 2 unsupported`.
+`9 direct / 1 composite / 9 reduced / 3 out of scope / 2 unsupported`.
 Decision 0007 remains `PROPOSED` until corrected independent scientific,
 bibliographic, and governance review.
 No model, benchmark, implementation, training, experiment, paid compute, or
@@ -148,7 +148,7 @@ This machine is sufficient for governance and small deterministic harness work a
 44. Reconcile the post-merge operational snapshot under issue #15 without changing scientific claims, evidence, candidate dispositions, experiments, or Decision 0006. Retain `TERMINAL_STOP`.
 45. Open issue #17 and milestone #9 only for a separation inside an intrinsic restricted communication, information, online-causality, computation, or learning class. Forbid unrestricted chain-rule arguments, weak independently trained comparators, M1c or M1d recycling, generic-bound relabeling, assemblies, narrative articles, and experiments intended to create novelty.
 46. Match the factorized comparator on all allowed observations, online order, persistent and transcript bits, rounds, probes, passes, parameters, samples, training information, randomness, feedback, oracle calls, and compute. Permit co-design and joint training.
-47. Screen 24 M1e formulations across communication and streaming complexity, causal identification, and learning or sample efficiency. Record eight direct anticipations, two positive composites, nine generic reductions, three scope violations, and two unsupported non-distinct admission failures; retain zero `DISTINCT_CANDIDATE` objects.
+47. Screen 24 M1e formulations across communication and streaming complexity, causal identification, and learning or sample efficiency. Record nine direct anticipations, one positive composite, nine generic reductions, three scope violations, and two unsupported non-distinct admission failures; retain zero `DISTINCT_CANDIDATE` objects.
 48. Propose global `STOP` in Decision 0007. Do not authorize a proof implementation or experiment for a candidate that is directly occupied, reconstructed, generically reduced, recycled, or only a relabeled classical open problem. Keep the decision in independent review before acceptance.
 
 ## Blockers

@@ -260,7 +260,7 @@ representation, and communication-constrained distributed learning. Online
 meta-learning and memory-reduced bilevel work cover components of C23 but do
 not prove its unstated joint frontier.
 
-The exclusive disposition is `8 direct / 2 composite / 9 reduced / 3 out of
+The exclusive disposition is `9 direct / 1 composite / 9 reduced / 3 out of
 scope / 2 unsupported`. Zero candidates are `DISTINCT_CANDIDATE`. The search is
 targeted and non-exhaustive; positive records, reductions, scope rules, and
 explicit admission failures, not search silence, determine the result. No

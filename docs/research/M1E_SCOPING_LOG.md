@@ -160,7 +160,7 @@ Positive records or generic reductions resolve the 22 admitted formulations:
   looped computation, lifelong feature acquisition, lifelong representation,
   online meta-learning, and bilevel optimization.
 
-The result is `8 direct / 2 composite / 9 reduced / 3 out of scope / 2
+The result is `9 direct / 1 composite / 9 reduced / 3 out of scope / 2
 unsupported`, with zero `DISTINCT_CANDIDATE` objects. The three out-of-scope
 candidates are two recycled longitudinal write-effect objects and one relabeled
 generic open lower-bound problem. C10 and C23 are retained as unsupported,

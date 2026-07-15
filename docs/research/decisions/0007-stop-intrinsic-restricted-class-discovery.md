@@ -82,8 +82,9 @@ Randomized commit
 encouragement is an instrumental-variable problem. Long-run feedback through
 future request populations is stationary OPE, performative prediction, or
 carryover. Bounded private causal views reduce to distributed estimation.
-Persistent interventions are best-intervention causal bandits, general-SCM
-causal regret, or adaptive experimental design.
+The registered persistent-intervention task is fixed-budget best-intervention
+selection; causal discovery and general-SCM cumulative regret are adjacent
+classes rather than components of that direct collision.
 Epistemic audits are dual control. Compute effects mediated by future writes
 are longitudinal mediation, MSM, SNMM, or proximal mediation.
 
@@ -120,8 +121,8 @@ be granted to the matched comparator as well.
 
 The exclusive result is:
 
-- eight `ANTICIPATED_DIRECTLY`;
-- two `ANTICIPATED_BY_COMPOSITE`;
+- nine `ANTICIPATED_DIRECTLY`;
+- one `ANTICIPATED_BY_COMPOSITE`;
 - nine conditional reductions to known theory;
 - three scope violations through forbidden recycling or a relabeled generic
   open problem; and
