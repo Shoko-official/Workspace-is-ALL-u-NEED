@@ -20,8 +20,9 @@ stopped: UniTok tokenizes recommendation items rather than text, reversible
 tokenizers transcode exactly, and the remaining pipeline is an assembly.
 
 Decision 0008 is accepted after independent scientific, bibliographic, and
-governance reviews all returned `PASS` on scientific commit `76d3ae0`. Protected
-PR integration under issue #21 is still pending.
+governance reviews all returned `PASS` on scientific commit `76d3ae0`. The
+protected `validate` check passed and [PR #22](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/22)
+merged with linear history; issue #21 and milestone #11 are closed.
 
 No article, implementation, benchmark, training, or experiment is authorized.
 See [accepted decision 0008](docs/research/decisions/0008-stop-mechanism-first-object-discovery.md)

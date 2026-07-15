@@ -6,6 +6,9 @@ Issue: [#21](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/issues/21
 Milestone: `M1f - Mechanism-first technical object discovery`
 Supersedes: no prior `STOP`; Decisions 0002 through 0007 remain in force
 Reviewed scientific commit: `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`
+Rebased scientific commit: `e5b4bd69a06b6959fd6c7d524a65ace396ad8112`
+Integrated by: [PR #22](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/22)
+Merged review commit: `67c0bdcf4b68671cda91d40c56bde99333dc36c8`
 
 ## Context
 
@@ -157,7 +160,8 @@ The following are explicitly insufficient for a future article:
   `PASS` on scientific commit
   `76d3ae0ee6266a5f8031e66f83f0d79b405fe033` after two correction rounds.
 - Acceptance does not waive protected CI. Issue #21 and milestone M1f may close
-  only through their issue-closing PR after the required check passes.
+  only through their issue-closing PR after the required check passes. That
+  condition was satisfied by PR #22; both records are closed.
 - A later cycle must begin from a problem and primitive outside all 73 screened
   objects, not from another component combination or an unreported application
   cell.

@@ -1,7 +1,7 @@
 # Novelty Review
 
-Status: `M1F_ACCEPTED_STOP`
-Protocol version: `0.7.1`
+Status: `M1F_TERMINAL_STOP`
+Protocol version: `0.7.2`
 Protocol recorded: `2026-07-15`
 Candidate gate: `STOP_ALL_CURRENT_CLAIMS`
 
@@ -273,7 +273,8 @@ the two M1e independent-review handoffs.
 ## M1f accepted gate decision
 
 Decision: `STOP`, accepted after independent review of scientific commit
-`76d3ae0ee6266a5f8031e66f83f0d79b405fe033`.
+`76d3ae0ee6266a5f8031e66f83f0d79b405fe033` and protected integration through
+PR #22.
 
 M1f changed the unit of search from a candidate batch to a sequential
 mechanism. It first crosswalked all 64 M1c-M1e formulations, then required each

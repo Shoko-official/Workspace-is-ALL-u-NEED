@@ -14,9 +14,13 @@ Branche examinée: `agent/21-mechanism-first-object`
 
 Commit scientifique examiné: `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`
 
-Intégration protégée: `PENDING`
+Commit scientifique fusionné après rebase protégé: `e5b4bd69a06b6959fd6c7d524a65ace396ad8112`
 
-Verdict des trois fonctions indépendantes: `MERGE_AFTER_PROTECTED_VALIDATE`
+Commit de revue fusionné: `67c0bdcf4b68671cda91d40c56bde99333dc36c8`
+
+Intégration protégée: `COMPLETE`
+
+Verdict des trois fonctions indépendantes: `MERGE`
 
 Décision scientifique: `STOP`
 
@@ -62,6 +66,10 @@ créer la nouveauté après l'échec du gate.
 - commit initial: `7429417724ddac33ef4fe987b08aca5642a9c0bf`;
 - premier correctif: `c1472aa921e50bb2d4198de32aab178e580a4fe1`;
 - commit scientifique final: `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`;
+- arbre scientifique fusionné byte-for-byte sous
+  `e5b4bd69a06b6959fd6c7d524a65ace396ad8112`;
+- état de revue fusionné sous
+  `67c0bdcf4b68671cda91d40c56bde99333dc36c8`;
 - rapport: 23 pages, SHA-256
   `c584128e870e22e2c0372c5cdc6dc41558f9655c256dc46770f50937cd2f8046`;
 - objets: `M1F-O01` à `M1F-O09`;
@@ -152,22 +160,25 @@ Le répertoire non suivi `.codex-remote-attachments/` reste hors périmètre.
 | Réciprocité claim-preuve-matrice | `PASS` |
 | BibTeX | 138 entrées et 138 clés uniques |
 | Registre expérimental | liste vide; aucune expérience autorisée |
-| Check protégé distant | `PENDING` |
+| Check protégé distant | [`validate` PASS](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/actions/runs/29429209486/job/87399526624) sur PR #22 |
+| Intégration | PR #22 fusionnée avec historique linéaire sous `67c0bdcf4b68671cda91d40c56bde99333dc36c8` |
+| Issue et milestone scientifiques | issue #21 fermée; milestone #11 fermé |
 | Périmètre Git | `PASS`; attachment runtime non suivi |
 
 ## 10. Décision recommandée
 
-`MERGE_AFTER_PROTECTED_VALIDATE`.
+`MERGE`, exécuté après passage du check distant protégé `validate`.
 
-Decision 0008 peut être `ACCEPTED` avec `STOP` pour les neuf objets, zéro objet
+Decision 0008 est `ACCEPTED` avec `STOP` pour les neuf objets, zéro objet
 distinct et aucune autorisation d'article, modèle, benchmark, implémentation,
 entraînement, expérience ou compute payant.
 
 ## 11. Prochaine action autorisée
 
-Créer le PR fermant l'issue #21, attendre le check protégé `validate`, fusionner
-avec historique linéaire, fermer le milestone #11, puis réconcilier l'état
-post-merge sans changer le contenu scientifique.
+Réconcilier l'état post-merge sous l'issue #23 et le milestone #12 sans changer
+le contenu scientifique. Après leur fermeture protégée, seule une nouvelle
+recherche problem-first, issue-scoped et extérieure aux 73 formulations peut
+rouvrir le programme.
 
 ## 12. Rôles et indépendance
 

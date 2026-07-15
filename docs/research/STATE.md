@@ -6,15 +6,15 @@ Operational status: `STOPPED`
 
 ## Current milestone
 
-Milestone #11, `M1f - Mechanism-first technical object discovery`, is active
-under issue #21. Its scientific package has accepted `STOP` after independent
-review and is awaiting protected PR integration.
+No scientific milestone. M0, M1, M1b, M1c, M1d, M1e, and M1f are closed.
+Milestone #12 and issue #23 are governance-only records for this reconciliation;
+their closure is coupled to the protected issue-closing reconciliation PR.
 
-M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14), and M1e by merged [PR #18](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/18). Issues #1, #3, #5, #9, #13, and #17 and their scientific milestones are closed. Issues #7, #11, #15, and #19 and milestones #4, #6, #8, and #10 tracked post-merge reconciliations and are closed without reopening scientific work.
+M0 was completed by merged [PR #2](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/2), M1 by merged [PR #4](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/4), M1b by merged [PR #6](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/6), M1c by merged [PR #10](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/10), M1d by merged [PR #14](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/14), M1e by merged [PR #18](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/18), and M1f by merged [PR #22](https://github.com/Shoko-official/Workspace-is-ALL-u-NEED/pull/22). Issues #1, #3, #5, #9, #13, #17, and #21 and their scientific milestones are closed. Issues #7, #11, #15, and #19 and milestones #4, #6, #8, and #10 tracked prior post-merge reconciliations and are closed without reopening scientific work. Issue #23 and milestone #12 track only the current reconciliation.
 
 ## Current gate
 
-`M1F_PROTECTED_INTEGRATION`
+`TERMINAL_STOP`
 
 The broad and narrowed architecture claims remain `STOP`. The WAIN-Core, Joint Memory Machine, and complete-accounting contribution routes also remain `STOP`. The associated architecture paper is `NOT_ELIGIBLE` and no model, benchmark, training, or manuscript implementation is authorized.
 
@@ -52,12 +52,16 @@ mission-tokenization route fails a source-category audit and an exact codec
 transcoding argument. Decision 0008 is `ACCEPTED`: independent scientific,
 bibliographic, and governance reviews all returned `PASS` on fixed scientific
 commit `76d3ae0ee6266a5f8031e66f83f0d79b405fe033` after two correction rounds.
-Protected integration remains pending.
+Its tree was rebased byte-for-byte as
+`e5b4bd69a06b6959fd6c7d524a65ace396ad8112`; the accepted review state merged
+as `67c0bdcf4b68671cda91d40c56bde99333dc36c8`. The protected `validate` check
+passed on PR #22, issue #21 closed, and milestone #11 closed.
 
 ## Active issues
 
-Issue #21 and milestone #11 are active only for protected integration of the
-accepted M1f `STOP`. They do not authorize implementation or experiment.
+Issue #23 and milestone #12 are active only for this post-merge reconciliation.
+They do not change scientific claims or authorize work, and close through the
+protected reconciliation lifecycle.
 
 ## Capability audit
 
@@ -174,6 +178,8 @@ This machine is sufficient for governance and small deterministic harness work a
 54. Test nine mechanisms and retain zero admissions. Reject mission tokenization by source-category audit and exact transcoding; reject shared-subcomputation separation by an exact factor-two compiler; reject the remaining objects by direct collision, recycling, generic reduction, or undecidability.
 55. Propose global `STOP` in Decision 0008. Authorize only independent scientific, bibliographic, and governance review of one fixed scientific commit before protected integration.
 56. Accept Decision 0008 after corrected independent scientific, bibliographic, and governance reviews report no remaining blocker on scientific commit `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`. Authorize only protected PR integration and post-merge reconciliation.
+57. Close M1f after the protected `validate` check passed on PR #22, PR #22 merged with linear history as `67c0bdcf4b68671cda91d40c56bde99333dc36c8`, issue #21 closed, and milestone #11 closed.
+58. Reconcile the post-merge operational snapshot under issue #23 without changing scientific claims, evidence, candidate dispositions, experiments, or Decision 0008. Retain `TERMINAL_STOP`.
 
 ## Blockers
 
@@ -194,9 +200,10 @@ None. No experiment has been authorized or run.
 
 ## Next authorized action
 
-Integrate accepted Decision 0008 through the protected issue-closing PR, then
-reconcile the post-merge operational snapshot. No new discovery cycle,
-implementation, or experiment may overlap this integration.
+Complete the governance-only reconciliation through issue #23 and its protected
+PR. After closure, only a new issue-scoped problem-first discovery cycle outside
+all 73 screened formulations may proceed. No implementation or experiment is
+authorized.
 
 ## M1f exit checklist
 
@@ -211,7 +218,19 @@ implementation, or experiment may overlap this integration.
 - [x] Independent scientific, bibliographic, and governance reviews agree on
   scientific commit `76d3ae0ee6266a5f8031e66f83f0d79b405fe033`.
 - [x] Local governance validation, unit tests, and diff check pass.
-- [ ] Required protected `validate` passes and the M1f PR merges.
+- [x] Required protected `validate` passes and M1f PR #22 merges.
+
+## M1f reconciliation checklist
+
+- [x] Issue #23 and milestone #12 define a governance-only reconciliation.
+- [x] PR #22, protected run `29429209486`, issue #21, and milestone #11 are
+  recorded.
+- [x] Scientific commits `76d3ae0` and `e5b4bd6` share tree
+  `ec878429a2b7cc859b740eae066c19a9d0b54dfd`.
+- [x] Scientific claims, evidence, dispositions, Decision 0008, and the empty
+  experiment registry remain unchanged.
+- [x] Local governance validation, unit tests, and diff check pass.
+- [ ] Protected reconciliation PR passes and issue #23 and milestone #12 close.
 
 ## M1e exit checklist
 
